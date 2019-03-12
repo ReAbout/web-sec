@@ -164,14 +164,6 @@ AND ascii(SELECT SUBSTR(table_name,1,1) FROM information_schema.tables) =ascii( 
 ### 0x07 时间型盲注
 SLEEP()
 ## Bypass
-注释方法：   
-|符号|说明|   
-|------|------|   
-|#|Hash 语法|   
-|/*|C-style 语法|   
-|-- -|SQL 语法|   
-|;%00|空字节|   
-|`|反引号|  
 ### 1.bypass WAF 
 - [sql-injection-fuck-waf](https://notwhy.github.io/2018/06/sql-injection-fuck-waf/)
 ### 2.bypass 过滤函数
