@@ -1,6 +1,6 @@
 # EXP手册-SQL injection(MySQL) 
-python:flask|Jinja2|tornado
-php:
+
+php:  
 ## SQL语句基础知识
 ### 0x01查询语句
 #### 1.查询数据库名
