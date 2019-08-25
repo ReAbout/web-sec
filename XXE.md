@@ -1,4 +1,4 @@
-# EXP手册-XXE(XML External Entity Injection)
+# EXP手册-XXE Injecton(XML External Entity Injection)
 ## 基础知识
 XXE(XML External Entity),即是XML外部实体注入攻击.漏洞是在对不安全的外部实体数据进行处理时引发的安全问题。   
 关键在DTD的引用。   
