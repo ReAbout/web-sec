@@ -22,7 +22,8 @@ DTD(The document type definition)，即是文档类型定义，可定义合法�
 - 不带回显读取文件-OOB(Out of Band）    
 - 报错回显读取文件-XXE Base Error   
 - 远程执行   
-### 回显读取文件
+### 0x01回显读取文件
+读取本地文件payload示例：   
 ```
 <?xml version=”1.0″ encoding=”utf-8″?>
 
