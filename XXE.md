@@ -19,8 +19,8 @@ DTD(The document type definition)，即是文档类型定义，可定义合法�
 按服务端语言有PHP、JAVA、JAVA(Android)一般解析函数都是默认不开启的。
 漏洞利用方法分：
 - 回显读取文件   
-- 不带回显读取文件    
-- 报错回显读取文件
+- 不带回显读取文件-OOB(Out of Band）    
+- 报错回显读取文件-XXE Base Error   
 - 远程执行   
 ### 回显读取文件
 ```
