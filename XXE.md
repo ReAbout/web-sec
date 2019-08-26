@@ -57,12 +57,12 @@ evil.dtd
 ![](https://raw.githubusercontent.com/ReAbout/web-exp/master/images/xxe-injection.svg?sanitize=true)    
 ## XXE漏洞利用
 前提条件：允许外部实体引用。   
-按服务端语言有PHP、JAVA、JAVA(Android)一般解析函数都是默认不开启的、Python、libxml。   
+按服务端语言有PHP(libxml)、JAVA、JAVA(Android)一般解析函数都是默认不开启的、Python、libxml2。   
 漏洞利用方法分：   
 - 回显读取文件   
 - 不带回显读取文件-OOB(Out of Band）    
 - 报错回显读取文件-XXE Base Error   
-- 远程执行   
+- 文件上传-jar协议   
 ### 0x01回显读取文件
 #### payload   
 ```
@@ -178,6 +178,8 @@ ubuntu系统自带的/usr/share/yelp/dtd/docbookx.dtd 包含%ISOamso
     %para;
 ]>
 ```
+### 文件上传-jar协议 
+这篇文章：[一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)其中实验七有详细利用方法。   
 ### Reference
 - [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)    
 - [XML external entity (XXE) injection](https://portswigger.net/web-security/xxe)
