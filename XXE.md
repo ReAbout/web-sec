@@ -180,6 +180,8 @@ ubuntu系统自带的/usr/share/yelp/dtd/docbookx.dtd 包含%ISOamso
 ```
 ### 文件上传-jar协议 
 这篇文章：[一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)其中实验七有详细利用方法。   
+### Tips
+ - java 还支持一个 netdoc 协议，能完成列目录的功能   
 ### Reference
 - [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)    
 - [XML external entity (XXE) injection](https://portswigger.net/web-security/xxe)
