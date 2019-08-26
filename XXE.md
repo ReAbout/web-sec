@@ -49,6 +49,8 @@ evil.dtd
 ```
 可以输入任意字符除了 ]]> 不能嵌套   
 用处是万一某个标签内容包含特殊字符或者不确定字符，我们可以用 CDATA包起来    
+### 各语言xml解析支持的协议
+![](https://raw.githubusercontent.com/ReAbout/web-exp/master/images/xxe1.png)
 ### 入门：  
 - [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)    
 - [XML external entity (XXE) injection](https://portswigger.net/web-security/xxe)
@@ -177,6 +179,7 @@ ubuntu系统自带的/usr/share/yelp/dtd/docbookx.dtd 包含%ISOamso
 ]>
 ```
 ### Reference
-
-[Exploiting XXE with local DTD files](https://mohemiv.com/all/exploiting-xxe-with-local-dtd-files/)   
-[Blind XXE详解与Google CTF一道题分析](https://www.freebuf.com/vuls/207639.html)  
+- [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)    
+- [XML external entity (XXE) injection](https://portswigger.net/web-security/xxe)
+- [Exploiting XXE with local DTD files](https://mohemiv.com/all/exploiting-xxe-with-local-dtd-files/)   
+- [Blind XXE详解与Google CTF一道题分析](https://www.freebuf.com/vuls/207639.html)  
