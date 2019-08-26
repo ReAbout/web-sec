@@ -19,8 +19,8 @@ DTD(The document type definition)，即是文档类型定义，可定义合法�
 - [XML external entity (XXE) injection](https://portswigger.net/web-security/xxe)
 ![](https://raw.githubusercontent.com/ReAbout/web-exp/master/images/xxe-injection.svg?sanitize=true)
 ## XXE漏洞利用
-按服务端语言有PHP、JAVA、JAVA(Android)一般解析函数都是默认不开启的、Python、libxml。
-漏洞利用方法分：
+按服务端语言有PHP、JAVA、JAVA(Android)一般解析函数都是默认不开启的、Python、libxml。   
+漏洞利用方法分：   
 - 回显读取文件   
 - 不带回显读取文件-OOB(Out of Band）    
 - 报错回显读取文件-XXE Base Error   
