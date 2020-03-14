@@ -170,7 +170,7 @@ grouo_concat()
 select a.*,group_concat(b.name separator '-') as name from a left join b on a.id=b.id group by a.id;   
 ```
 ### 2. 截取字符串
-left(),right(),substring()
+left(),right(),substring(),substring_index()   
 如果显示有字数限制，对于过长的字符串需要分部分截取。
 从左边开始截取   
 ```
@@ -183,6 +183,14 @@ SELECT RIGHT('web-exp-mysql',6)
 从第3个字符开始截取到结束   
 ```
 SELECT SUBSTRING('web-exp-mysql', 3)
+```
+截取第二个“-”之前的所有字符    
+```
+SELECT SUBSTRING_INDEX('web-exp-mysql', '-', 2);
+```
+截取倒数第二个“-”之后的所有字符   
+```
+SELECT SUBSTRING_INDEX('web-exp-mysql', '.', -2);
 ```
 ## Bypass
 ### 1.bypass WAF
