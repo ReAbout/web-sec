@@ -166,9 +166,11 @@ SLEEP()
 ## 常用小技巧
 ### 1.多行合并一行   
 grouo_concat   
-'select a.*,group_concat(b.name separator '-') as name from a left join b on a.id=b.id group by a.id;'   
+```
+select a.*,group_concat(b.name separator '-') as name from a left join b on a.id=b.id group by a.id;   
+```
 ## Bypass
-### 1.bypass WAF 
+### 1.bypass WAF
 - [sql-injection-fuck-waf](https://notwhy.github.io/2018/06/sql-injection-fuck-waf/)
 ### 2.bypass 过滤函数
 过滤
