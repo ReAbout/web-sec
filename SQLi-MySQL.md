@@ -165,9 +165,24 @@ AND ascii(SELECT SUBSTR(table_name,1,1) FROM information_schema.tables) =ascii( 
 SLEEP()
 ## 常用小技巧
 ### 1.多行合并一行   
-grouo_concat   
+grouo_concat()
 ```
 select a.*,group_concat(b.name separator '-') as name from a left join b on a.id=b.id group by a.id;   
+```
+### 2. 截取字符串
+left(),right(),substring()
+如果显示有字数限制，对于过长的字符串需要分部分截取。
+从左边开始截取   
+```
+SELECT LEFT('web-exp-mysql',6)
+```
+从右边开始截取   
+```
+SELECT RIGHT('web-exp-mysql',6)
+```
+从第3个字符开始截取到结束   
+```
+SELECT SUBSTRING('web-exp-mysql', 3)
 ```
 ## Bypass
 ### 1.bypass WAF
