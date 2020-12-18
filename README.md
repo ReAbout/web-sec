@@ -1,20 +1,27 @@
 # WEB SEC手册
-## 漏洞理解篇
+## 0x01 漏洞理解篇(Vulnerability)
 ### 前端
 - [跨域安全](https://github.com/ReAbout/web-exp/blob/master/VUL-CrossDomain.md)
-## 漏洞利用篇
-- [SQL injection](https://github.com/ReAbout/web-exp/blob/master/EXP-SQLi-MySQL.md)
-- [SSTI](https://github.com/ReAbout/web-exp/blob/master/EXP-SSTI.md)
+### 后端逻辑
+## 0x02 漏洞利用篇(Exploit)
+- [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/EXP-SQLi-MySQL.md)
 - [XSS](https://github.com/ReAbout/web-exp/blob/master/EXP-XSS.md)
 - [CSRF](https://github.com/ReAbout/web-exp/blob/master/EXP-CSRF.md)
 - [SSRF](https://github.com/ReAbout/web-exp/blob/master/EXP-SSRF.md)
 - [XXE](https://github.com/ReAbout/web-exp/blob/master/EXP-XXE.md)
-- [命令执行漏洞-远程执行-本地提权]()
+- [SSTI -Python](https://github.com/ReAbout/web-exp/blob/master/EXP-SSTI.md)
 - [反序列化漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/EXP-PHP-Unserialize.md)
+- [包含漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/EXP-Include-PHP.md)
 - [Node.js 原型链污染](https://github.com/ReAbout/web-exp/blob/master/EXP-nodejs-proto.md)
-- [包含漏洞]()
-- [业务逻辑漏洞]()
-## 代码审计篇
+## 0x03 代码审计篇(Audit)
+- [PHP调试环境的搭建](https://github.com/ReAbout/web-exp/blob/master/audit/AUD-PHP-Debug.md)
 - [PHP代码审计]()
 
-## 渗透篇
+## 0x04 渗透篇(Penetration)
+### 网络预置
+- [信息收集](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
+### 后门&维持会话
+### 隧道
+
+
+
