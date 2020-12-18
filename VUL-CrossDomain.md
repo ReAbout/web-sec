@@ -108,9 +108,9 @@ CDN上的JS框架，如果CDN上存在一些低版本的框架，就可能存在
 CDN服务商存在某些低版本的js库。   
 此CDN服务商在CSP白名单中。   
 
-#### 站点可控静态资源绕过
+#### 站点可控静态资源绕过     
 
-www.google.analytics.com中提供了自定义javascript的功能（google会封装自定义的js，所以还需要unsafe-eval），于是可以绕过CSP   
+`www.google.analytics.com`中提供了自定义javascript的功能（google会封装自定义的js，所以还需要unsafe-eval），于是可以绕过CSP   
 ```
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-eval' https://www.google-analytics.com">
 <script src="https://www.google-analytics.com/gtm/js?id=GTM-PJF5W64"></script>
@@ -204,7 +204,7 @@ Content-Type: application/xml
 
 默认情况下，如果没有设置“Access-Control-Allow-Credentials”这个头的话，浏览器发送的请求就不会带有用户的身份数据（cookie或者HTTP身份数据），所以就不会泄露用户隐私信息。    
 CORS保护的例子    
-![9a8a99144c3b3b73adff885de3b03466.png](https://raw.githubusercontent.com/ReAbout/web-exp/master/images/cd_4.png)
+![9a8a99144c3b3b73adff885de3b03466.png](https://raw.githubusercontent.com/ReAbout/web-exp/master/images/cd4.png)
 ### 漏洞发现
 通过发送请求，判断回报是否允许   
 ```
@@ -297,10 +297,10 @@ CORS的规范中还提到了“NULL”源。触发这个源是为了网页跳转
 
 #### 特殊字符，利用正则
 
-Ref[][HTTP访问控制（CORS）](
+- Ref[][HTTP访问控制（CORS）](
 https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)   
 
-Ref[]:[cors安全完全指南](https://xz.aliyun.com/t/2745)
+- Ref[]:[cors安全完全指南](https://xz.aliyun.com/t/2745)
 ## 0x04 JSONP-非官方跨域数据交互协议
 JSONP（JSON with Padding）
 JSONP是一种依靠开发人员的聪明才智创造出的一种非官方跨域数据交互协议。    
@@ -356,8 +356,8 @@ document.write(JSON.stringify(json))
 </html>
 ```
 
-Ref[]:[JSONP 劫持原理与挖掘方法](https://www.k0rz3n.com/2019/03/07/JSONP%20%E5%8A%AB%E6%8C%81%E5%8E%9F%E7%90%86%E4%B8%8E%E6%8C%96%E6%8E%98%E6%96%B9%E6%B3%95/)
-Ref[]:[对jsonp劫持的一次简单了解](http://sh1yan.top/2018/08/12/jsonp-study/)
+- Ref[]:[JSONP 劫持原理与挖掘方法](https://www.k0rz3n.com/2019/03/07/JSONP%20%E5%8A%AB%E6%8C%81%E5%8E%9F%E7%90%86%E4%B8%8E%E6%8C%96%E6%8E%98%E6%96%B9%E6%B3%95/)
+- Ref[]:[对jsonp劫持的一次简单了解](http://sh1yan.top/2018/08/12/jsonp-study/)
 
 
 ## Ref
