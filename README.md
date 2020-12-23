@@ -13,6 +13,7 @@
 - [反序列化漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-PHP-Unserialize.md)
 - [包含漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-Include-PHP.md)
 - [Node.js 原型链污染](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-nodejs-proto.md)
+- [DNS rebinding 攻击]()
 ## 0x03 代码审计篇(Audit)
 - [PHP调试环境的搭建](https://github.com/ReAbout/web-exp/blob/master/audit/AUD-PHP-Debug.md)
 - [PHP代码审计]()
