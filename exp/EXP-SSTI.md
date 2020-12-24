@@ -102,6 +102,7 @@ codecs.open('/etc/passwd').read()
 ```
 ### 0x06Bypass
 - [Jinja2 template injection filter bypasses](https://0day.work/jinja2-template-injection-filter-bypasses/)
+- [SSTI Bypass 分析](https://www.secpulse.com/archives/115367.html)
 ### Reference：
 - [Flask/Jinja2 SSTI && python 沙箱逃逸](https://www.kingkk.com/2018/06/Flask-Jinja2-SSTI-python-%E6%B2%99%E7%AE%B1%E9%80%83%E9%80%B8/)
 - [Flask/Jinja2模板注入中的一些绕过姿势](https://p0sec.net/index.php/archives/120/)
