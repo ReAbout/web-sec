@@ -6,6 +6,10 @@ Vscode + Ubuntu16.04虚拟机 + Xdebug
 
 ### ubuntu 
 - 首先安装好 Apache,Mysql,php   
+```
+sudo apt install apache2 php  libapache2-mod-php mysql-server
+
+```
 
 - xdebug install
 ```
