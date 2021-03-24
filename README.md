@@ -26,7 +26,7 @@
 - [反向端口转发工具 FRP](https://github.com/fatedier/frp)
 - [内网多级代理工具 Venom](https://github.com/Dliv3/Venom/releases)
 ### 1day漏洞索引
-- [红队中易被攻击的一些重点系统漏洞整理]https://github.com/r0eXpeR/redteam_vul
+- [红队中易被攻击的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam_vul)
 ### 协同
 - [HackMD markdown协同工具(Docker版)](https://hackmd.io/c/codimd-documentation/%2Fs%2Fcodimd-docker-deployment)
 
