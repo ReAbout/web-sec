@@ -24,6 +24,7 @@
 ### 外网突破(nday)
 - [红队中易被攻击的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam_vul)
 - [**[Tool]** Struts2-Scan](https://github.com/HatBoy/Struts2-Scan)
+- [**[Tool]** shiro反序列化漏洞综合利用](https://github.com/j1anFen/shiro_attack)
 ### 后门&维持会话
 #### Webshell
 - [**[Tool]** 蚁剑](https://github.com/AntSwordProject/AntSword-Loader)
