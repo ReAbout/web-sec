@@ -23,7 +23,7 @@
 ### 网络预置
 - [信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
 ### 外网突破(nday)
-- [红队中易被攻击的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam_vul)
+- [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
 - [**[Tool]** Struts2-Scan](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞综合利用](https://github.com/j1anFen/shiro_attack)
 ### 后门&维持会话
@@ -36,7 +36,7 @@
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
 - [**[Tool]** 内网多级代理工具 Venom](https://github.com/Dliv3/Venom/releases)
 ### 后渗透
-- [域渗透](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
+- [域渗透@uknowsec](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
 ### 协同
 - [HackMD markdown协同工具(Docker版)](https://hackmd.io/c/codimd-documentation/%2Fs%2Fcodimd-docker-deployment)
 
