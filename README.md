@@ -28,7 +28,9 @@
 - [**[Tool]** shiro反序列化漏洞综合利用](https://github.com/j1anFen/shiro_attack)
 ### (3)提权
 #### Win
+- [Windows提权漏洞集合@SecWiki](https://github.com/SecWiki/windows-kernel-exploits)
 #### Linux
+- [linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
 ### (4)后门&维持会话
 #### Webshell
 - [**[Tool]** 蚁剑](https://github.com/AntSwordProject/AntSword-Loader)
