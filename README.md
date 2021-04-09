@@ -24,6 +24,7 @@
 - [信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
 ### (2)外网突破(nday)
 - [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
+- [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
 - [**[Tool]** Struts2-Scan](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞综合利用](https://github.com/j1anFen/shiro_attack)
 ### (3)提权
