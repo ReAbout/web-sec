@@ -42,6 +42,8 @@
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
 - [**[Tool]** 内网多级代理工具 Venom](https://github.com/Dliv3/Venom/releases)
 ### (6)后渗透
+- [**[Tool]** 后渗透利用神器 Metasploit](https://www.metasploit.com/)
+- [**[Tool]** 内网横向拓展系统 InScan](https://github.com/inbug-team/InScan)
 - [域渗透@uknowsec](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
 ### (7)协同
 - [HackMD markdown协同工具(Docker版)](https://hackmd.io/c/codimd-documentation/%2Fs%2Fcodimd-docker-deployment)
