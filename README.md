@@ -23,6 +23,7 @@
 ## 0x04 渗透篇(Penetration)
 ### (1)网络预置
 - [信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
+- [**[Tool]** 移动端信息收集工具 AppInfoScanner](https://github.com/kelvinBen/AppInfoScanner)
 ### (2)外网突破(nday)
 - [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
