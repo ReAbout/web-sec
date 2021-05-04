@@ -17,7 +17,7 @@
 - [DNS rebinding 攻击]()[待更新]
 ## 0x03 代码审计篇(Audit)
 - [PHP调试环境的搭建](https://github.com/ReAbout/web-exp/blob/master/audit/AUD-PHP-Debug.md)
-- [PHP代码审计]()[待更新]
+- [PHP代码审计@bowu678](https://github.com/bowu678/php_bugs)
 - [Java代码审计@cn-panda](https://github.com/cn-panda/JavaCodeAudit)
 
 ## 0x04 渗透篇(Penetration)
