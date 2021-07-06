@@ -24,11 +24,12 @@
 ### (1)网络预置
 - [信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
 - [**[Tool]** 移动端信息收集工具 AppInfoScanner](https://github.com/kelvinBen/AppInfoScanner)
-### (2)外网突破(nday)
+### (2)外网突破(exp)
 - [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
 - [**[Tool]** Struts2-Scan](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞综合利用](https://github.com/j1anFen/shiro_attack)
+- [**[Tool]** Vulmap 是一款 web 漏洞扫描和验证工具, 可对 webapps 进行漏洞扫描, 并且具备漏洞利用功能, 目前支持的 webapps 包括 activemq, flink, shiro, solr, struts2, tomcat, unomi, drupal, elasticsearch, fastjson, jenkins, nexus, weblogic, jboss, spring, thinkphp](https://github.com/zhzyker/vulmap)  
 ### (3)提权
 #### Win
 - [Windows提权漏洞集合@SecWiki](https://github.com/SecWiki/windows-kernel-exploits)
