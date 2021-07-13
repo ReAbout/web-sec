@@ -57,9 +57,17 @@ O:<class_name_length>:"<class_name>":<number_of_properties>:{<properties>}
 * __autoload()，尝试加载未定义的类 
 * __debugInfo()，打印所需调试信息
 
+## 0x03 触发反序列化
+
+### unserialize()
+
+### phar反序列化
+常用攻击链 = 上传文件 + PoP链 + 文件操作phar://伪协议   
+- [利用 phar 拓展 php 反序列化漏洞攻击面](https://paper.seebug.org/680/)   
 
 
-## 0x03 bypass技巧
+
+## 0x04 bypass技巧
 
 ### 跳过__wakeup 执行
 
@@ -81,7 +89,7 @@ O:<class_name_length>:"<class_name>":<number_of_properties>:{<properties>}
 
 [红日安全代码审计Day11 - unserialize反序列化漏洞](https://xz.aliyun.com/t/2733)
 
-## 0x04 技巧篇
+## 0x05 技巧篇
 
 
 ### 利用array()动态调用类
