@@ -37,7 +37,7 @@
 - [linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
 ### (4)后门&维持会话
 #### Shell会话
-- [反弹shell](https://github.com/ReAbout/web-sec/blob/master/penetration/PEN-ReShell.md)
+- [反弹shell Linux&Win](https://github.com/ReAbout/web-sec/blob/master/penetration/PEN-ReShell.md)
 #### Webshell
 - [**[Tool]** WebShell管理工具 蚁剑](https://github.com/AntSwordProject/AntSword-Loader)
 - [**[Tool]** WebShell管理工具 冰蝎](https://github.com/rebeyond/Behinder)
