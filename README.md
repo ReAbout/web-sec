@@ -30,8 +30,9 @@
 - [**[Tool]** Struts2-Scan](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞综合利用](https://github.com/j1anFen/shiro_attack)
 - [**[Tool]** Vulmap 是一款 web 漏洞扫描和验证工具, 可对 webapps 进行漏洞扫描, 并且具备漏洞利用功能, 目前支持的 webapps 包括 activemq, flink, shiro, solr, struts2, tomcat, unomi, drupal, elasticsearch, fastjson, jenkins, nexus, weblogic, jboss, spring, thinkphp](https://github.com/zhzyker/vulmap)  
-### (3)提权
+### (3)权限获取&提升
 #### Win
+- [Windows 认证凭证获取]()   
 - [Windows提权漏洞集合@SecWiki](https://github.com/SecWiki/windows-kernel-exploits)
 #### Linux
 - [linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
@@ -45,6 +46,7 @@
 #### Android
 #### Linux
 ### (5)隧道
+- [ssh 端口转发&开socks5](./)
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
 - [**[Tool]** 内网多级代理工具 Venom](https://github.com/Dliv3/Venom/releases)
 ### (6)后渗透
