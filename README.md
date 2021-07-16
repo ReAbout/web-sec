@@ -38,7 +38,7 @@
 - [linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
 ### (4)后门&维持会话
 #### Shell会话
-- [反弹shell Linux&Win](https://github.com/ReAbout/web-sec/blob/master/penetration/PEN-ReShell.md)
+- [反弹shell Linux&Win](./penetration/PEN-ReShell.md)
 #### Webshell
 - [**[Tool]** WebShell管理工具 蚁剑](https://github.com/AntSwordProject/AntSword-Loader)
 - [**[Tool]** WebShell管理工具 冰蝎](https://github.com/rebeyond/Behinder)
@@ -46,7 +46,7 @@
 #### Android
 #### Linux
 ### (5)隧道
-- [ssh 端口转发&开socks5](./)
+- [ssh 端口转发&开socks5](./penetration/PEN-ssh.md)
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
 - [**[Tool]** 内网多级代理工具 Venom](https://github.com/Dliv3/Venom/releases)
 ### (6)后渗透
