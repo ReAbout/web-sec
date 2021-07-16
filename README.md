@@ -10,7 +10,7 @@
 - [CSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-CSRF.md)
 ### SQL注入
 - [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SQLi-MySQL.md)
-- [SQL injection 技巧篇-信息外带]()
+- [SQL injection 技巧篇-信息外带]()【待整理】
 ### SSRF
 - [SSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSRF.md)
 ### XXE
@@ -35,6 +35,7 @@
 - [信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
 - [**[Tool]** 移动端信息收集工具 AppInfoScanner](https://github.com/kelvinBen/AppInfoScanner)
 ### (2)外网突破(exp)
+- [漏洞索引表]()【待整理】
 - [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
 - [**[Tool]** Struts2-Scan](https://github.com/HatBoy/Struts2-Scan)
