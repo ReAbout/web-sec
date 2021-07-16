@@ -5,15 +5,25 @@
 - [跨域安全](https://github.com/ReAbout/web-exp/blob/master/vul/VUL-CrossDomain.md)
 ### 后端逻辑
 ## 0x02 漏洞利用篇(Exploit)
-- [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SQLi-MySQL.md)
+### 前端
 - [XSS](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XSS.md)
 - [CSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-CSRF.md)
+### SQL注入
+- [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SQLi-MySQL.md)
+- [SQL injection 技巧篇-信息外带]()
+### SSRF
 - [SSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSRF.md)
+### XXE
 - [XXE](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XXE.md)
+### SSTI
 - [SSTI -Python](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSTI.md)
+### 反序列化漏洞
 - [反序列化漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-PHP-Unserialize.md)
+### PHP-特性漏洞
 - [包含漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-Include-PHP.md)
+### NodeJs-特性漏洞
 - [Node.js 原型链污染](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-nodejs-proto.md)
+### Other
 - [DNS rebinding 攻击]()[待更新]
 ## 0x03 代码审计篇(Audit)
 - [PHP调试环境的搭建](https://github.com/ReAbout/web-exp/blob/master/audit/AUD-PHP-Debug.md)
