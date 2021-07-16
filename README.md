@@ -8,7 +8,7 @@
 ### 前端
 - [XSS](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XSS.md)
 - [CSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-CSRF.md)
-### SQL注入
+### SQL注入&数据库漏洞利用
 - [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SQLi-MySQL.md)
 - [SQL injection 技巧篇-信息外带]()【待整理】
 ### SSRF
