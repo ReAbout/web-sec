@@ -6,7 +6,8 @@
 ### 后端逻辑
 ## 0x02 漏洞利用篇(Exploit)
 ### 前端
-- [Cross Site Scripting (XSS)_](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XSS.md)
+>XSS 利用的是用户对指定网站的信任，CSRF 利用的是网站对用户网页浏览器的信任   
+- [Cross Site Scripting (XSS)](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XSS.md)
 - [Client-side request forgery (CSRF)](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-CSRF.md)
 ### SQL注入&数据库漏洞利用
 - [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SQLi-MySQL.md)
@@ -18,7 +19,7 @@
 ### Server Side Template Injection (SSTI)
 - [SSTI -Python](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSTI.md)
 ### 反序列化漏洞
-php,java只能序列化数据，python可以序列化代码。   
+>php,java只能序列化数据，python可以序列化代码。   
 - [反序列化漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-PHP-Unserialize.md)
 ### PHP-特性漏洞
 - [包含漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-Include-PHP.md)
