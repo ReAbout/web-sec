@@ -51,14 +51,13 @@
 #### Linux
 - [linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
 ### (4)后门&维持会话
-#### Shell会话
+#### Shell网络流
 - [反弹shell Linux&Win](./penetration/PEN-ReShell.md)
 #### Webshell
 - [**[Tool]** WebShell管理工具 蚁剑](https://github.com/AntSwordProject/AntSword-Loader)
 - [**[Tool]** WebShell管理工具 冰蝎](https://github.com/rebeyond/Behinder)
-#### Win
-#### Android
-#### Linux
+#### PC & Server
+#### Mobile (Android & ios)  
 ### (5)隧道
 - [ssh 端口转发&开socks5](./penetration/PEN-ssh.md)
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
@@ -67,7 +66,8 @@
 - [**[Tool]** 后渗透利用神器 Metasploit](https://www.metasploit.com/)
 - [**[Tool]** 内网横向拓展系统 InScan](https://github.com/inbug-team/InScan)
 - [域渗透@uknowsec](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
-### (7)协同
+### (7) 反溯源 
+### (8)协同
 - [HackMD markdown协同工具(Docker版)](https://hackmd.io/c/codimd-documentation/%2Fs%2Fcodimd-docker-deployment)
 
 
