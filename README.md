@@ -1,5 +1,6 @@
-# WEB SEC手册
-包括个人对漏洞理解，漏洞利用和渗透测试的整理，也收录了他人相关的知识的总结和工具的推荐。
+# WEB 安全手册
+包括个人对漏洞理解，漏洞利用和渗透测试的整理，也收录了他人相关的知识的总结和工具的推荐。    
+
 ## 0x01 漏洞理解篇(Vulnerability)
 ### 前端
 - [跨域安全](https://github.com/ReAbout/web-exp/blob/master/vul/VUL-CrossDomain.md)
