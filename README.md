@@ -4,6 +4,7 @@
 ### 前端
 - [跨域安全](https://github.com/ReAbout/web-exp/blob/master/vul/VUL-CrossDomain.md)
 ### 后端逻辑
+- [错综复杂的后端逻辑及安全]()【待整理】
 ## 0x02 漏洞利用篇(Exploit)
 ### 前端
 >XSS 利用的是用户对指定网站的信任，CSRF 利用的是网站对用户网页浏览器的信任   
