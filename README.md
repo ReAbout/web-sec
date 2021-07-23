@@ -14,12 +14,16 @@
 ### SQL注入&数据库漏洞利用
 - [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SQLi-MySQL.md)
 - [SQL injection 技巧篇-信息外带]()【待整理】
+### 模板注入 Server Side Template Injection (SSTI)
+- [SSTI -Python](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSTI.md)
+### 表达式注入 
+
+### 命令注入&执行
+
 ### Server-side request forgery (SSRF)
 - [SSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSRF.md)
 ### XML External Entity (XXE) 
 - [XXE](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XXE.md)
-### Server Side Template Injection (SSTI)
-- [SSTI -Python](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSTI.md)
 ### 反序列化漏洞
 >php,java只能序列化数据，python可以序列化代码。   
 - [反序列化漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-PHP-Unserialize.md)
