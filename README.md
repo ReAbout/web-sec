@@ -2,42 +2,42 @@
 包括个人对漏洞理解，漏洞利用和渗透测试的整理，也收录了他人相关的知识的总结和工具的推荐。    
 
 ## 0x01 漏洞理解篇(Vulnerability)
-### 前端
+### （1）前端
 - [跨域安全](https://github.com/ReAbout/web-exp/blob/master/vul/VUL-CrossDomain.md)
-### 后端逻辑
+### （2）后端逻辑
 - [错综复杂的后端逻辑及安全]()【待整理】
 ## 0x02 漏洞利用篇(Exploit)
-### 前端
+### （1）前端安全
 >XSS 利用的是用户对指定网站的信任，CSRF 利用的是网站对用户网页浏览器的信任   
 - [Cross Site Scripting (XSS)](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XSS.md)
 - [Client-side request forgery (CSRF)](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-CSRF.md)
-### SQL注入&数据库漏洞利用
+### （2）SQL注入&数据库漏洞利用
 - [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SQLi-MySQL.md)
 - [SQL injection 技巧篇-信息外带]()【待整理】
-### 模板注入 Server Side Template Injection (SSTI)
+### （3）模板注入 Server Side Template Injection (SSTI)
 - [SSTI -Python](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSTI.md)
-### 表达式注入 
+### （4）表达式注入 
 
-### 命令注入&执行
+### （5）命令注入&执行
 
-### Server-side request forgery (SSRF)
+### （6）Server-side request forgery (SSRF)
 - [SSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSRF.md)
-### XML External Entity (XXE) 
+### （7）XML External Entity (XXE) 
 - [XXE](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XXE.md)
-### 反序列化漏洞
+### （8）反序列化漏洞
 >php,java只能序列化数据，python可以序列化代码。   
 - [反序列化漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-PHP-Unserialize.md)
-### PHP-特性漏洞
+### （9）PHP-特性漏洞
 - [包含漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-Include-PHP.md)
-### NodeJs-特性漏洞
+### （10）NodeJs-特性漏洞
 - [Node.js 原型链污染](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-nodejs-proto.md)
-### Other
+### （11）Other
 - [DNS rebinding 攻击]()[待更新]
 ## 0x03 代码审计篇(Audit)
-### PHP
+### （1）PHP
 - [PHP调试环境的搭建](https://github.com/ReAbout/web-exp/blob/master/audit/AUD-PHP-Debug.md)
 - [PHP代码审计@bowu678](https://github.com/bowu678/php_bugs)
-### JAVA
+### （2）JAVA
 - [Java代码审计@cn-panda](https://github.com/cn-panda/JavaCodeAudit)
 
 ## 0x04 渗透篇(Penetration)
