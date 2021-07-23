@@ -50,9 +50,10 @@
 - [**[Tool]** Vulmap 是一款 web 漏洞扫描和验证工具, 可对 webapps 进行漏洞扫描, 并且具备漏洞利用功能, 目前支持的 webapps 包括 activemq, flink, shiro, solr, struts2, tomcat, unomi, drupal, elasticsearch, fastjson, jenkins, nexus, weblogic, jboss, spring, thinkphp](https://github.com/zhzyker/vulmap)  
 #### 扫描器
 ##### 主动式
-
+ - [AWVS]()
 ##### 被动式
-
+>将Burpusuite打造成一个被动式扫描器   
+- [BurpSutie 插件集合@Mr-xn](https://github.com/Mr-xn/BurpSuite-collections)  
 ### (3)权限获取&提升
 #### Win
 - [Windows 认证凭证获取]()   
