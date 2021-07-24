@@ -15,7 +15,7 @@
 - [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SQLi-MySQL.md)
 - [SQL injection 技巧篇-信息外带]()【待整理】
 ### 2.3 模板注入 Server Side Template Injection (SSTI)
-> MVC架构中，模板参数输入产生的安全问题
+> MVC架构中，模板参数恶意输入产生的安全问题
 - [SSTI -Python](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSTI.md)
 ### 2.4 表达式注入 
 
