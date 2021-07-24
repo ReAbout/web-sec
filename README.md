@@ -46,20 +46,24 @@
 - [信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
 - [**[Tool]** 移动端信息收集工具 AppInfoScanner](https://github.com/kelvinBen/AppInfoScanner)
 ### 4.2 外网突破(exp)
-#### 4.2.1漏洞利用
+
+#### 4.2.1 漏洞验证（扫描器）
+> 工欲其善必先利器
+##### 4.2.1.1 主动式
+ - [**[Tool]** AWVS 14 Docker版](https://hub.docker.com/r/secfa/docker-awvs)
+ - [**[Tool]** Vulmap 是一款 web 漏洞扫描和验证工具, 可对 webapps 进行漏洞扫描, 并且具备漏洞利用功能, 目前支持的 webapps 包括 activemq, flink, shiro, solr, struts2, tomcat, unomi, drupal, elasticsearch, fastjson, jenkins, nexus, weblogic, jboss, spring, thinkphp](https://github.com/zhzyker/vulmap)  
+##### 4.2.1.2 被动式
+>将Burpusuite打造成一个被动式扫描器   
+- [**[Tool]** BurpSutie 插件集合@Mr-xn](https://github.com/Mr-xn/BurpSuite-collections)  
+
+#### 4.2.2漏洞利用
 - [漏洞索引表]()【待整理】
 - [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
 - [**[Tool]** Struts2-Scan](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞综合利用](https://github.com/j1anFen/shiro_attack)
-- [**[Tool]** Vulmap 是一款 web 漏洞扫描和验证工具, 可对 webapps 进行漏洞扫描, 并且具备漏洞利用功能, 目前支持的 webapps 包括 activemq, flink, shiro, solr, struts2, tomcat, unomi, drupal, elasticsearch, fastjson, jenkins, nexus, weblogic, jboss, spring, thinkphp](https://github.com/zhzyker/vulmap)  
-#### 4.2.2 扫描器
-> 工欲其善必先利器
-##### 4.2.2.1 主动式
- - [**[Tool]** AWVS 14 Docker版](https://hub.docker.com/r/secfa/docker-awvs)
-##### 4.2.2.2 被动式
->将Burpusuite打造成一个被动式扫描器   
-- [**[Tool]** BurpSutie 插件集合@Mr-xn](https://github.com/Mr-xn/BurpSuite-collections)  
+
+
 ### 4.3 权限获取&提升
 #### 4.3.1 Win
 - [Windows 认证凭证获取]()   
