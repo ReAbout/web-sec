@@ -57,7 +57,7 @@ O:<class_name_length>:"<class_name>":<number_of_properties>:{<properties>}
 * __autoload()，尝试加载未定义的类 
 * __debugInfo()，打印所需调试信息
 
-## 0x03 触发反序列化
+## 0x03 反序列化入口点
 
 ### unserialize()
 
