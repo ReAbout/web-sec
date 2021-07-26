@@ -6,6 +6,7 @@
 > 同源策略 & CSP & JOSNP
 - [跨域安全](./vul/VUL-CrossDomain.md)
 ### 1.2 后端
+> 应用分层 & 漏洞分类
 - [错综复杂的后端逻辑及安全](./vul/VUL-Backend.md)
 ## 0x02 漏洞利用篇(Exploit)
 ### 2.1前端安全
