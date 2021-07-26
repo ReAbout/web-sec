@@ -53,7 +53,7 @@
 ##### 4.2.1.1 主动式
  - [**[Tool]** AWVS 14 Docker版](https://hub.docker.com/r/secfa/docker-awvs)
  - [**[Tool]** 长亭的扫描器 Xray](https://github.com/chaitin/xray)   
- - [**[Tool]** Vulmap 是一款 web 漏洞扫描和验证工具, 可对 webapps 进行漏洞扫描, 并且具备漏洞利用功能, 目前支持的 webapps 包括 activemq, flink, shiro, solr, struts2, tomcat, unomi, drupal, elasticsearch, fastjson, jenkins, nexus, weblogic, jboss, spring, thinkphp](https://github.com/zhzyker/vulmap)  
+ - [**[Tool]** Vulmap(目前支持的 webapps 包括 activemq, flink, shiro, solr, struts2, tomcat, unomi, drupal, elasticsearch, fastjson, jenkins, nexus, weblogic, jboss, spring, thinkphp)](https://github.com/zhzyker/vulmap)  
 ##### 4.2.1.2 被动式
 >将Burpusuite打造成一个被动式扫描器   
 - [**[Tool]** BurpSutie 插件集合@Mr-xn](https://github.com/Mr-xn/BurpSuite-collections)  
