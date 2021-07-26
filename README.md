@@ -3,6 +3,7 @@
 
 ## 0x01 漏洞理解篇(Vulnerability)
 ### 1.1 前端
+> 同源策略 & CSP & JOSNP
 - [跨域安全](https://github.com/ReAbout/web-exp/blob/master/vul/VUL-CrossDomain.md)
 ### 1.2 后端逻辑
 - [错综复杂的后端逻辑及安全]()【待整理】
