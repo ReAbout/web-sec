@@ -13,6 +13,7 @@ Web安全不同于二进制安全，更多在于经验的积累和知识体系�
 - Web中间件（Apache，Nginx，Tomcat等）
 - 数据库系统（Mysql，Mssql等）
 - 操作系统（Linux，Windows等）    
+
 #---硬件侧---#
 
 ## 0x02 架构（横向）
@@ -28,14 +29,14 @@ Web安全不同于二进制安全，更多在于经验的积累和知识体系�
 ![](https://s3.51cto.com/oss/201906/14/97b88fa7fb4f64aecd4701b12bef38b6.jpg-wh_600x-s_2360315611.jpg)
 
 ## 0x03 分类（漏洞）
+注入类的漏洞，都是因为信任了输入参数，进而利用各类表达式语言进行利用。   
+
 1. 前端安全
 - Cross Site Scripting (XSS)
 - Client-side request forgery (CSRF)
 2. SQL注入&数据库漏洞
-
 3. 模板注入 Server Side Template Injection (SSTI)
 MVC架构中，模板参数恶意输入产生的安全问题
-
 4. 表达式注入
 5. 命令注入&执行
 6. Server-side request forgery (SSRF)
