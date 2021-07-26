@@ -34,6 +34,7 @@
 ### 2.10 NodeJs-特性漏洞
 - [Node.js 原型链污染](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-nodejs-proto.md)
 ### 2.11 Other
+> 利用前后DNS解析的不一致（劫持或者逻辑问题）   
 - [DNS rebinding 攻击]()[待更新]
 ## 0x03 代码审计篇(Audit)
 ### 3.1 PHP
