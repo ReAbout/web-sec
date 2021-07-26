@@ -29,8 +29,8 @@ Web安全不同于二进制安全，更多在于经验的积累和知识体系�
 
 ## 0x03 分类（漏洞）
 1. 前端安全
-Cross Site Scripting (XSS)
-Client-side request forgery (CSRF)
+- Cross Site Scripting (XSS)
+- Client-side request forgery (CSRF)
 2. SQL注入&数据库漏洞
 
 3. 模板注入 Server Side Template Injection (SSTI)
