@@ -14,7 +14,7 @@
 - [Client-side request forgery (CSRF)](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-CSRF.md)
 ###  2.2 SQL注入&数据库漏洞利用
 - [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SQLi-MySQL.md)
-- [SQL injection - 信息外带(OOB)](./web-sec/exp/EXP-SQLi-OOB.md)
+- [SQL injection - 信息外带(OOB)](./exp/EXP-SQLi-OOB.md)
 ### 2.3 模板注入 Server Side Template Injection (SSTI)
 > MVC架构中，模板参数恶意输入产生的安全问题
 - [SSTI -Python](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSTI.md)
