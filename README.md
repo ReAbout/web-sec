@@ -4,9 +4,9 @@
 ## 0x01 漏洞理解篇(Vulnerability)
 ### 1.1 前端
 > 同源策略 & CSP & JOSNP
-- [跨域安全](https://github.com/ReAbout/web-exp/blob/master/vul/VUL-CrossDomain.md)
+- [跨域安全](./vul/VUL-CrossDomain.md)
 ### 1.2 后端逻辑
-- [错综复杂的后端逻辑及安全]()【待整理】
+- [错综复杂的后端逻辑及安全](./vul/VUL-CrossDomain.md)
 ## 0x02 漏洞利用篇(Exploit)
 ### 2.1前端安全
 > XSS 利用的是用户对指定网站的信任，CSRF 利用的是网站对用户网页浏览器的信任   
