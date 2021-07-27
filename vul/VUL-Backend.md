@@ -43,8 +43,8 @@ MVC架构中，模板参数恶意输入产生的安全问题
 7. XML External Entity (XXE)
 8. 反序列化漏洞
 php,java只能序列化数据，python可以序列化代码。
-9. PHP-特性漏洞
-10. NodeJs-特性漏洞
+9. 包含漏洞
+10. 各个语言特性漏洞
 
 
 ## Ref
