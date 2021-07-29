@@ -19,7 +19,8 @@
 - [Redis 漏洞利用](./exp/EXP-DB-Redis.md)
 ### 2.3 模板注入 Server Side Template Injection (SSTI)
 > MVC架构中，模板参数恶意输入产生的安全问题
-- [SSTI -Python](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSTI.md)
+- [SSTI -Python](./exp/EXP-SSTI.md)
+- [SSTI -PHP](./exp/EXP-SSTI-PHP.md)
 ### 2.4 表达式注入 
 
 ### 2.5 命令注入&执行
