@@ -61,7 +61,9 @@
 ##### 4.2.1.1 主动式
  - [**[Tool]** AWVS 14 Docker版](https://hub.docker.com/r/secfa/docker-awvs)
  - [**[Tool]** 长亭的扫描器 Xray](https://github.com/chaitin/xray)   
- - [**[Tool]** Vulmap(目前支持的 webapps 包括 activemq, flink, shiro, solr, struts2, tomcat, unomi, drupal, elasticsearch, fastjson, jenkins, nexus, weblogic, jboss, spring, thinkphp)](https://github.com/zhzyker/vulmap)  
+ - [**[Tool]** Vulmap](https://github.com/zhzyker/vulmap)   
+ 支持：activemq, flink, shiro, solr, struts2, tomcat, unomi, drupal, elasticsearch, fastjson, jenkins, nexus, weblogic, jboss, spring, thinkphp
+ - [**[Tool]** 红队综合渗透框架SatanSword@Lucifer1993](https://github.com/Lucifer1993/SatanSword)   
 ##### 4.2.1.2 被动式
 >将Burpusuite打造成一个被动式扫描器   
 - [**[Tool]** BurpSutie 插件集合@Mr-xn](https://github.com/Mr-xn/BurpSuite-collections)  
@@ -73,6 +75,9 @@
 - [**[Tool]** Struts2-Scan](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞综合利用](https://github.com/j1anFen/shiro_attack)
 
+#### 4.2.3 字典
+
+-[常用的字典，用于渗透测试、SRC漏洞挖掘、爆破、Fuzzing等@insightglacier](https://github.com/insightglacier/Dictionary-Of-Pentesting)
 
 ### 4.3 权限获取&提升
 #### 4.3.1 Win
