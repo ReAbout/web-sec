@@ -23,24 +23,28 @@
 - [SSTI -PHP](./exp/EXP-SSTI-PHP.md)
 ### 2.4 表达式注入 
 
-### 2.5 命令注入&执行
+### 2.5 命令注入
 
-### 2.6 Server-side request forgery (SSRF)
+### 2.6 Xpath注入
+
+### 2.7 上传文件漏洞
+
+### 2.8 Server-side request forgery (SSRF)
 - [SSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSRF.md)
-### 2.7 XML External Entity (XXE) 
+### 2.9 XML External Entity (XXE) 
 - [XXE](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XXE.md)
-### 2.8 反序列化漏洞
+### 2.10 反序列化漏洞
 >php,java只能序列化数据，python可以序列化代码。   
 - [反序列化漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-PHP-Unserialize.md)
 
-### 2.9 包含漏洞
+### 2.11 包含漏洞
 - [包含漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-Include-PHP.md)
 
-### 2.10 PHP-特性漏洞
+### 2.12 PHP-特性漏洞
 
-### 2.11 NodeJs-特性漏洞
+### 2.13 NodeJs-特性漏洞
 - [Node.js 原型链污染](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-nodejs-proto.md)
-### 2.12 Other
+### 2.14 Other
 > 利用前后DNS解析的不一致（劫持或者逻辑问题）   
 - [DNS rebinding 攻击]()[待更新]
 ## 0x03 代码审计篇(Audit)
