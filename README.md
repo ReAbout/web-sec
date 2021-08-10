@@ -101,14 +101,15 @@
 #### 4.4.4 Mobile (Android & ios)  
 ### 4.5 隧道&代理
 - [ssh 端口转发&开socks5](./penetration/PEN-ssh.md)
+>FRP 客服端和服务端配合的端口转发工具
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
->客服端和服务端配合的端口转发工具
+>Venom 可以嵌套多层代理，适合多层无外网的渗透测试
 - [**[Tool]** 内网多级代理服务端工具 Venom](https://github.com/Dliv3/Venom/releases)
->可以嵌套多层代理，适合多层无外网的渗透测试
+>Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
 - [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
->全局代理支持并不好，可以设置规则选择指定程序走代理或直连
+>SSTap 通过虚拟网卡支持全局代理，但是已经不更新了
 - [**[Tool]** Windows下全局代理客户端工具 SSTap](https://github.com/solikethis/SSTap-backup)
->通过虚拟网卡支持全局代理，但是已经不更新了
+
 ### 4.6 后渗透
 #### 4.6.1 后渗透常用方法
 ####  4.6.2 轻量级扫描工具
