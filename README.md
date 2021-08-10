@@ -102,16 +102,21 @@
 ### 4.5 隧道&代理
 - [ssh 端口转发&开socks5](./penetration/PEN-ssh.md)
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
-- [**[Tool]** 内网多级代理工具 Venom](https://github.com/Dliv3/Venom/releases)
+>客服端和服务端配合的端口转发工具
+- [**[Tool]** 内网多级代理服务端工具 Venom](https://github.com/Dliv3/Venom/releases)
+>可以嵌套多层代理，适合多层无外网的渗透测试
 - [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
+>全局代理支持并不好，可以设置规则选择指定程序走代理或直连
+- [**[Tool]** Windows下全局代理客户端工具 SSTap](https://github.com/solikethis/SSTap-backup)
+>通过虚拟网卡支持全局代理，但是已经不更新了
 ### 4.6 后渗透
-
-####  4.6.1 轻量级扫描工具
+#### 4.6.1 后渗透常用方法
+####  4.6.2 轻量级扫描工具
 - [**[Tool]** fscan](https://github.com/shadow1ng/fscan)
-#### 4.6.2 渗透框架
+#### 4.6.3 渗透框架
 - [**[Tool]** 后渗透利用神器 Metasploit](https://www.metasploit.com/)
 - [**[Tool]** 内网横向拓展系统 InScan](https://github.com/inbug-team/InScan)
-#### 4.6.3 域渗透
+#### 4.6.4 域渗透
 - [域渗透@uknowsec](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
 ### 4.7 反溯源 
 ### 4.8 协同
