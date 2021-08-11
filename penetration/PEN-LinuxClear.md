@@ -1,6 +1,6 @@
 # Linux 痕迹清理
 
-## 清除ssh登录日志
+## ssh登录日志
 
 ### 日志文件位置及命令
  | 命令	 | 日志文件	 | 功能 | 
@@ -19,4 +19,6 @@
 # > /var/log/lastlog
 ```
 方案2，使用脚本：
+
+- [logtamper.py](./logtamper.py)
 
