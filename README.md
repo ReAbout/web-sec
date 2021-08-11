@@ -93,7 +93,7 @@
 - [Windows提权漏洞集合@SecWiki](https://github.com/SecWiki/windows-kernel-exploits)
 #### 4.3.2 Linux
 - [linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
-### 4.4 后门&维持会话
+### 4.4 后门&权限维持
 #### 4.4.1 Shell会话
 - [反弹shell Linux&Win](./penetration/PEN-ReShell.md)
 #### 4.4.2 Webshell
