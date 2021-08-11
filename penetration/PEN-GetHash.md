@@ -1,5 +1,12 @@
 # Windows Hash提取
 
+## 0x00 基础知识
+
+- LM Hash Windows Vista和Windows Server 2008以前的系统还会使用
+- NTLM Hash
+- Net-NTLM Hash 网络环境下NTLM认证中的hash
+
+[Windows下的密码hash——NTLM hash和Net-NTLM hash介绍](https://3gstudent.github.io/Windows%E4%B8%8B%E7%9A%84%E5%AF%86%E7%A0%81hash-NTLM-hash%E5%92%8CNet-NTLM-hash%E4%BB%8B%E7%BB%8D)
 ## 0x01 离线获取Hash
 
 ### 1.注册表导出文件
@@ -32,3 +39,7 @@ mimikatz # lsadump::sam /sam:sam.hive /system:system.hive
 - [Ophcrack 在线破解](https://www.objectif-securite.ch/en/ophcrack)
 
 - [Cmd5在线破解](https://www.cmd5.com/)
+
+## Ref
+
+- https://3gstudent.github.io/Windows%E4%B8%8B%E7%9A%84%E5%AF%86%E7%A0%81hash-NTLM-hash%E5%92%8CNet-NTLM-hash%E4%BB%8B%E7%BB%8D 
