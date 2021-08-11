@@ -103,7 +103,8 @@
 - [**[Tool]** Cobalt Strike ]()
 #### 4.4.4 Mobile (Android & ios)  
 ### 4.5 隧道&代理
-- [ssh 端口转发&开socks5](./penetration/PEN-ssh.md)
+- [SSH 端口转发&开socks5](./penetration/PEN-ssh.md)
+- [Iptables 端口复用](./penetration/PEN-Reuse.md)
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
  >FRP 客服端和服务端配合的端口转发工具
 - [**[Tool]** 内网多级代理服务端工具 Venom](https://github.com/Dliv3/Venom/releases)
