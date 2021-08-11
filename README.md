@@ -9,42 +9,44 @@
 > 应用分层 & 漏洞分类
 - [错综复杂的后端逻辑及安全](./vul/VUL-Backend.md)
 ## 0x02 漏洞利用篇(Exploit)
-### 2.1前端安全
-> XSS 利用的是用户对指定网站的信任，CSRF 利用的是网站对用户网页浏览器的信任   
+### 2.1 前端安全-XSS
+> XSS 利用的是用户对指定网站的信任 
 - [Cross Site Scripting (XSS)](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XSS.md)
+ ### 2.2 前端安全-CSRF
+> CSRF 利用的是网站对用户网页浏览器的信任   
 - [Client-side request forgery (CSRF)](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-CSRF.md)
-###  2.2 SQL注入&数据库漏洞利用
+###  2.3 SQL注入&数据库漏洞利用
 - [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SQLi-MySQL.md)
 - [SQL injection - 信息外带(OOB)](./exp/EXP-SQLi-OOB.md)
 - [Redis 漏洞利用](./exp/EXP-DB-Redis.md)
-### 2.3 模板注入 Server Side Template Injection (SSTI)
+### 2.4 模板注入 Server Side Template Injection (SSTI)
 > MVC架构中，模板参数恶意输入产生的安全问题
 - [SSTI -Python](./exp/EXP-SSTI.md)
 - [SSTI -PHP](./exp/EXP-SSTI-PHP.md)
-### 2.4 表达式注入 
+### 2.5 表达式注入 
 
-### 2.5 命令注入
+### 2.6 命令注入
 
-### 2.6 Xpath注入
+### 2.7 Xpath注入
 
-### 2.7 上传文件漏洞
+### 2.8 上传文件漏洞
 
-### 2.8 Server-side request forgery (SSRF)
+### 2.9 Server-side request forgery (SSRF)
 - [SSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSRF.md)
-### 2.9 XML External Entity (XXE) 
+### 2.10 XML External Entity (XXE) 
 - [XXE](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XXE.md)
-### 2.10 反序列化漏洞
+### 2.11 反序列化漏洞
 >php,java只能序列化数据，python可以序列化代码。   
 - [反序列化漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-PHP-Unserialize.md)
 
-### 2.11 包含漏洞
+### 2.12 包含漏洞
 - [包含漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-Include-PHP.md)
 
-### 2.12 PHP-特性漏洞
+### 2.13 PHP-特性漏洞
 
-### 2.13 NodeJs-特性漏洞
+### 2.14 NodeJs-特性漏洞
 - [Node.js 原型链污染](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-nodejs-proto.md)
-### 2.14 Other
+### 2.15 Other
 > 利用前后DNS解析的不一致（劫持或者逻辑问题）   
 - [DNS rebinding 攻击]()[待更新]
 ## 0x03 代码审计篇(Audit)
@@ -101,15 +103,14 @@
 #### 4.4.4 Mobile (Android & ios)  
 ### 4.5 隧道&代理
 - [ssh 端口转发&开socks5](./penetration/PEN-ssh.md)
->FRP 客服端和服务端配合的端口转发工具
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
->Venom 可以嵌套多层代理，适合多层无外网的渗透测试
+ >FRP 客服端和服务端配合的端口转发工具
 - [**[Tool]** 内网多级代理服务端工具 Venom](https://github.com/Dliv3/Venom/releases)
->Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
+>Venom 可以嵌套多层代理，适合多层无外网的渗透测试
 - [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
->SSTap 通过虚拟网卡支持全局代理，但是已经不更新了
+>Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
 - [**[Tool]** Windows下全局代理客户端工具 SSTap](https://github.com/solikethis/SSTap-backup)
-
+>SSTap 通过虚拟网卡支持全局代理，但是已经不更新了
 ### 4.6 后渗透
 #### 4.6.1 后渗透常用方法
 ####  4.6.2 轻量级扫描工具
