@@ -74,7 +74,7 @@
 >将Burpusuite打造成一个被动式扫描器   
 - [**[Tool]** BurpSutie 插件集合@Mr-xn](https://github.com/Mr-xn/BurpSuite-collections)  
 
-#### 4.2.2漏洞利用
+#### 4.2.2漏洞利用(1day)
 - [漏洞索引表]()【待整理】
 - [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
