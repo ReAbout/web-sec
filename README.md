@@ -120,6 +120,8 @@
 #### 4.6.4 域渗透
 - [域渗透@uknowsec](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
 ### 4.7 反溯源 
+ - [Linux 痕迹清理](./penetration/PEN-LinuxClear.md)
+
 ### 4.8 协同
 - [HackMD markdown协同工具(Docker版)](https://hackmd.io/c/codimd-documentation/%2Fs%2Fcodimd-docker-deployment)
 
