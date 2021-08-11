@@ -30,11 +30,12 @@ $ ./mimikatz.exe
 mimikatz # lsadump::sam /sam:sam.hive /system:system.hive
 ```
 
-### 3. 在线破解 Hash
+### 3. 破解Hash获取明文密码
  
- 见0x03 NTHash 破解
+ 见0x03 破解 Hash 
+## 0x02 在线获取Hash
 
-## 0x03 Hash 破解
+## 0x03 破解 Hash 
 >强力推荐
 - [Ophcrack 在线破解](https://www.objectif-securite.ch/en/ophcrack)
 
