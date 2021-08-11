@@ -1,6 +1,6 @@
 # Windows Hash提取
 
-## 0x01 离线获取
+## 0x01 离线获取Hash
 
 ### 1.注册表导出文件
 ```
@@ -22,3 +22,13 @@ $ ./mimikatz.exe
 
 mimikatz # lsadump::sam /sam:sam.hive /system:system.hive
 ```
+
+### 3. 在线破解 Hash
+ 
+ 见0x03 NTHash 破解
+
+## 0x03 Hash 破解
+>强力推荐
+- [Ophcrack 在线破解](https://www.objectif-securite.ch/en/ophcrack)
+
+- [Cmd5在线破解](https://www.cmd5.com/)
