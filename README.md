@@ -58,7 +58,7 @@
 
 ## 0x04 渗透篇(Penetration)
 ### 4.1 网络预置
-- [信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
+- [外网信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
 - [**[Tool]** 移动端信息收集工具 AppInfoScanner](https://github.com/kelvinBen/AppInfoScanner)
 ### 4.2 外网突破(exp)
 
