@@ -87,7 +87,7 @@
 
 #### 4.2.3 字典
 
--[常用的字典，用于渗透测试、SRC漏洞挖掘、爆破、Fuzzing等@insightglacier](https://github.com/insightglacier/Dictionary-Of-Pentesting)
+- [常用的字典，用于渗透测试、SRC漏洞挖掘、爆破、Fuzzing等@insightglacier](https://github.com/insightglacier/Dictionary-Of-Pentesting)
 
 ### 4.3 权限获取&提升
 #### 4.3.1 Win
