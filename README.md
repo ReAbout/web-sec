@@ -72,7 +72,7 @@
  - [**[Tool]** AWVS 14 Docker版](https://hub.docker.com/r/secfa/docker-awvs)
  - [**[Tool]** 长亭的扫描器 Xray](https://github.com/chaitin/xray)   
  - [**[Tool]** Vulmap](https://github.com/zhzyker/vulmap)   
- 支持：activemq, flink, shiro, solr, struts2, tomcat, unomi, drupal, elasticsearch, fastjson, jenkins, nexus, weblogic, jboss, spring, thinkphp
+ >支持：activemq, flink, shiro, solr, struts2, tomcat, unomi, drupal, elasticsearch, fastjson, jenkins, nexus, weblogic, jboss, spring, thinkphp
  - [**[Tool]** 红队综合渗透框架SatanSword@Lucifer1993](https://github.com/Lucifer1993/SatanSword)   
 ##### 4.2.1.2 被动式
 >将Burpusuite打造成一个被动式扫描器   
@@ -121,6 +121,7 @@
 #### 4.6.1 后渗透常用方法
 ####  4.6.2 轻量级扫描工具
 - [**[Tool]** fscan](https://github.com/shadow1ng/fscan)
+> 内网扫描神器，go语言跨平台，效率快，支持各类口令爆破，还有主机识别和web服务识别。
 #### 4.6.3 渗透框架
 - [**[Tool]** 后渗透利用神器 Metasploit](https://www.metasploit.com/)
 - [**[Tool]** 内网横向拓展系统 InScan](https://github.com/inbug-team/InScan)
