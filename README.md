@@ -80,6 +80,8 @@
 
 #### 4.2.2漏洞利用(1day)
 - [漏洞索引表]()【待整理】
+- [漏洞利用wiki](https://wiki.96.mk/)
+> IoT安全 & web安全& 系统漏洞 1day整理
 - [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
 - [**[Tool]** Struts2-Scan](https://github.com/HatBoy/Struts2-Scan)
