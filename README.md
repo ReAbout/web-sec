@@ -118,7 +118,9 @@
 - [**[Tool]** Windows下全局代理客户端工具 SSTap](https://github.com/solikethis/SSTap-backup)
 >SSTap 通过虚拟网卡支持全局代理，但是已经不更新了
 ### 4.6 后渗透
-#### 4.6.1 后渗透常用方法
+#### 4.6.1 内网信息获取
+- [**[Tool]** 流量取证工具 BruteShark](https://github.com/odedshimon/BruteShark)
+> 可以提取流量中用户名&密码，NTML Hash，图片等，以及绘制网络拓扑。
 ####  4.6.2 轻量级扫描工具
 - [**[Tool]** fscan](https://github.com/shadow1ng/fscan)
 > 内网扫描神器，go语言跨平台，效率快，支持各类口令爆破，还有主机识别和web服务识别。
