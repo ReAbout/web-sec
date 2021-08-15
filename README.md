@@ -105,6 +105,7 @@
 - [**[Tool]** WebShell管理工具 冰蝎](https://github.com/rebeyond/Behinder)
 #### 4.4.3 PC & Server
 - [**[Tool]** Cobalt Strike ]()
+- [Cobalt Strike资料汇总@zer0yu](https://github.com/zer0yu/Awesome-CobaltStrike)
 #### 4.4.4 Mobile (Android & ios)  
 ### 4.5 隧道&代理
 - [SSH 端口转发&开socks5](./penetration/PEN-ssh.md)
