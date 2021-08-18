@@ -121,6 +121,7 @@
 >Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
 - [**[Tool]** Windows下全局代理客户端工具 SSTap](https://github.com/solikethis/SSTap-backup)
 >SSTap 通过虚拟网卡支持全局代理，但是已经不更新了
+- [**[Tool]** Windows版 proxychains](https://github.com/shunf4/proxychains-windows)
 ### 4.6 后渗透
 #### 4.6.1 内网信息获取
 - [**[Tool]** 流量取证工具 BruteShark](https://github.com/odedshimon/BruteShark)
