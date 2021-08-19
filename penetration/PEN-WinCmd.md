@@ -21,8 +21,8 @@
 
 ## 0x02 远程文件操作
 ### net use
-前置条件：需要主机开启ipc$共享   
-与192.168.0.1主机建立通道共享，用户名：abc 密码：password
+前置条件：目标主机开启ipc$共享   
+目标主机：192.168.0.1 用户名：abc 密码：password
 - 建立空连接: `net use \\192.168.0.1\ipc$ "" /user:"" `
 - 建立非空连接: `net use \\192.168.0.1\ipc$ "password" /user:"abc" `
  - 映射默认共享: `net use z: \\192.168.0.1\c$ "password" /user:"abc"`
@@ -30,6 +30,10 @@
 - 删除映射的z盘: `net use z: /del `
 
 ## 0x03 远程命令执行
+### wmic
+前置条件：目标开启 "Windows Management Instrumentation" 服务，端口：135   
+目标主机：192.168.0.1 用户名：abc 密码：password   
+- 执行命令 ： `wmic /node:192.168.0.1 /user:abc /password:password PROCESS call create "calc.exe"`
 
 
 ## 0x04 权限切换
@@ -40,3 +44,4 @@
 
 ## ref
 - https://chen1sheng.github.io/2020/11/30/%E6%B8%97%E9%80%8F/windows/Windows%E5%9F%9F%E6%B8%97%E9%80%8F%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/
+- https://www.cnblogs.com/LyShark/p/11344288.html
