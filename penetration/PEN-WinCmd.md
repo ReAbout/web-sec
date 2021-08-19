@@ -1,7 +1,7 @@
 # 渗透测试—— Windows 系统常用命令
 
 ## 0x01 信息收集
-### 1.1 本机
+### 1.1 本机信息
  - 查看系统信息 ： `systeminfo`
  - 查看进程 ： `tasklist`
  - 查看当前工作目录  : `chdir` 
@@ -12,7 +12,7 @@
  - 查看文件共享：`net use`
  - 查看远程桌面连接历史： `cmdkey /l`
  - 查看杀毒软件 ： `wmic /namespace:\\root\securitycenter2 path antivirusproduct GET displayName,productState, pathToSignedProductExe`
-### 1.2 域
+### 1.2 域信息
 - 查看域：`net view /domain`
 - 查看abc域中的主机：`net view /domain:abc` 
 - 查看域用户 ：`net user /domain`
