@@ -124,6 +124,7 @@
 - [**[Tool]** Windows版 proxychains](https://github.com/shunf4/proxychains-windows)
 ### 4.6 后渗透
 #### 4.6.1 内网信息获取
+- [Windows 主机常用命令](./penetration/PEN-WinCmd.md)
 - [**[Tool]** 流量取证工具 BruteShark](https://github.com/odedshimon/BruteShark)
 > 可以提取流量中用户名&密码，NTML Hash，图片等，以及绘制网络拓扑。
 ####  4.6.2 轻量级扫描工具
