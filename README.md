@@ -119,13 +119,13 @@
 >Venom 可以嵌套多层代理，适合多层无外网的渗透测试
 - [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
 >Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
-- [**[Tool]** Windows下全局代理客户端工具 SSTap](https://github.com/solikethis/SSTap-backup)
->SSTap 通过虚拟网卡支持全局代理，但是已经不更新了
+- [**[Tool]** 多平台全局代理客户端工具 tun2socks](https://github.com/eycorsican/go-tun2socks)
+>虚拟网卡，需要手动配路由
 - [**[Tool]** Windows版 proxychains](https://github.com/shunf4/proxychains-windows)
 ### 4.6 后渗透
 #### 4.6.1 内网信息获取
 - [Windows 主机常用命令](./penetration/PEN-WinCmd.md)
->信息获取 & wmi & ipc$
+>信息获取 & 远程文件操作 & 远程执行命令 & ipc$ & wmic & winrm
 - [**[Tool]** 流量取证工具 BruteShark](https://github.com/odedshimon/BruteShark)
 > 可以提取流量中用户名&密码，NTML Hash，图片等，以及绘制网络拓扑。
 ####  4.6.2 轻量级扫描工具
