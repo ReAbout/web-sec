@@ -21,7 +21,7 @@
 
 ## 0x02 远程文件操作
 ### net use
-前置条件：目标主机开启IPC$共享   
+前置条件：目标主机开启IPC$共享（端口：445）      
 目标主机：192.168.0.1 用户名：abc 密码：password
 - 建立空连接: `net use \\192.168.0.1\ipc$ "" /user:"" `
 - 建立非空连接: `net use \\192.168.0.1\ipc$ "password" /user:"abc" `
@@ -39,13 +39,13 @@ net share admin$
 ```
 ## 0x03 远程命令执行
 ### wmic
-前置条件：目标开启 "Windows Management Instrumentation" 服务，端口：135   
+前置条件：目标开启 "Windows Management Instrumentation" 服务（端口：135）   
 目标主机：192.168.0.1 用户名：abc 密码：password   
 - 执行命令 ： `wmic /node:192.168.0.1 /user:abc /password:password PROCESS call create "calc.exe"`
 
 ### psexec
 
-前置条件：目标开启 ADMIN$ 共享   
+前置条件：目标开启 ADMIN$ 共享（端口：445）   
 工具：https://docs.microsoft.com/zh-cn/sysinternals/downloads/pstools   
 目标主机：192.168.0.1 用户名：abc 密码：password   
 - 执行命令(交互式shell) ： psexec \\192.168.0.1 -u abc -p password cmd
@@ -54,12 +54,12 @@ net share admin$
 前置条件：目标启动 Task Scheduler 服务    
 目标主机：192.168.0.1 用户名：abc 密码：password  
 
-- 添加计划任务在远程系统上执行命令: `at \\192.168.0.1:18 cmd.exe /c "ipconfig /all > c:\programdata\error.log"`
+- 添加计划任务在远程系统上执行命令: `at \\192.168.0.1 23:00 cmd.exe /c "ipconfig /all > c:\programdata\error.log"`
 - 查看 at 任务列表: `at \\192.168.0.1`
 - 删除 at 计划任务: `at \\192.168.17.138 1 /delete`
 
 ### winrm
-前置条件：目标启动winrm服务，5985、5986端口
+前置条件：目标启动winrm服务（5985,5986端口）
 目标启动快速启动winrm服务：
 ```
 winrm quickconfig -q
