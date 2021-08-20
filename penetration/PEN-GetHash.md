@@ -33,7 +33,7 @@ mimikatz # lsadump::sam /sam:sam.hive /system:system.hive
 ### 3. 破解Hash获取明文密码
  
  见0x03 破解 Hash 
-## 0x02 在线获取Hash
+## 0x02 主机获取Hash
 
 ## 0x03 破解 Hash 
 >强力推荐
