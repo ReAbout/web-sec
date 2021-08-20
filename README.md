@@ -22,8 +22,8 @@
 - [MSSQL 漏洞利用](./exp/EXP-DB-MSSQL.md)  
 ### 2.4 模板注入 Server Side Template Injection (SSTI)
 > MVC架构中，模板参数恶意输入产生的安全问题
-
-- [SSTI -Python](./exp/EXP-SSTI.md)
+- [STTI 总述](./exp/EXP-SSTI-ALL.md)
+- [SSTI -Python](./exp/EXP-SSTI-Python.md)
 - [SSTI -PHP](./exp/EXP-SSTI-PHP.md)
 
 
