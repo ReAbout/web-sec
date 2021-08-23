@@ -33,3 +33,10 @@ python logtamper.py -m 2 -u root -i 192.168.0.188
 修改上次登录时间地点(lastlog)
 python logtamper.py -m 3 -u root -i 192.168.0.188 -t tty1 -d 2014:05:28:10:11:12
 ```
+### 不记录history
+```
+unset HISTORY HISTFILE HISTSAVE HISTZONE HISTORY HISTLOG
+export HISTFILE=/dev/null
+export HISTSIZE=0
+export HISTFILESIZE=0
+```
