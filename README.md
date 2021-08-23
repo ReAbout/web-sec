@@ -66,6 +66,7 @@
 ### 4.1 网络预置
 - [外网信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
 - [**[Tool]** 移动端信息收集工具 AppInfoScanner](https://github.com/kelvinBen/AppInfoScanner)
+- [**[Tool]** 资产识别工具 dismap](https://github.com/zhzyker/dismap.git)   
 ### 4.2 外网突破(exp)
 
 #### 4.2.1 漏洞验证（扫描器）
