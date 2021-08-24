@@ -119,11 +119,13 @@
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
  >FRP 客服端和服务端配合的端口转发工具
 - [**[Tool]** 内网多级代理服务端工具 Venom](https://github.com/Dliv3/Venom/releases)
->Venom 可以嵌套多层代理，适合多层无外网的渗透测试
+>Venom 可以嵌套多层代理，适合多层无外网的渗透测试，【停止更新】
+- [**[Tool]** 内网多级代理服务端工具 Stowaway](https://github.com/ph4ntonn/Stowaway)
+>比Venom更加稳定，持续更新
 - [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
 >Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
 - [**[Tool]** 多平台全局代理客户端工具 tun2socks](https://github.com/eycorsican/go-tun2socks)
->虚拟网卡，需要手动配路由
+>全局代理，虚拟网卡，需要手动配路由
 - [**[Tool]** Windows版 proxychains](https://github.com/shunf4/proxychains-windows)
 ### 4.6 后渗透
 #### 4.6.1 内网信息获取
