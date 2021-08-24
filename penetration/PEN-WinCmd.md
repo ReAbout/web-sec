@@ -13,12 +13,14 @@
  - 查看远程桌面连接历史： `cmdkey /l`
  - 查看杀毒软件 ： `wmic /namespace:\\root\securitycenter2 path antivirusproduct GET displayName,productState, pathToSignedProductExe`
 ### 1.2 域信息
+> 有时候本地用户无法查到相关信息，可以通过runas切换到域用户进行查询。      
+
 - 查看域：`net view /domain`
 - 查看abc域中的主机：`net view /domain:abc` 
 - 查看域用户 ：`net user /domain`
 - 查看域管理员 ： `net group "domain admin" /domain`
 - 查看本机域管理员 ：`net localgroup administrators /domain `
-
+- 查看域控主机 ：`dsquery server`  or `net group “domain controllers” /domain`
 ## 0x02 远程文件操作
 ### net use
 前置条件：目标主机开启IPC$共享（端口：445）      
