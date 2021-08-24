@@ -43,7 +43,7 @@ net share admin$
 ### wmic
 前置条件：目标开启 "Windows Management Instrumentation" 服务（端口：135）   
 目标主机：192.168.0.1 用户名：abc 密码：password   
-- 执行命令 ： `wmic /node:192.168.0.1 /user:abc /password:password PROCESS call create "calc.exe"`
+- 执行命令 ： `wmic /node:192.168.0.1 /user:abc /password:password PROCESS call create "cmd /c ver > c:\\test.txt"`
 
 ### psexec
 
@@ -56,7 +56,7 @@ net share admin$
 前置条件：目标启动 Task Scheduler 服务    
 目标主机：192.168.0.1 用户名：abc 密码：password  
 
-- 添加计划任务在远程系统上执行命令: `at \\192.168.0.1 23:00 cmd.exe /c "ipconfig /all > c:\programdata\error.log"`
+- 添加计划任务在远程系统上执行命令: `at \\192.168.0.1 23:00 cmd.exe /c "ver > c:\test.txt"`
 - 查看 at 任务列表: `at \\192.168.0.1`
 - 删除 at 计划任务: `at \\192.168.17.138 1 /delete`
 
