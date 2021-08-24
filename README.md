@@ -124,7 +124,7 @@
 >比Venom更加稳定，持续更新
 - [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
 >Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
-- [**[Tool]** 多平台全局代理客户端工具 tun2socks](https://github.com/eycorsican/go-tun2socks)
+- [Windows下socks客户端全局代理终极解决方案——tun2socks](./penetration/PEN-Tun2socks.md)
 >全局代理，虚拟网卡，需要手动配路由
 - [**[Tool]** Windows版 proxychains](https://github.com/shunf4/proxychains-windows)
 ### 4.6 后渗透
