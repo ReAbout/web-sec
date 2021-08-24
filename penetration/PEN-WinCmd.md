@@ -12,6 +12,7 @@
  - 查看文件共享：`net use`
  - 查看远程桌面连接历史： `cmdkey /l`
  - 查看杀毒软件 ： `wmic /namespace:\\root\securitycenter2 path antivirusproduct GET displayName,productState, pathToSignedProductExe`
+ - 查询登录用户：`query user`
 ### 1.2 域信息
 > 有时候本地用户无法查到相关信息，可以通过runas切换到域用户进行查询。      
 
