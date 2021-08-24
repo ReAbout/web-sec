@@ -50,7 +50,7 @@ net share admin$
 前置条件：目标开启 ADMIN$ 共享（端口：445）   
 工具：https://docs.microsoft.com/zh-cn/sysinternals/downloads/pstools   
 目标主机：192.168.0.1 用户名：abc 密码：password   
-- 执行命令(交互式shell) ： psexec \\192.168.0.1 -u abc -p password cmd
+- 执行命令(交互式shell) ： `psexec \\192.168.0.1 -u abc -p password cmd`
 
 ### at
 前置条件：目标启动 Task Scheduler 服务    
