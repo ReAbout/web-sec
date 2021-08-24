@@ -61,6 +61,7 @@
 - [PHP代码审计@bowu678](https://github.com/bowu678/php_bugs)
 ### 3.2 JAVA
 - [Java代码审计@cn-panda](https://github.com/cn-panda/JavaCodeAudit)
+- [Java漏洞平台@j3ers3](https://github.com/j3ers3/Hello-Java-Sec)
 
 ## 0x04 渗透篇(Penetration)
 ### 4.1 网络预置
