@@ -115,7 +115,9 @@
 - [Cobalt Strike资料汇总@zer0yu](https://github.com/zer0yu/Awesome-CobaltStrike)
 - [**[Tool]** Meterpreter of Metasploit](https://www.metasploit.com/)
 #### 4.4.4 Mobile (Android & ios)  
-### 4.5 隧道&代理
+### 4.5 免杀
+
+### 4.6 隧道&代理
 - [SSH 端口转发&开socks5](./penetration/PEN-ssh.md)
 - [Iptables 端口复用](./penetration/PEN-Reuse.md)
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
@@ -129,24 +131,24 @@
 - [Windows下socks客户端全局代理终极解决方案——tun2socks](./penetration/PEN-Tun2socks.md)
 >全局代理，虚拟网卡，需要手动配路由【推荐】
 - [**[Tool]** Windows版 proxychains](https://github.com/shunf4/proxychains-windows)
-### 4.6 后渗透
-#### 4.6.1 内网信息获取
+### 4.7 后渗透
+#### 4.7.1 内网信息获取
 - [Windows 主机常用命令](./penetration/PEN-WinCmd.md)
 >信息获取 & 远程文件操作 & 远程执行命令 & ipc$ & wmic & winrm
 - [**[Tool]** 流量取证工具 BruteShark](https://github.com/odedshimon/BruteShark)
 > 可以提取流量中用户名&密码，NTML Hash，图片等，以及绘制网络拓扑。
-####  4.6.2 轻量级扫描工具
+####  4.7.2 轻量级扫描工具
 - [**[Tool]** fscan](https://github.com/shadow1ng/fscan)
 > 内网扫描神器，go语言跨平台，效率快，支持各类口令爆破，还有主机识别和web服务识别。
-#### 4.6.3 渗透框架
+#### 4.7.3 渗透框架
 - [**[Tool]** 后渗透利用神器 Metasploit](https://www.metasploit.com/)
 - [**[Tool]** 内网横向拓展系统 InScan](https://github.com/inbug-team/InScan)
-#### 4.6.4 域渗透
+#### 4.7.4 域渗透
 - [域渗透@uknowsec](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
-### 4.7 反溯源 
+### 4.8 反溯源 
  - [Linux 痕迹清理](./penetration/PEN-LinuxClear.md)
 
-### 4.8 协同
+### 4.9 协同
 - [HackMD markdown协同工具(Docker版)](https://hackmd.io/c/codimd-documentation/%2Fs%2Fcodimd-docker-deployment)
 
 
