@@ -140,6 +140,8 @@
 ####  4.7.2 轻量级扫描工具
 - [**[Tool]** fscan](https://github.com/shadow1ng/fscan)
 > 内网扫描神器，go语言跨平台，效率快，支持各类口令爆破，还有主机识别和web服务识别。
+- [**[Tool]** Landon](https://github.com/k8gege/LadonGo)
+> k8 team的内网扫描器
 #### 4.7.3 渗透框架
 - [**[Tool]** 后渗透利用神器 Metasploit](https://www.metasploit.com/)
 - [**[Tool]** 内网横向拓展系统 InScan](https://github.com/inbug-team/InScan)
