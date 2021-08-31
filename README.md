@@ -107,7 +107,7 @@
 - [linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
 ### 4.4 后门&权限维持
 #### 4.4.1 Shell会话
-- [反弹Shell & 升级交互式Shell Linux&Win](./penetration/PEN-ReShell.md)
+- [反弹Shell & 升级交互式Shell (Linux&Win)](./penetration/PEN-ReShell.md)
 #### 4.4.2 Webshell
 - [**[Tool]** WebShell管理工具 菜刀](https://github.com/raddyfiy/caidao-official-version)
 - [**[Tool]** WebShell管理工具 蚁剑](https://github.com/AntSwordProject/AntSword-Loader)
