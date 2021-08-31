@@ -30,13 +30,15 @@
 ### 2.5 命令注入
 
 ### 2.6 Xpath注入
+> XPath 即为 XML 路径语言
+- [XPath Injection](./exp/EXP-XPath.md)
+### 2.7 XML External Entity (XXE) 
+- [XXE](./exp/EXP-XXE.md)
+### 2.8 上传文件漏洞
 
-### 2.7 上传文件漏洞
-
-### 2.8 Server-side request forgery (SSRF)
+### 2.9 Server-side request forgery (SSRF)
 - [SSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSRF.md)
-### 2.9 XML External Entity (XXE) 
-- [XXE](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XXE.md)
+
 ### 2.10 反序列化漏洞
 >php,java只能序列化数据，python可以序列化代码。   
 - [反序列化漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-PHP-Unserialize.md)
