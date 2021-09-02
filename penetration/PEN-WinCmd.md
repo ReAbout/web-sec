@@ -40,6 +40,11 @@ net share d$=d:
 net share ipc$
 net share admin$
 ```
+
+### 文件操作
+- 压缩文件（默认导出压缩文件最后一个字符改为`_`）： `makecab  file`
+- 解压文件： `expand src tar.zip`
+
 ## 0x03 远程命令执行
 ### wmic
 前置条件：目标开启 "Windows Management Instrumentation" 服务（端口：135）   
