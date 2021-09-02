@@ -41,7 +41,9 @@
 
 ### 2.10 反序列化漏洞
 >php,java只能序列化数据，python可以序列化代码。   
-- [反序列化漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-PHP-Unserialize.md)
+- [反序列化漏洞-PHP](./exp/EXP-PHP-Unserialize.md)
+- [反序列化漏洞-Java](./exp/EXP-Java-Unserialize.md)
+- [**[Tool]** 反序列化漏洞利用工具-Java ysoserial](https://github.com/frohoff/ysoserial)
 
 ### 2.11 包含漏洞
 - [包含漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-Include-PHP.md)
