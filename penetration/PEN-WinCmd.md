@@ -52,7 +52,7 @@ net share admin$
 - 执行命令 ： `wmic /node:192.168.0.1 /user:abc /password:password PROCESS call create "cmd /c ver > c:\\test.txt"`
 
 ### psexec
-
+>一般配合net use 将输出导出到文件读取，完成回显的任务      
 前置条件：目标开启 ADMIN$ 共享（端口：445）   
 工具：https://docs.microsoft.com/zh-cn/sysinternals/downloads/pstools   
 目标主机：192.168.0.1 用户名：abc 密码：password   
