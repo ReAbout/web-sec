@@ -52,7 +52,7 @@
 
 ### 2.13 Java-特性漏洞
 
-- 表达式注入 
+- [表达式注入Java](./exp/EXP-Expression-Injection.md)
 
 ### 2.14 NodeJs-特性漏洞
 - [Node.js 原型链污染](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-nodejs-proto.md)
