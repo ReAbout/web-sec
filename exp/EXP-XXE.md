@@ -3,10 +3,11 @@
 ### 概念
 XXE(XML External Entity),即是XML外部实体注入攻击.漏洞是在对不安全的外部实体数据进行处理时引发的安全问题。   
 关键在DTD的引用。   
+实例1：    
 ```
 <?xml version="1.0"?>//这一行是 XML 文档定义
 <!DOCTYPE message [ 
-<!ELEMENT message (receiver ,sender ,header ,msg，ANY)> //关键词 ANY 声明的元素，可包含任何可解析数据的组合
+<!ELEMENT message (receiver ,sender ,header ,msg)> \\声明的字段对应xml结构中字段
 <!ELEMENT receiver (#PCDATA)>
 <!ELEMENT sender (#PCDATA)>
 <!ELEMENT header (#PCDATA)>
@@ -20,6 +21,20 @@ XXE(XML External Entity),即是XML外部实体注入攻击.漏洞是在对不安
 <msg>This is an amazing book</msg>
 </message>
 ```
+实例2：  
+```
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE foo [
+<!ELEMENT foo ANY >//定义元素为 ANY 说明接受任何元素
+<!ENTITY xxe "test" >]>
+```
+```
+<creds>
+<user>&xxe;</user>
+<pass>mypass</pass>
+</creds>
+```
+
 DTD(The document type definition)，即是文档类型定义，可定义合法的XML文档构建模块。它使用一系列合法的元素来定义文档的结构。DTD 可被成行地声明于 XML 文档中，也可作为一个外部引用。   
 ```
 <!ENTITY 实体名 SYSTEM url > //外部实体
