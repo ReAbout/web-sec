@@ -16,11 +16,24 @@ Java 反序列化：把字节序列恢复为 Java 对象的过程，ObjectInputS
 
 ## 0x02 Java反序列化基础知识
 
-- RMI(Remote Method Invocation) 即 Java 远程方法调用，一种用于实现远程过程调用的应用程序编程接口，常见的两种接口实现为 JRMP(Java Remote Message Protocol ，Java 远程消息交换协议)以及 CORBA。
+简单的来说就是RMI注册的服务可以让 JNDI 应用程序来访问，调用。
+
 - JNDI (Java Naming and Directory Interface) 是一个应用程序设计的 API，为开发人员提供了查找和访问各种命名和目录服务的通用、统一的接口。JNDI 支持的服务主要有以下几种：DNS、LDAP、 CORBA 对象服务、RMI 等。
+- RMI(Remote Method Invocation) 即 Java 远程方法调用，一种用于实现远程过程调用的应用程序编程接口，常见的两种接口实现为 JRMP(Java Remote Message Protocol ，Java 远程消息交换协议)以及 CORBA。
+
 
 ## 0x03 如何发现反序列化漏洞
 
+### 反序列化函数
+```
+ObjectInputStream.readObject
+ObjectInputStream.readUnshared
+XMLDecoder.readObject
+Yaml.load
+XStream.fromXML
+ObjectMapper.readValue
+JSON.parseObject
+```
 ## 0x04 反序列化漏洞利用
 
 
