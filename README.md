@@ -122,7 +122,7 @@
 - [**[Tool]** Meterpreter of Metasploit](https://www.metasploit.com/)
 #### 4.4.4 Mobile (Android & ios)  
 ### 4.5 免杀
-
+- [免杀系列文章及配套工具@TideSec](https://github.com/TideSec/BypassAntiVirus)
 ### 4.6 隧道&代理
 - [SSH 端口转发&开socks5](./penetration/PEN-ssh.md)
 - [Iptables 端口复用](./penetration/PEN-Reuse.md)
