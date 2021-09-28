@@ -17,7 +17,8 @@
 > CSRF 利用的是网站对用户网页浏览器的信任   
 - [Client-side request forgery (CSRF)](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-CSRF.md)
 ###  2.3 SQL注入&数据库漏洞利用
-- [SQL injection - MySQL](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SQLi-MySQL.md)
+- [SQL injection - MySQL](./exp/EXP-SQLi-MySQL.md)
+- [SQL injection - Oracle](./exp/EXP-SQLi-Oracle.md)
 - [SQL injection - 信息外带(OOB)](./exp/EXP-SQLi-OOB.md)
 - [Redis 漏洞利用](./exp/EXP-DB-Redis.md)
 - [MSSQL 漏洞利用](./exp/EXP-DB-MSSQL.md)  
