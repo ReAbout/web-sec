@@ -93,8 +93,8 @@
 > IoT安全 & web安全& 系统漏洞 1day整理
 - [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
-- [**[Tool]** Struts2-Scan](https://github.com/HatBoy/Struts2-Scan)
-- [**[Tool]** shiro反序列化漏洞综合利用](https://github.com/j1anFen/shiro_attack)
+- [**[Tool]** Struts2漏洞扫描&利用](https://github.com/HatBoy/Struts2-Scan)
+- [**[Tool]** shiro反序列化漏洞利用](https://github.com/wyzxxz/shiro_rce_tool)
 
 #### 4.2.3 字典
 
