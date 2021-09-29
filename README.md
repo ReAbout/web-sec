@@ -144,6 +144,7 @@
 >信息获取 & 远程文件操作 & 远程执行命令 & ipc$ & wmic & winrm
 - [**[Tool]** 流量取证工具 BruteShark](https://github.com/odedshimon/BruteShark)
 > 可以提取流量中用户名&密码，NTML Hash，图片等，以及绘制网络拓扑。
+- [**[Tool]** 浏览器数据导出解密工具](https://github.com/moonD4rk/HackBrowserData)
 ####  4.7.2 轻量级扫描工具
 - [**[Tool]** fscan](https://github.com/shadow1ng/fscan)
 > 内网扫描神器，go语言跨平台，效率快，支持各类口令爆破，还有主机识别和web服务识别。
