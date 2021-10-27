@@ -22,6 +22,8 @@
 - 思路三：配置错误，可列目录或报错信息，这样获取更权限信息。
 - 思路四：Admin后台。
 
+
+
 #### 案例：   
 ##### DNN CMS   
 搜索规则：`inurl:Portals/0/`
@@ -78,6 +80,7 @@ intitle:index of /
 intitle:Phantom Hackers.PH intext:password filetype:php
 
 #### 2.Zoomeye
+类似的互联网资产搜索引擎还有：fofa.so,shodan.io等。    
 要学会几个关键词的使用，icdr、country、app等
 
 ## 普通模式
