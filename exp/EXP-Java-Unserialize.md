@@ -48,8 +48,11 @@ POC:   https://github.com/zerothoughts/spring-jndi
 分析： https://paper.seebug.org/1503/
 
 ### 5. Apache Solr
-### 3. WebLogic
 
+分析： [Apache Solr反序列化远程代码执行漏洞分析（CVE-2019-0192）](https://www.anquanke.com/post/id/210866?luicode=10000011&lfid=1076033957583411&featurecode=newtitle%0AUltrasonic+Fingerprint+ID+on+the+Galaxy+S10%3A+Pesto+Fingers&u=https%3A%2F%2Fwww.anquanke.com%2Fpost%2Fid%2F210866)
+
+### 3. WebLogic
+分析：[Weblogic CVE-2021-2394 反序列化漏洞分析](https://www.anquanke.com/post/id/249654)
 
 ## Ref
 - [深入理解 JAVA 反序列化漏洞](https://paper.seebug.org/312/#2)
@@ -57,3 +60,5 @@ POC:   https://github.com/zerothoughts/spring-jndi
 - http://llfam.cn/2019/11/11/spring_4.2.4_unser/
 - https://www.iswin.org/2015/11/13/Apache-CommonsCollections-Deserialized-Vulnerability/
 - https://paper.seebug.org/1318/
+- [Apache Solr反序列化远程代码执行漏洞分析（CVE-2019-0192）](https://www.anquanke.com/post/id/210866?luicode=10000011&lfid=1076033957583411&featurecode=newtitle%0AUltrasonic+Fingerprint+ID+on+the+Galaxy+S10%3A+Pesto+Fingers&u=https%3A%2F%2Fwww.anquanke.com%2Fpost%2Fid%2F210866)
+-[Weblogic CVE-2021-2394 反序列化漏洞分析](https://www.anquanke.com/post/id/249654)
