@@ -43,6 +43,25 @@ meterpreter >
 ```
 ## 0x03 Meterpreter使用
 
+### 基本命令
+```
+background   # 将当前会话放置后台
+sessions   # sessions –h 查看帮助
+sessions -i <ID值>  #进入会话   -k  杀死会话
+bgrun / run   # 执行已有的模块，输入run后按两下tab，列出已有的脚本
+info   # 查看已有模块信息
+getuid   # 查看当前用户身份
+getprivs  # 查看当前用户具备的权限
+getpid   # 获取当前进程ID(PID)
+sysinfo   # 查看目标机系统信息
+irb   # 开启ruby终端
+ps   # 查看正在运行的进程    
+kill <PID值> # 杀死指定PID进程
+idletime     # 查看目标机闲置时间
+reboot / shutdown    # 重启/关机
+shell    # 进入目标机cmd shell
+```
+
 ### 上传/下载
 upload
 ```
@@ -62,3 +81,5 @@ Usage: download [options] src1 src2 src3 ... destination
     -t   Timestamp downloaded files
 ```
 
+## Ref
+- https://xz.aliyun.com/t/6400
