@@ -120,9 +120,8 @@
 - [linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
 ### 4.4 后门&权限维持
 #### 4.4.0 通用
-- [Meterpreter of Metasploit教程](./penetration/PEN-MSF.md)
-- [**[Tool]** Meterpreter of Metasploit](https://www.metasploit.com/)
-
+- [Meterpreter of Metasploit 使用教程](./penetration/PEN-MSF.md)
+> backdoor生成，meterpreter操作指令
 #### 4.4.1 Shell会话
 - [反弹Shell & 升级交互式Shell (Linux&Win)](./penetration/PEN-ReShell.md)
 #### 4.4.2 Webshell
