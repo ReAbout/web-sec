@@ -119,6 +119,10 @@
 #### 4.3.2 Linux
 - [linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
 ### 4.4 后门&权限维持
+#### 4.4.0 通用
+- [Meterpreter of Metasploit教程](./penetration/PEN-MSF.md)
+- [**[Tool]** Meterpreter of Metasploit](https://www.metasploit.com/)
+
 #### 4.4.1 Shell会话
 - [反弹Shell & 升级交互式Shell (Linux&Win)](./penetration/PEN-ReShell.md)
 #### 4.4.2 Webshell
@@ -128,7 +132,6 @@
 #### 4.4.3 PC & Server
 - [**[Tool]** Cobalt Strike ]()
 - [Cobalt Strike资料汇总@zer0yu](https://github.com/zer0yu/Awesome-CobaltStrike)
-- [**[Tool]** Meterpreter of Metasploit](https://www.metasploit.com/)
 #### 4.4.4 Mobile (Android & ios)  
 ### 4.5 免杀
 - [免杀系列文章及配套工具@TideSec](https://github.com/TideSec/BypassAntiVirus)
