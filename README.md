@@ -11,7 +11,7 @@
 - [错综复杂的后端逻辑及安全](./vul/VUL-Backend.md)
 
 ### 1.3 打造自己的知识库
-
+>爬取范围包括先知社区、安全客、Seebug Paper、跳跳糖、奇安信攻防社区、棱角社区
 - [**[Tool]** 推送安全情报爬虫@Le0nsec](https://github.com/Le0nsec/SecCrawler)
 
 ## 0x02 漏洞利用篇(Exploit)
