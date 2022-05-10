@@ -77,6 +77,8 @@
 - [Java漏洞平台@j3ers3](https://github.com/j3ers3/Hello-Java-Sec)
 
 ## 0x04 渗透篇(Penetration)
+网络预置-->外网突破-->权限获取和提升-->权限维持（后门）-->后渗透
+---免杀+++反溯源+++协同---
 ### 4.1 网络预置
 #### 4.1.1 常规信息
 - [外网信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
@@ -130,7 +132,7 @@
 
 - [Dokcer容器逃逸@duowen1](https://github.com/duowen1/Container-escape-exps)
 
-### 4.4 后门&权限维持
+### 4.4 权限维持&后门
 #### 4.4.0 通用
 - [Meterpreter of Metasploit 使用教程](./penetration/PEN-MSF.md)
 > backdoor生成，meterpreter操作指令
