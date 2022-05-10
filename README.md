@@ -110,6 +110,7 @@
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
 - [**[Tool]** Struts2漏洞扫描&利用](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞利用](https://github.com/wyzxxz/shiro_rce_tool)
+- [**[Tool]** 数据库综合利用工具](https://github.com/Ryze-T/Sylas)
 
 #### 4.2.3 字典
 
