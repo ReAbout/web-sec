@@ -70,7 +70,8 @@
 - [请求走私总结@chenjj](https://github.com/chenjj/Awesome-HTTPRequestSmuggling)
 ## 0x03 代码审计篇(Audit)
 ### 3.1 PHP
-- [PHP调试环境的搭建-vscode](https://github.com/ReAbout/web-exp/blob/master/audit/AUD-PHP-Debug.md)
+> vscode & phpstorm 方案
+- [PHP调试环境的搭建](https://github.com/ReAbout/web-exp/blob/master/audit/AUD-PHP-Debug.md)
 - [PHP代码审计@bowu678](https://github.com/bowu678/php_bugs)
 ### 3.2 JAVA
 - [Java代码审计@cn-panda](https://github.com/cn-panda/JavaCodeAudit)
