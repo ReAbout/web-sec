@@ -27,6 +27,7 @@
 - [SQL injection - 信息外带(OOB)](./exp/EXP-SQLi-OOB.md)
 - [Redis 漏洞利用](./exp/EXP-DB-Redis.md)
 - [MSSQL 漏洞利用](./exp/EXP-DB-MSSQL.md)  
+- [**[Tool]** 数据库综合利用工具](https://github.com/Ryze-T/Sylas)
 ### 2.4 模板注入 Server Side Template Injection (SSTI)
 > MVC架构中，模板参数恶意输入产生的安全问题
 - [STTI 总述](./exp/EXP-SSTI-ALL.md)
@@ -110,7 +111,6 @@
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
 - [**[Tool]** Struts2漏洞扫描&利用](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞利用](https://github.com/wyzxxz/shiro_rce_tool)
-- [**[Tool]** 数据库综合利用工具](https://github.com/Ryze-T/Sylas)
 
 #### 4.2.3 字典
 
