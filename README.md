@@ -66,6 +66,7 @@
 ### 2.15 Other
 > 利用前后DNS解析的不一致（劫持或者逻辑问题）   
 - [DNS rebinding 攻击]()[待更新]
+- [请求走私总结@chenjj](https://github.com/chenjj/Awesome-HTTPRequestSmuggling)
 ## 0x03 代码审计篇(Audit)
 ### 3.1 PHP
 - [PHP调试环境的搭建](https://github.com/ReAbout/web-exp/blob/master/audit/AUD-PHP-Debug.md)
