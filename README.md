@@ -42,8 +42,8 @@
 - [XPath Injection](./exp/EXP-XPath.md)
 ### 2.7 XML External Entity (XXE) 
 - [XXE](./exp/EXP-XXE.md)
-### 2.8 上传文件漏洞
-
+### 2.8 文件上传漏洞
+- [文件上传漏洞](./exp/EXP-Upload.md)
 ### 2.9 Server-side request forgery (SSRF)
 - [SSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSRF.md)
 
