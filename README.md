@@ -70,14 +70,14 @@
 - [请求走私总结@chenjj](https://github.com/chenjj/Awesome-HTTPRequestSmuggling)
 ## 0x03 代码审计篇(Audit)
 ### 3.1 PHP
-- [PHP调试环境的搭建](https://github.com/ReAbout/web-exp/blob/master/audit/AUD-PHP-Debug.md)
+- [PHP调试环境的搭建-vscode](https://github.com/ReAbout/web-exp/blob/master/audit/AUD-PHP-Debug.md)
 - [PHP代码审计@bowu678](https://github.com/bowu678/php_bugs)
 ### 3.2 JAVA
 - [Java代码审计@cn-panda](https://github.com/cn-panda/JavaCodeAudit)
 - [Java漏洞平台@j3ers3](https://github.com/j3ers3/Hello-Java-Sec)
 
 ## 0x04 渗透篇(Penetration)
-网络预置-->外网突破-->权限获取和提升-->权限维持（后门）-->后渗透
+网络预置-->外网突破-->权限获取和提升-->权限维持（后门）-->后渗透    
 ---免杀+++反溯源+++协同---
 ### 4.1 网络预置
 #### 4.1.1 常规信息
