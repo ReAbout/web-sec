@@ -35,8 +35,8 @@
 - [SSTI -PHP](./exp/EXP-SSTI-PHP.md)
 
 
-### 2.5 命令注入
-
+### 2.5 命令注入&代码执行
+-[命令注入&代码执行-PHP](./exp/EXP-CI-PHP.md)
 ### 2.6 Xpath注入
 > XPath 即为 XML 路径语言
 - [XPath Injection](./exp/EXP-XPath.md)
