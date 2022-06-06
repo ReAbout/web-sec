@@ -98,7 +98,7 @@
 #### 4.2.1 漏洞验证（扫描器）
 > 工欲其善必先利器
 ##### 4.2.1.1 主动式
- - [**[Tool]** AWVS 14 Docker版](https://hub.docker.com/r/secfa/docker-awvs)
+ - [**[Tool]** AWVS  Docker版](https://hub.docker.com/r/secfa/docker-awvs)
  - [**[Tool]** 长亭的扫描器 Xray](https://github.com/chaitin/xray)   
  - [**[Tool]** Vulmap](https://github.com/zhzyker/vulmap)   
  - [**[Tool]** 红队综合渗透框架SatanSword@Lucifer1993](https://github.com/Lucifer1993/SatanSword)   
