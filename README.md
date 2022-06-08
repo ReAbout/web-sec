@@ -67,7 +67,7 @@
 ### 2.15 Other
 > 利用前后DNS解析的不一致（劫持或者逻辑问题）   
 - [DNS rebinding 攻击](./exp/EXP-DNS-Rebinding.md)
-> 不一致性
+> 前后端不一致性
 - [请求走私总结@chenjj](https://github.com/chenjj/Awesome-HTTPRequestSmuggling)
 ## 0x03 代码审计篇(Audit)
 ### 3.1 PHP
