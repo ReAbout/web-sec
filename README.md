@@ -79,7 +79,7 @@
 - [Java漏洞平台@j3ers3](https://github.com/j3ers3/Hello-Java-Sec)
 
 ### 3.3 Perl
-
+> Perl CGI快速上手，了解Perl语言特性
 - [Perl基础&代码审计@mi1k7ea](https://www.mi1k7ea.com/2020/11/24/Perl%E5%9F%BA%E7%A1%80-%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/)
 
 ## 0x04 渗透篇(Penetration)
