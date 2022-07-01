@@ -102,7 +102,7 @@
 - [**[Tool]** 安全分析框架 MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
 
 ####
-### 4.2 外网突破(exp)
+### 4.2 网络预置(exp)
 
 #### 4.2.1 漏洞验证（扫描器）
 > 工欲其善必先利器
