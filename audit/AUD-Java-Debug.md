@@ -22,7 +22,7 @@ JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,address=9090,suspend=n,server=y"
 方案二：
 
 
-修改./bin/startup.sh，在exec语句中添加 jpda
+修改./bin/startup.sh，在最后一行exec语句中添加 jpda
 
 ```
 exec "$PRGDIR"/"$EXECUTABLE" jpda start "$@"
@@ -34,6 +34,7 @@ if [ -z "$JPDA_ADDRESS" ]; then
  JPDA_ADDRESS="0.0.0.0:9090"
 ```
 
+重启服务即可
 
 **IDEA配置**：
 https://blog.51cto.com/u_15127502/3518074
