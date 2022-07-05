@@ -8,9 +8,10 @@
 
 ### 1. Tomcat 远程调试
 
-**远程Tomcat配置**： 
-在./bin/catalina.sh 中添加 address 调试端口 9090
+#### 远程Tomcat配置：    
+
 方案一：
+在./bin/catalina.sh 中添加 address 调试端口 9090
 ```
 CATALINA_OPTS="-server -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9090" 
 
@@ -36,5 +37,5 @@ if [ -z "$JPDA_ADDRESS" ]; then
 
 重启服务即可
 
-**IDEA配置**：
+#### IDEA配置：
 https://blog.51cto.com/u_15127502/3518074
