@@ -10,7 +10,7 @@
 
 #### 远程Tomcat配置：    
 
-方案一：
+**方案一**：   
 在./bin/catalina.sh 中添加 address 调试端口 9090
 ```
 CATALINA_OPTS="-server -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9090" 
@@ -20,7 +20,7 @@ CATALINA_OPTS="-server -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transpor
 ```
 JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,address=9090,suspend=n,server=y"
 ```
-方案二：
+**方案二**：
 
 
 修改./bin/startup.sh，在最后一行exec语句中添加 jpda
