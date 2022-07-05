@@ -74,9 +74,10 @@
 ## 0x03 代码审计篇(Audit)
 ### 3.1 PHP
 > vscode&phpstorm方案,xdebug2.X和xdebug3.X配置
-- [PHP调试环境的搭建](https://github.com/ReAbout/web-exp/blob/master/audit/AUD-PHP-Debug.md)
+- [PHP调试环境的搭建](./audit/AUD-PHP-Debug.md)
 - [PHP代码审计@bowu678](https://github.com/bowu678/php_bugs)
 ### 3.2 JAVA
+- [Java调试环境的搭建](./audit/AUD-Java-Debug.md)
 - [Java代码审计@cn-panda](https://github.com/cn-panda/JavaCodeAudit)
 - [Java漏洞平台@j3ers3](https://github.com/j3ers3/Hello-Java-Sec)
 
