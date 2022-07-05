@@ -55,7 +55,7 @@ ssh  -o StrictHostKeyChecking=no 192.168.1.1
 ```
 ### 3. 远程命令执行
 
-#### 主从同步->RCE
+#### (1) 主从同步->RCE
 - 附加条件： redis 4.x-5.0.5
 - 在Redis 4.x之后，Redis新增了模块功能，通过外部拓展，可以在redis中实现一个新的Redis命令，通过写c语言并编译出.so文件。  
 
@@ -75,6 +75,9 @@ redis:
 >module load C:\Users\test\Desktop\exp.dll 
 >exp.e whoami
 ```
+#### (2) Redis沙盒绕过（CVE-2022-0543）
+- 附加条件： 2.2 <= redis < 5.0.13，2.2 <= redis < 6.0.15，2.2 <= redis < 6.2.5
+- 漏洞利用：https://github.com/aodsec/CVE-2022-0543
 
 ## Ref
 - https://www.freebuf.com/column/237263.html
