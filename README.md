@@ -100,7 +100,7 @@
 ### 4.1 网络预置
 #### 4.1.1 常规信息
 - [外网信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
-- [**[Tool]** 资产识别工具 dismap](https://github.com/zhzyker/dismap.git)  
+- [**[Tool]** kscan 测绘工具](https://github.com/lcvvvv/kscan)  
 #### 4.1.2 资产搜索引擎
 - [fofa.so](https://fofa.so)   
 - [shodan.io](https://www.shodan.io/)   
