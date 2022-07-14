@@ -90,7 +90,7 @@
 ### 3.3 .NET
 - [.Net反序列化@Ivan1ee](https://github.com/Ivan1ee/NET-Deserialize)
 
-### 3.3 Perl
+### 3.4 Perl CGI
 > Perl CGI快速上手，了解Perl语言特性
 - [Perl基础&代码审计@mi1k7ea](https://www.mi1k7ea.com/2020/11/24/Perl%E5%9F%BA%E7%A1%80-%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/)
 
