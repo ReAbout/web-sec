@@ -112,5 +112,18 @@ Usage: download [options] src1 src2 src3 ... destination
     -t   Timestamp downloaded files
 ```
 
+### 端口转发
+```
+portfwd add -l 7777 -p 3389 -r 127.0.0.1 #将目标机的3389端口转发到本地7777端口
+```
+
+### 添加路由
+```
+run autoroute -h # 查看帮助
+run get_local_subnets # 查看目标内网网段地址
+run autoroute -s 192.168.183.0/24  # 添加目标网段路由
+run autoroute -p  # 查看添加的路由
+```
+
 ## Ref
 - https://xz.aliyun.com/t/6400
