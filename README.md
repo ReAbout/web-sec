@@ -78,6 +78,7 @@
 > 前后端不一致性
 - [请求走私总结@chenjj](https://github.com/chenjj/Awesome-HTTPRequestSmuggling)
 ## 0x03 代码审计篇(Audit)
+
 ### 3.1 PHP
 > vscode&phpstorm方案,xdebug2.X和xdebug3.X配置
 - [PHP调试环境的搭建](./audit/AUD-PHP-Debug.md)
@@ -167,6 +168,8 @@
 - [**[Tool]** WebShell管理工具 菜刀](https://github.com/raddyfiy/caidao-official-version)
 - [**[Tool]** WebShell管理工具 蚁剑](https://github.com/AntSwordProject/AntSword-Loader)
 - [**[Tool]** WebShell管理工具 冰蝎](https://github.com/rebeyond/Behinder)
+- [**[Tool]** WebShell管理工具 哥斯拉](https://github.com/BeichenDream/Godzilla)
+
 #### 4.4.3 PC & Server
 - [**[Tool]** Cobalt Strike ]()
 - [Cobalt Strike资料汇总@zer0yu](https://github.com/zer0yu/Awesome-CobaltStrike)
