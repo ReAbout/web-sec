@@ -152,8 +152,7 @@
 #### 4.3.2 Linux
 - [Linux 认证凭证获取](./penetration/PEN-GetHash-Linux.md)
 - [Linux setuid提权](./penetration/PEN-Setuid-Linux.md)
->wget "https://github.com/diego-treitos/linux-smart-enumeration/releases/latest/download/lse.sh" -O lse.sh;chmod 700 lse.sh
-- [Linux 提权检测脚本](https://github.com/diego-treitos/linux-smart-enumeration)
+- [Linux 提权检测脚本 lse.sh](https://github.com/diego-treitos/linux-smart-enumeration)
 > 已经停止更新到CVE-2018
 - [Linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
 
