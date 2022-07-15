@@ -100,7 +100,6 @@
 ### 4.1 网络预置
 #### 4.1.1 常规信息
 - [外网信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
-- [**[Tool]** kscan 测绘工具](https://github.com/lcvvvv/kscan)  
 #### 4.1.2 资产搜索引擎
 - [fofa.so](https://fofa.so)   
 - [shodan.io](https://www.shodan.io/)   
@@ -111,7 +110,7 @@
 - [**[Tool]** 移动端信息收集工具 AppInfoScanner](https://github.com/kelvinBen/AppInfoScanner)    
 - [**[Tool]** 安全分析框架 MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
 
-####
+
 ### 4.2 网络预置(exp)
 
 #### 4.2.1 漏洞验证（扫描器）
