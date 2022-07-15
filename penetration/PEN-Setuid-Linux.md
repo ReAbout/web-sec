@@ -23,12 +23,15 @@ suid全称是Set owner User ID up on execution。这是Linux给可执行文件�
 - 
 通常情况下Effective UID和Real UID相等，所以普通用户不能写入只有UID=0号才可写的/etc/passwd；有suid的程序启动时，Effective UID就等于二进制文件的所有者，此时Real UID就可能和Effective UID不相等了。
 
-## 0x01 漏洞利用
 
-setuid 提权条件：
+### setuid 提权条件
 1. 文件所有者是root用户
 2. 具备s标志位
 3. 程序执行setuid(0)后执行代码
+
+## 0x01 漏洞利用
+
+
 
 
 [简谈setuid提权](https://www.freebuf.com/articles/web/272617.html) 其中包括一些常见的应用setuid提权方法。     
