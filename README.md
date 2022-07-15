@@ -33,6 +33,7 @@
 ###  2.3 SQL注入&数据库漏洞利用
 - [SQL injection - MySQL](./exp/EXP-SQLi-MySQL.md)
 - [SQL injection - Oracle](./exp/EXP-SQLi-Oracle.md)
+> MySQL，Oracle，MSSQL和PostgreSQL的OOB方法
 - [SQL injection - 信息外带(OOB)](./exp/EXP-SQLi-OOB.md)
 - [MSSQL 漏洞利用](./exp/EXP-DB-MSSQL.md)  
 - [Redis 漏洞利用](./exp/EXP-DB-Redis.md)
