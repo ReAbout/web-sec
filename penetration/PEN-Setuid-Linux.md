@@ -25,6 +25,11 @@ suid全称是Set owner User ID up on execution。这是Linux给可执行文件�
 
 ## 0x01 漏洞利用
 
+setuid 提权条件：
+1. 文件所有者是root用户
+2. 具备s标志位
+3. 程序执行setuid(0)后执行代码
+
 
 [简谈setuid提权](https://www.freebuf.com/articles/web/272617.html) 其中包括一些常见的应用setuid提权方法。     
 
