@@ -146,7 +146,8 @@
 - [Windows提权漏洞集合@SecWiki](https://github.com/SecWiki/windows-kernel-exploits)
 #### 4.3.2 Linux
 - [Linux 认证凭证获取](./penetration/PEN-GetHash-Linux.md)
-- [linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
+- [Linux setuid提权](./penetration/PEN-Setuid-Linux.md)
+- [Linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
 
 #### 4.3.3 Docker&Sandbox逃逸
 
