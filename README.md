@@ -214,7 +214,7 @@
 #### 4.7.4 域渗透
 - [域渗透@uknowsec](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
 ### 4.8 反溯源 
-> RedTeam 操作系统 on VM + OpenWrt网关 on VM = 全流量跳板
+> RedTeam 操作系统 on VM + OpenWrt网关 on VM = 全局跳板
 - [VMware安装OpenWrt虚拟机让宿主机上网](https://blog.yqxpro.com/2019/10/04/VMware%E5%AE%89%E8%A3%85OpenWrt%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%A9%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%B8%8A%E7%BD%91/)
  - [Linux 痕迹清理](./penetration/PEN-LinuxClear.md)
 
