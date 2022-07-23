@@ -13,9 +13,9 @@ qemu-img convert -f raw openwrt.img -O vmdk openwrt.vmdk
 ```
 
 ### 3. VM安装openwrt
+
 vmdk方式虚拟机添加
 
-- [VMware安装OpenWrt虚拟机让宿主机上网](https://blog.yqxpro.com/2019/10/04/VMware%E5%AE%89%E8%A3%85OpenWrt%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%A9%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%B8%8A%E7%BD%91/)
 ### 4. 配置openwrt
 
 配置网卡：  
@@ -48,7 +48,7 @@ config interface 'wan'
 
 ### 6. 配置宿主机通过OpenWrt上网
 
-- [VMware安装OpenWrt虚拟机让宿主机上网](https://blog.yqxpro.com/2019/10/04/VMware%E5%AE%89%E8%A3%85OpenWrt%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%A9%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%B8%8A%E7%BD%91/)
+[VMware安装OpenWrt虚拟机让宿主机上网](https://blog.yqxpro.com/2019/10/04/VMware%E5%AE%89%E8%A3%85OpenWrt%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%A9%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%B8%8A%E7%BD%91/)有图文介绍
 
 ## Ref
 - [VMware安装OpenWrt虚拟机让宿主机上网](https://blog.yqxpro.com/2019/10/04/VMware%E5%AE%89%E8%A3%85OpenWrt%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%A9%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%B8%8A%E7%BD%91/)
