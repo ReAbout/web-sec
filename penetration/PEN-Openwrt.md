@@ -25,13 +25,13 @@ vmdk方式虚拟机添加
 
 配置网络：
 配置wan口和lan口 `vim /etc/config/network`
->注意192.168.111.1根据主机网络模式的网段配置
+>注意192.168.111.3根据主机网络模式的网段配置
 ```
 config interface 'lan'
   option type 'bridge'
   option ifname 'eth1'
   option proto 'static'
-  option ipaddr '192.168.111.1'
+  option ipaddr '192.168.111.3'
   option netmask '255.255.255.0'
   option ip5assign '60'
 config interface 'wan'
@@ -40,8 +40,11 @@ config interface 'wan'
 ```
 ### 5. 配置其他虚拟机使用OpenWrt来提供网络服务
 
+>其他虚拟机需要通过OpenWrt虚拟机上网时只需要将网卡修改为VMnet1仅主机网络并使用DHCP方式。
 
-其他虚拟机需要通过OpenWrt虚拟机上网时只需要将网卡修改为VMnet1仅主机网络并使用DHCP方式上网即可实现目标。
+需要添加默认网关：    
+- Linux:   `route add default gw 192.168.111.3`
+- Windows:  高级网络设置修改网关修改即可
 
 ### 6. 配置宿主机通过OpenWrt上网
 
