@@ -101,6 +101,16 @@
 ## 0x04 渗透篇(Penetration)
 【流程】网络预置-->外网突破-->权限获取和提升-->权限维持（后门）-->后渗透    
 【基础】---免杀+++反溯源+++协同---
+
+### 4.0 环境准备
+
+> 操作系统 on VM + OpenWrt网关 on VM = 全局跳板
+- [全局代理[VMware]：Openwrt on VMware网关方案](./penetration/PEN-Openwrt.md)
+
+> 全局代理，虚拟网卡，需要手动配路由
+- [全局代理[Win]：Windows下socks客户端全局代理终极解决方案——tun2socks](./penetration/PEN-Tun2socks.md)
+
+
 ### 4.1 网络预置
 #### 4.1.1 常规信息
 - [外网信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
@@ -189,8 +199,7 @@
 - [**[Tool]** 内网多级代理服务端工具 Stowaway](https://github.com/ph4ntonn/Stowaway)
 >Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
 - [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
->全局代理，虚拟网卡，需要手动配路由【推荐】
-- [Windows下socks客户端全局代理终极解决方案——tun2socks](./penetration/PEN-Tun2socks.md)
+
 - [**[Tool]** Windows版 proxychains](https://github.com/shunf4/proxychains-windows)
 ### 4.7 后渗透
 #### 4.7.1 内网信息获取
@@ -214,8 +223,7 @@
 #### 4.7.4 域渗透
 - [域渗透@uknowsec](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
 ### 4.8 反溯源 
-> RedTeam 操作系统 on VM + OpenWrt网关 on VM = 全局跳板
-- [VMware安装OpenWrt虚拟机让宿主机上网](https://blog.yqxpro.com/2019/10/04/VMware%E5%AE%89%E8%A3%85OpenWrt%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%A9%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%B8%8A%E7%BD%91/)
+
  - [Linux 痕迹清理](./penetration/PEN-LinuxClear.md)
 
 ### 4.9 协同
