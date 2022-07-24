@@ -103,13 +103,15 @@
 【基础】---免杀+++反溯源+++协同---
 
 ### 4.0 环境准备
-
+#### 4.0.1 代理
 > 操作系统 on VM + OpenWrt网关 on VM = 全局跳板
 - [全局代理[VMware]：Openwrt on VMware网关方案](./penetration/PEN-Openwrt.md)
 
 > 全局代理，虚拟网卡，需要手动配路由
 - [全局代理[Win]：Windows下socks客户端全局代理终极解决方案——tun2socks](./penetration/PEN-Tun2socks.md)
 
+>Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
+- [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
 
 ### 4.1 网络预置
 #### 4.1.1 常规信息
@@ -197,8 +199,6 @@
 - [**[Tool]** 内网多级代理服务端工具 Venom](https://github.com/Dliv3/Venom/releases)
 >比Venom更加稳定，持续更新【推荐】
 - [**[Tool]** 内网多级代理服务端工具 Stowaway](https://github.com/ph4ntonn/Stowaway)
->Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
-- [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
 
 - [**[Tool]** Windows版 proxychains](https://github.com/shunf4/proxychains-windows)
 ### 4.7 后渗透
