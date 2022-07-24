@@ -1,6 +1,6 @@
 # 全局代理[VMware]：Openwrt on VMware网关方案
 
-## Install
+## 0x01 Install
 
 ### 1. 下载固件：
 
@@ -49,6 +49,13 @@ config interface 'wan'
 ### 6. 配置宿主机通过OpenWrt上网
 
 [VMware安装OpenWrt虚拟机让宿主机上网](https://blog.yqxpro.com/2019/10/04/VMware%E5%AE%89%E8%A3%85OpenWrt%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%A9%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%B8%8A%E7%BD%91/)有图文介绍
+
+## 0x02 Start
+
+- VPS安装：v2ray一键脚本： bash <(curl -sL https://s.hijk.art/xray.sh)
+
+- 客户端检测：可以通过该网站检测IP和DNS  https://whoer.net/
+
 
 ## Ref
 - [VMware安装OpenWrt虚拟机让宿主机上网](https://blog.yqxpro.com/2019/10/04/VMware%E5%AE%89%E8%A3%85OpenWrt%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%A9%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%B8%8A%E7%BD%91/)
