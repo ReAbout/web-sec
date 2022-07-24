@@ -54,6 +54,8 @@ config interface 'wan'
 
 - VPS安装：v2ray一键脚本： bash <(curl -sL https://s.hijk.art/xray.sh)
 
+- Openwrt插件推荐使用 Passwall，注意要配置全局tcp，udp以及dns
+
 - 客户端检测：可以通过该网站检测IP和DNS  https://whoer.net/
 
 >PS:DNS如果存在泄漏问题：Windows需要通过 `ipconfig /flushdns`刷新下
