@@ -56,6 +56,7 @@ config interface 'wan'
 
 - 客户端检测：可以通过该网站检测IP和DNS  https://whoer.net/
 
+>PS:DNS如果存在泄漏问题：Windows需要通过 `ipconfig /flushdns`刷新下
 
 ## Ref
 - [VMware安装OpenWrt虚拟机让宿主机上网](https://blog.yqxpro.com/2019/10/04/VMware%E5%AE%89%E8%A3%85OpenWrt%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%A9%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%B8%8A%E7%BD%91/)
