@@ -10,7 +10,7 @@
 下载地址：http://build.openvpn.net/downloads/releases/tap-windows-9.22.1-I602.exe   
 2. 下载tun2socks工具     
 下载地址：https://github.com/eycorsican/go-tun2socks/releases/download/v1.11.2/tun2socks-windows-4.0-amd64.exe.zip
-
+>PS:采用推荐版本，最新版适配有问题
 ### 0x02 执行
 
 #### 运行tun2socks
