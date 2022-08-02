@@ -110,8 +110,13 @@
 > 全局代理，虚拟网卡，需要手动配路由
 - [全局代理[Win]：Windows下socks客户端全局代理终极解决方案——tun2socks](./penetration/PEN-Tun2socks.md)
 
+> SSTap全局代理也是基于虚拟网卡方案，可惜已停止更新，推荐使用1.0.9.7版本
+- [**[Tool]** Windows下全局代理客户端工具 SSTap](https://github.com/solikethis/SSTap-backup)
+
 >Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
 - [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
+
+
 
 ### 4.1 网络预置
 #### 4.1.1 常规信息
