@@ -230,6 +230,11 @@
 - [**[Tool]** 开源图形化内网渗透工具 Viper](https://github.com/FunnyWolf/Viper)
 #### 4.7.4 域渗透
 - [域渗透@uknowsec](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
+
+#### 4.7.5 云平台
+>通过accesskey获取相关主机权限执行命令
+- [**[Tool]** Aliyun Accesskey Tool](https://github.com/mrknow001/aliyun-accesskey-Tools)
+
 ### 4.8 反溯源 
 
  - [Linux 痕迹清理](./penetration/PEN-LinuxClear.md)
