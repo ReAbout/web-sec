@@ -92,6 +92,7 @@
 ### 3.2 JAVA
 - [Java调试环境的搭建](./audit/AUD-Java-Debug.md)
 - [Java代码审计@cn-panda](https://github.com/cn-panda/JavaCodeAudit)
+- [Java安全@Y4tacker](https://github.com/Y4tacker/JavaSec)
 - [Java漏洞平台@j3ers3](https://github.com/j3ers3/Hello-Java-Sec)
 
 ### 3.3 .NET
