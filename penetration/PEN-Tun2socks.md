@@ -27,7 +27,8 @@
 `route -p add 172.16.9.0 MASK 255.255.255.0  10.0.0.1`
 > 添加一条永久路由条目（-p 表示永久路由，重启后不丢失）
 
-
+#### 更换默认路由
+`route change 0.0.0.0 MASK 0.0.0.0  10.0.0.1`
 
 ## Ref
 - https://tachyondevel.medium.com/%E6%95%99%E7%A8%8B-%E5%9C%A8-windows-%E4%B8%8A%E4%BD%BF%E7%94%A8-tun2socks-%E8%BF%9B%E8%A1%8C%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86-aa51869dd0d
