@@ -120,6 +120,7 @@
 >Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
 - [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
 
+- [**[Tool]** Windows版 proxychains](https://github.com/shunf4/proxychains-windows)
 
 
 ### 4.1 网络预置
@@ -204,12 +205,13 @@
 - [Iptables 端口复用](./penetration/PEN-Reuse.md)
  >FRP 客服端和服务端配合的端口转发工具
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
->Venom 可以嵌套多层代理，适合多层无外网的渗透测试，【停止更新】
+>Venom 可以嵌套多层代理，适合多层无外网的渗透测试，停止更新
 - [**[Tool]** 内网多级代理服务端工具 Venom](https://github.com/Dliv3/Venom/releases)
 >比Venom更加稳定，持续更新【推荐】
 - [**[Tool]** 内网多级代理服务端工具 Stowaway](https://github.com/ph4ntonn/Stowaway)
+>HTTP代理，国内更新维护【推荐】
+- [**[Tool]**HTTP代理 Neo-reGeorg](https://github.com/L-codes/Neo-reGeorg)
 
-- [**[Tool]** Windows版 proxychains](https://github.com/shunf4/proxychains-windows)
 ### 4.7 后渗透
 #### 4.7.1 内网信息获取
 >信息获取 & 远程文件操作 & 远程执行命令 & ipc$ & wmic & winrm
