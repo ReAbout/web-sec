@@ -107,7 +107,7 @@
 【基础】---免杀+++反溯源+++协同---
 
 ### 4.0 环境准备
-#### 4.0.1 代理
+#### 4.0.1 代理客户端
 > 操作系统 on VM + OpenWrt网关 on VM = 全局跳板
 - [全局代理[VMware]：Openwrt on VMware网关方案](./penetration/PEN-Openwrt.md)
 
