@@ -210,7 +210,7 @@
 >比Venom更加稳定，持续更新【推荐】
 - [**[Tool]** 内网多级代理服务端工具 Stowaway](https://github.com/ph4ntonn/Stowaway)
 >HTTP代理，国内更新维护【推荐】
-- [**[Tool]**HTTP代理 Neo-reGeorg](https://github.com/L-codes/Neo-reGeorg)
+- [**[Tool]** HTTP代理 Neo-reGeorg](https://github.com/L-codes/Neo-reGeorg)
 
 ### 4.7 后渗透
 #### 4.7.1 内网信息获取
