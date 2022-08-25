@@ -187,7 +187,7 @@
 - [Meterpreter of Metasploit 使用教程](./penetration/PEN-MSF.md)
 > backdoor生成，meterpreter操作指令
 #### 4.4.1 Shell会话
-- [反弹Shell & 升级交互式Shell (Linux&Win)](./penetration/PEN-ReShell.md)
+- [反弹/正向 Shell & 升级交互式Shell (Linux&Win)](./penetration/PEN-ReShell.md)
 #### 4.4.2 Webshell
 - [**[Tool]** WebShell管理工具 菜刀](https://github.com/raddyfiy/caidao-official-version)
 - [**[Tool]** WebShell管理工具 蚁剑](https://github.com/AntSwordProject/AntSword-Loader)
