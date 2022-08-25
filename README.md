@@ -56,6 +56,8 @@
 - [XXE](./exp/EXP-XXE.md)
 ### 2.8 文件上传漏洞
 - [文件上传漏洞](./exp/EXP-Upload.md)
+> 远古时期的通杀利器
+- [FCKeditor编辑器漏洞利用](./exp/EXP-FCK.md)
 ### 2.9 Server-side request forgery (SSRF)
 - [SSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSRF.md)
 
