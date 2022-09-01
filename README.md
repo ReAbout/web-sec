@@ -38,7 +38,10 @@
 - [SQL injection - 信息外带(OOB)](./exp/EXP-SQLi-OOB.md)
 
 - [Redis 漏洞利用](./exp/EXP-DB-Redis.md)
+> 程序检测参数不能为空，导致空口令无法利用
 - [**[Tool]** 数据库综合利用工具](https://github.com/Ryze-T/Sylas)
+- [**[Tool]** MSSQL利用工具](https://github.com/uknowsec/SharpSQLTools)
+
 ### 2.4 模板注入 Server Side Template Injection (SSTI)
 > MVC架构中，模板参数恶意输入产生的安全问题
 - [STTI 总述](./exp/EXP-SSTI-ALL.md)
