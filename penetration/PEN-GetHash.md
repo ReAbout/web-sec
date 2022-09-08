@@ -82,7 +82,7 @@ mimikatz.exe "sekurlsa::minidump lsass.dmp" "sekurlsa::logonPasswords full" "exi
 ```
 
 ## 0x03 破解 Hash 
->强力推荐
+>超好用，可惜已经停止服务了
 - [Ophcrack 在线破解](https://www.objectif-securite.ch/en/ophcrack)
 
 - [Cmd5在线破解](https://www.cmd5.com/)
