@@ -80,7 +80,9 @@
 ### 2.13 Java-特性漏洞
 
 - [表达式注入Java](./exp/EXP-Expression-Injection.md)
-- [SprintBoot漏洞利用@LandGrey](https://github.com/LandGrey/SpringBootVulExploit)
+- [SprintBoot漏洞利用清单@LandGrey](https://github.com/LandGrey/SpringBootVulExploit)
+> 按照清单做的配套工具
+- [**[Tool]** SprintBoot漏洞利用工具](https://github.com/0x727/SpringBootExploit)
 
 ### 2.14 NodeJs-特性漏洞
 - [Node.js 原型链污染](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-nodejs-proto.md)
