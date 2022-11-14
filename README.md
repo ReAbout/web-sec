@@ -171,6 +171,8 @@
 
 - [常用的字典，用于渗透测试、SRC漏洞挖掘、爆破、Fuzzing等@insightglacier](https://github.com/insightglacier/Dictionary-Of-Pentesting)
 - [Fuzzing相关字典@TheKingOfDuck](https://github.com/TheKingOfDuck/fuzzDicts)
+>全拼用户名10w
+- [爆破字典](https://github.com/rootphantomer/Blasting_dictionary)
 
 ### 4.3 权限获取&提升
 #### 4.3.1 Win
