@@ -204,6 +204,7 @@
 - [**[Tool]** WebShell管理工具 冰蝎](https://github.com/rebeyond/Behinder)
 - [**[Tool]** WebShell管理工具 哥斯拉](https://github.com/BeichenDream/Godzilla)
 - [收集的各种Webshell@tennc](https://github.com/tennc/webshell)
+- [webshell免杀&WAF逃逸](./penetration/Webshell-Bypass.md)
 
 #### 4.4.3 PC & Server
 - [**[Tool]** Cobalt Strike ]()
