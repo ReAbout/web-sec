@@ -111,7 +111,7 @@
 - [Perl基础&代码审计@mi1k7ea](https://www.mi1k7ea.com/2020/11/24/Perl%E5%9F%BA%E7%A1%80-%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/)
 
 ## 0x04 渗透篇(Penetration)
-【流程】网络预置（信息收集）-->网络接入（外网突破）-->权限获取和提升-->权限维持（后门）-->后渗透    
+【流程】网络预置（准备&信息收集）-->网络接入（外网突破）-->权限获取和提升-->权限维持（后门）-->后渗透    
 【基础】---免杀+++反溯源+++协同---
 
 ### 4.0 环境准备
@@ -132,9 +132,9 @@
 
 
 ### 4.1 网络预置
-#### 4.1.1 常规信息
+#### 4.1.1 常规信息（单兵）
 - [外网信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
-#### 4.1.2 资产搜索引擎
+#### 4.1.2 资产搜索引擎（支撑）
 - [fofa.so](https://fofa.so)   
 - [shodan.io](https://www.shodan.io/)   
 - [zoomeye.org](https://www.zoomeye.org/)
