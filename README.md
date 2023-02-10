@@ -144,6 +144,9 @@
 - [**[Tool]** 移动端信息收集工具 AppInfoScanner](https://github.com/kelvinBen/AppInfoScanner)    
 - [**[Tool]** 安全分析框架 MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
 
+#### 4.1.4 近源渗透（WiFi）
+> 高通410随身wifi改造
+- [打造近源渗透工具](./penetration/PEN-WiFi-Tool.md)
 
 ### 4.2 网络接入(exp)
 
