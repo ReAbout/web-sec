@@ -97,6 +97,7 @@
 > vscode&phpstorm方案,xdebug2.X和xdebug3.X配置
 - [PHP调试环境的搭建](./audit/AUD-PHP-Debug.md)
 - [PHP代码审计@bowu678](https://github.com/bowu678/php_bugs)
+- [PHP代码审计入门指南@burpheart](https://github.com/burpheart/PHPAuditGuideBook)
 ### 3.2 JAVA
 - [Java调试环境的搭建](./audit/AUD-Java-Debug.md)
 - [Java代码审计@cn-panda](https://github.com/cn-panda/JavaCodeAudit)
