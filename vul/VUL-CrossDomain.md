@@ -303,20 +303,54 @@ https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS)
 - Ref[]:[cors安全完全指南](https://xz.aliyun.com/t/2745)
 ## 0x04 JSONP-非官方跨域数据交互协议
 JSONP（JSON with Padding）
-JSONP是一种依靠开发人员的聪明才智创造出的一种非官方跨域数据交互协议。    
-拥有src这个属性的标签都拥有跨域的能力，比如<script>、<img>、<iframe>
+>JSONP是一种依靠开发人员的聪明才智创造出的一种非官方跨域数据交互协议。 在进行 Ajax 请求时，由于同源策略的影响，不能进行跨域请求，而<script>标签的 src 属性却可以加载跨域的 JavaScript 脚本，JSONP 就是利用这一特性实现的。与普通的 Ajax 请求不同，在使用 JSONP 进行跨域请求时，服务器不再返回 JSON 格式的数据，而是返回一段调用某个函数的 JavaScript 代码，在 src 属性种调用，来实现跨域。
+       
+- JSONP更像是一个漏洞，程序员可以利用这个漏洞，实现跨域（可以简单理解为跨域名）传输数据
+- 利用拥有src这个属性的标签的跨域能力，比如<script>、<img>、<iframe>    
 
 ### 原生JS实现JSONP的步骤
->客户端
-1. 定义获取数据后调用的回调函数
-2. 动态生成对服务端JS进行引用的代码
-* 设置url为提供jsonp服务的url地址，并在该url中设置相关callback参数
-* 创建script标签，并设置其src属性
-* 把script标签加入head，此时调用开始。
-
->服务端
-
-将客户端发送的callback参数作为函数名来包裹住JSON数据，返回数据至客户端。    
+**服务端**
+访问 : https://www.runoob.com/try/ajax/jsonp.php?jsoncallback=callbackFunction。
+期望返回数据：["customername1","customername2"]。
+真正返回到客户端的数据显示为: callbackFunction(["customername1","customername2"])。
+服务端文件 jsonp.php 代码为：
+```php
+<?php
+header('Content-type: application/json');
+//获取回调函数名
+$jsoncallback = htmlspecialchars($_REQUEST ['jsoncallback']);
+//json数据
+$json_data = '["customername1","customername2"]';
+//输出jsonp格式的数据
+echo $jsoncallback . "(" . $json_data . ")";
+?> 
+```
+**客户端**
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JSONP 实例</title>
+</head>
+<body>
+<div id="divCustomers"></div>
+<script type="text/javascript">
+function callbackFunction(result, methodName)
+{
+    var html = '<ul>';
+    for(var i = 0; i < result.length; i++)
+    {
+        html += '<li>' + result[i] + '</li>';
+    }
+    html += '</ul>';
+    document.getElementById('divCustomers').innerHTML = html;
+}
+</script>
+<script type="text/javascript" src="https://www.runoob.com/try/ajax/jsonp.php?jsoncallback=callbackFunction"></script>
+</body>
+</html>
+```
 
 
 Ref[]:[JSONP跨域详解](https://www.jianshu.com/p/e1e2920dac95)
