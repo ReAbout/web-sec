@@ -32,9 +32,8 @@ Web安全不同于二进制安全，更多在于经验的积累和知识体系�
 - 运行语言（PHP，.NET，Java Web等）
 - Web中间件（Apache，Nginx，Tomcat等）
 - 数据库系统（Mysql，Mssql等）
-- 容器（Docker等）
-- 操作系统（Linux，Windows等）    
-- 虚拟层（qemu，VM等）
+- 容器（Docker等）操作系统（Linux，Windows等）    
+- 虚拟层（qemu，VM等）    
 #---硬件侧---#
 
 
