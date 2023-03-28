@@ -309,10 +309,10 @@ JSONP（JSON with Padding）
 - 利用拥有src这个属性的标签的跨域能力，比如<script>、<img>、<iframe>    
 
 ### 原生JS实现JSONP的步骤
-**服务端**
-访问 : https://www.runoob.com/try/ajax/jsonp.php?jsoncallback=callbackFunction。
-期望返回数据：["customername1","customername2"]。
-真正返回到客户端的数据显示为: callbackFunction(["customername1","customername2"])。
+**服务端**    
+- 访问 : https://www.runoob.com/try/ajax/jsonp.php?jsoncallback=callbackFunction。
+- 期望返回数据：["customername1","customername2"]。
+- 真正返回数据: callbackFunction(["customername1","customername2"])。
 服务端文件 jsonp.php 代码为：
 ```php
 <?php
@@ -325,7 +325,7 @@ $json_data = '["customername1","customername2"]';
 echo $jsoncallback . "(" . $json_data . ")";
 ?> 
 ```
-**客户端**
+**客户端**    
 ```
 <!DOCTYPE html>
 <html>
