@@ -37,5 +37,11 @@ if [ -z "$JPDA_ADDRESS" ]; then
 
 重启服务即可
 
-#### IDEA配置：
+### 2. Jar 远程调试
+```
+-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=9090
+-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:9090  //jdk9+
+```
+
+### IDEA配置：
 https://blog.51cto.com/u_15127502/3518074
