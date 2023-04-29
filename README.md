@@ -138,9 +138,8 @@
 - [包含漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-Include-PHP.md)
 
 ### 2.12 Java-特性漏洞
-
-- [EL表达式注入](./exp/EXP-Expression-Injection.md)
-- [SPEL表达式注入](./exp/EXP-SPEL-Injection.md)
+- [表达式(EL)注入](./exp/EXP-Expression-Injection.md)
+- [Spring表达式(SPEL)注入](./exp/EXP-SPEL-Injection.md)
 - [SprintBoot漏洞利用清单@LandGrey](https://github.com/LandGrey/SpringBootVulExploit)
 > 按照清单做的配套工具
 - [**[Tool]** SprintBoot漏洞利用工具](https://github.com/0x727/SpringBootExploit)
