@@ -19,7 +19,7 @@
     * [2.6 [注入]命令注入&代码执行](#26-注入命令注入代码执行)
     * [2.7 [注入]Xpath注入](#27-注入xpath注入)
     * [2.8 XML External Entity (XXE)](#28-xml-external-entity-xxe)
-    * [2.9 文件上传漏洞](#29-文件上传漏洞)
+    * [2.9 文件操作漏洞](#29-文件操作漏洞)
     * [2.10 反序列化漏洞](#210-反序列化漏洞)
     * [2.11 包含漏洞](#211-包含漏洞)
     * [2.12 Java-特性漏洞](#212-java-特性漏洞)
@@ -121,7 +121,7 @@
 - [XPath Injection](./exp/EXP-XPath.md)
 ### 2.8 XML External Entity (XXE) 
 - [XXE](./exp/EXP-XXE.md)
-### 2.9 文件上传漏洞
+### 2.9 文件操作漏洞
 - [文件上传漏洞](./exp/EXP-Upload.md)
 > 远古时期的通杀利器
 - [FCKeditor编辑器漏洞利用](./exp/EXP-FCK.md)
