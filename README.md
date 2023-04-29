@@ -140,6 +140,7 @@
 ### 2.12 Java-特性漏洞
 - [表达式(EL)注入](./exp/EXP-Expression-Injection.md)
 - [Spring表达式(SPEL)注入](./exp/EXP-SPEL-Injection.md)
+> Confluence和Struct2都使用OGNL
 - [OGNL表达式注入](./exp/EXP-OGNL-Injection.md)
 - [SprintBoot漏洞利用清单@LandGrey](https://github.com/LandGrey/SpringBootVulExploit)
 > 按照清单做的配套工具
