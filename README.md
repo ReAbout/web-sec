@@ -111,6 +111,7 @@
 - [STTI 总述](./exp/EXP-SSTI-ALL.md)
 - [SSTI -Python](./exp/EXP-SSTI-Python.md)
 - [SSTI -PHP](./exp/EXP-SSTI-PHP.md)
+- [SSTI Payload @payloadbox](https://github.com/payloadbox/ssti-payloads)
 
 
 ### 2.6 [注入]命令注入&代码执行
