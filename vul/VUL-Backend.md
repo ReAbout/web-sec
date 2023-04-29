@@ -74,7 +74,10 @@ CDN主要用于网站动、静态资源的访问加速，也用于DDoS的安全�
 
 ## 0x03 分类（漏洞）
 
-
+### Top 10
+近些年漏洞的威胁分类也发生了很大变化，王道SQL注入也慢慢淡出历史的舞台，最新[owasp top 10](https://owasp.org/www-project-top-ten/)2021版，分类和排名都变化了很多。    
+![](https://owasp.org/www-project-top-ten/assets/images/mapping.png)
+### 常见分类
 注入类的漏洞，都是因为信任了输入参数，进而利用各类表达式语言进行利用。   
 
 | 前/后端 | 类别     | 漏洞   | 目标     |
