@@ -102,6 +102,8 @@
 - [SQL injection - 信息外带(OOB)](./exp/EXP-SQLi-OOB.md)
 
 - [Redis 漏洞利用](./exp/EXP-DB-Redis.md)
+> go写的命令行版本
+- [**[Tool]** 数据库综合利用工具](https://github.com/Hel10-Web/Databasetools)
 > 程序检测参数不能为空，导致空口令无法利用
 - [**[Tool]** 数据库综合利用工具](https://github.com/Ryze-T/Sylas)
 - [**[Tool]** MSSQL利用工具](https://github.com/uknowsec/SharpSQLTools)
