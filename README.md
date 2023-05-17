@@ -291,8 +291,10 @@
 - [**[Tool]** 内网多级代理服务端工具 Venom](https://github.com/Dliv3/Venom/releases)
 >比Venom更加稳定，持续更新【推荐】
 - [**[Tool]** 内网多级代理服务端工具 Stowaway](https://github.com/ph4ntonn/Stowaway)
->HTTP代理，国内更新维护【推荐】
+>HTTP代理，国内更新维护
 - [**[Tool]** HTTP代理 Neo-reGeorg](https://github.com/L-codes/Neo-reGeorg)
+>HTTP代理，号称性能是neo的10倍
+- [**[Tool]** HTTP代理 suo5](https://github.com/zema1/suo5)
 
 ### 4.7 后渗透
 #### 4.7.1 内网信息获取
