@@ -201,6 +201,8 @@
 
 #### 4.1.2 常规信息（单兵）
 - [外网信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
+- [IP地址信息网站 ipip.net](http://ipip.net)
+- [IP反查域名和子域名查询 rapiddns.io](https://rapiddns.io/)
 #### 4.1.3 资产搜索引擎（大数据）
 - [fofa.so](https://fofa.so)   
 - [shodan.io](https://www.shodan.io/)   
@@ -229,13 +231,21 @@
 - [**[Tool]** BurpSutie 插件集合@Mr-xn](https://github.com/Mr-xn/BurpSuite-collections)  
 
 #### 4.2.2漏洞利用(1day)
+##### 4.2.2.1 漏洞利用知识
 - [漏洞索引表]()【待整理】
 > IoT安全 & web安全& 系统漏洞 1day整理
 - [漏洞利用wiki](https://wiki.96.mk/)
 - [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
+##### 4.2.2.2 漏洞利用工具
 - [**[Tool]** Struts2漏洞扫描&利用](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞利用](https://github.com/wyzxxz/shiro_rce_tool)
+
+##### 4.2.2.3 dnslog平台
+> 用于出网检测，无回显命令执行检测
+- [dnslog.cn](http://dnslog.cn/)
+- [ceye](http://ceye.io/)
+
 
 #### 4.2.3 字典
 
@@ -298,7 +308,7 @@
 
 ### 4.7 后渗透
 #### 4.7.1 内网信息获取
->信息获取 & 远程文件操作 & 远程执行命令 & ipc$ & wmic & winrm
+> 信息获取 & 远程文件操作 & 远程执行命令 & ipc$ & wmic & winrm
 - [Windows 主机常用命令](./penetration/PEN-WinCmd.md)
 > 可以提取流量中用户名&密码，NTML Hash，图片等，以及绘制网络拓扑。
 - [**[Tool]** 流量取证工具 BruteShark](https://github.com/odedshimon/BruteShark)
@@ -324,7 +334,6 @@
 - [**[Tool]** CF 云环境利用框架](https://github.com/teamssix/cf)
 
 ### 4.8 反溯源 
-
  - [Linux 痕迹清理](./penetration/PEN-LinuxClear.md)
 
 ### 4.9 协同
