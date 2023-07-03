@@ -83,6 +83,8 @@ redis:
 #### (2) Redis沙盒绕过（CVE-2022-0543）
 - 附加条件： 2.2 <= redis < 5.0.13，2.2 <= redis < 6.0.15，2.2 <= redis < 6.2.5
 - 漏洞利用：https://github.com/aodsec/CVE-2022-0543
+#### （3）结合Jackson和JDK的漏洞利用
+参考 [细数 redis 的几种 getshell 方法](https://paper.seebug.org/1169/)
 
 ## Ref
 - https://www.freebuf.com/column/237263.html
