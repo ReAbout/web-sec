@@ -194,6 +194,9 @@
 > SSTap全局代理也是基于虚拟网卡方案，可惜已停止更新，推荐使用1.0.9.7版本
 - [**[Tool]** Windows下全局代理客户端工具 SSTap](https://github.com/solikethis/SSTap-backup)
 
+> Clash for Windows支持TAP模式基于虚拟网卡方案，走全局
+- [**[Tool]** Windows下全局代理客户端工具 Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
+
 >Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
 - [**[Tool]** Windows下代理客户端工具 Proxifier](https://www.proxifier.com/)
 
