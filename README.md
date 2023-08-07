@@ -5,6 +5,8 @@
 【内容】包括个人对漏洞理解、漏洞利用、代码审计和渗透测试的整理，也收录了他人相关的知识的总结和工具的推荐。    
 
 ## 目录
+* [WEB 安全手册](#web-安全手册)
+  * [目录](#目录)
   * [0x00 技能栈](#0x00-技能栈)
   * [0x01 漏洞理解篇(Vulnerability)](#0x01-漏洞理解篇vulnerability)
     * [1.1 前端](#11-前端)
@@ -42,6 +44,9 @@
         * [4.2.1.1 主动式](#4211-主动式)
         * [4.2.1.2 被动式](#4212-被动式)
       * [4.2.2漏洞利用(1day)](#422漏洞利用1day)
+        * [4.2.2.1 漏洞利用知识](#4221-漏洞利用知识)
+        * [4.2.2.2 漏洞利用工具](#4222-漏洞利用工具)
+        * [4.2.2.3 dnslog平台](#4223-dnslog平台)
       * [4.2.3 字典](#423-字典)
     * [4.3 权限获取&提升](#43-权限获取提升)
       * [4.3.1 Win](#431-win)
@@ -55,6 +60,10 @@
       * [4.4.4 Mobile (Android & ios)](#444-mobile-android--ios)
     * [4.5 免杀](#45-免杀)
     * [4.6 隧道&代理](#46-隧道代理)
+      * [4.6.1 TCP隧道](#461-tcp隧道)
+      * [4.6.2 HTTP隧道](#462-http隧道)
+      * [4.6.3 DNS隧道](#463-dns隧道)
+      * [4.6.3 ICMP隧道](#463-icmp隧道)
     * [4.7 后渗透](#47-后渗透)
       * [4.7.1 内网信息获取](#471-内网信息获取)
       * [4.7.2 轻量级扫描工具](#472-轻量级扫描工具)
@@ -296,6 +305,8 @@
 ### 4.5 免杀
 - [免杀系列文章及配套工具@TideSec](https://github.com/TideSec/BypassAntiVirus)
 ### 4.6 隧道&代理
+
+#### 4.6.1 TCP隧道
 - [SSH 端口转发&开socks5](./penetration/PEN-ssh.md)
 - [Iptables 端口复用](./penetration/PEN-Reuse.md)
  >FRP 客服端和服务端配合的端口转发工具
@@ -304,10 +315,16 @@
 - [**[Tool]** 内网多级代理服务端工具 Venom](https://github.com/Dliv3/Venom/releases)
 >比Venom更加稳定，持续更新【推荐】
 - [**[Tool]** 内网多级代理服务端工具 Stowaway](https://github.com/ph4ntonn/Stowaway)
+#### 4.6.2 HTTP隧道
 >HTTP代理，国内更新维护
 - [**[Tool]** HTTP代理 Neo-reGeorg](https://github.com/L-codes/Neo-reGeorg)
 >HTTP代理，号称性能是neo的10倍
 - [**[Tool]** HTTP代理 suo5](https://github.com/zema1/suo5)
+#### 4.6.3 DNS隧道
+- [**[Tool]** DNS隧道工具 iodine](https://github.com/yarrick/iodine)
+#### 4.6.3 ICMP隧道
+- [**[Tool]** ICMP隧道工具 PingTunnel](https://github.com/esrrhs/pingtunnel)
+
 
 ### 4.7 后渗透
 #### 4.7.1 内网信息获取
