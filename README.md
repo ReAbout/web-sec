@@ -252,7 +252,7 @@
 ##### 4.2.2.2 漏洞利用工具
 - [**[Tool]** Struts2漏洞扫描&利用](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞利用](https://github.com/wyzxxz/shiro_rce_tool)
-
+- [**[Tool]** EBurstGo Exchange 服务器 Web 接口爆破邮箱账户](https://github.com/X1r0z/EBurstGo)
 ##### 4.2.2.3 dnslog平台
 > 用于出网检测，无回显命令执行检测
 - [dnslog.cn](http://dnslog.cn/)
