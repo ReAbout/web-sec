@@ -327,9 +327,11 @@
 
 
 ### 4.7 后渗透
-#### 4.7.1 内网信息获取
-> 信息获取 & 远程文件操作 & 远程执行命令 & ipc$ & wmic & winrm
+#### 4.7.1 内网信息获取&执行
+> 信息获取 & 远程文件操作 & 远程执行命令 & ipc$ & wmi & winrm
 - [Windows 主机常用命令](./penetration/PEN-WinCmd.md)
+> wmi,smb等执行脚本，python方便liunx使用
+- [**[Tool]** Impacket](https://github.com/fortra/impacket)
 > 可以提取流量中用户名&密码，NTML Hash，图片等，以及绘制网络拓扑。
 - [**[Tool]** 流量取证工具 BruteShark](https://github.com/odedshimon/BruteShark)
 > Windows rdp相关的登录记录导出工具。
