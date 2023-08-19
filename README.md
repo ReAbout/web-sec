@@ -5,8 +5,6 @@
 【内容】包括个人对漏洞理解、漏洞利用、代码审计和渗透测试的整理，也收录了他人相关的知识的总结和工具的推荐。    
 
 ## 目录
-* [WEB 安全手册](#web-安全手册)
-  * [目录](#目录)
   * [0x00 技能栈](#0x00-技能栈)
   * [0x01 漏洞理解篇(Vulnerability)](#0x01-漏洞理解篇vulnerability)
     * [1.1 前端](#11-前端)
@@ -59,19 +57,23 @@
       * [4.4.3 PC & Server](#443-pc--server)
       * [4.4.4 Mobile (Android & ios)](#444-mobile-android--ios)
     * [4.5 免杀](#45-免杀)
+      * [4.5.1 二进制免杀](#451-二进制免杀)
+      * [4.5.2 webshell免杀和WAF逃逸](#452-webshell免杀和waf逃逸)
     * [4.6 隧道&代理](#46-隧道代理)
       * [4.6.1 TCP隧道](#461-tcp隧道)
       * [4.6.2 HTTP隧道](#462-http隧道)
       * [4.6.3 DNS隧道](#463-dns隧道)
       * [4.6.3 ICMP隧道](#463-icmp隧道)
     * [4.7 后渗透](#47-后渗透)
-      * [4.7.1 内网信息获取](#471-内网信息获取)
+      * [4.7.1 内网信息获取&执行](#471-内网信息获取执行)
       * [4.7.2 轻量级扫描工具](#472-轻量级扫描工具)
       * [4.7.3 渗透框架](#473-渗透框架)
       * [4.7.4 域渗透](#474-域渗透)
       * [4.7.5 云平台](#475-云平台)
     * [4.8 反溯源](#48-反溯源)
     * [4.9 协同](#49-协同)
+
+
 
 
 ## 0x00 技能栈
@@ -296,14 +298,18 @@
 - [**[Tool]** WebShell管理工具 冰蝎](https://github.com/rebeyond/Behinder)
 - [**[Tool]** WebShell管理工具 哥斯拉](https://github.com/BeichenDream/Godzilla)
 - [收集的各种Webshell@tennc](https://github.com/tennc/webshell)
-- [Webshell免杀&WAF逃逸](./penetration/Webshell-Bypass.md)
 
 #### 4.4.3 PC & Server
 - [**[Tool]** Cobalt Strike ]()
 - [Cobalt Strike资料汇总@zer0yu](https://github.com/zer0yu/Awesome-CobaltStrike)
 #### 4.4.4 Mobile (Android & ios)  
 ### 4.5 免杀
+#### 4.5.1 二进制免杀
 - [免杀系列文章及配套工具@TideSec](https://github.com/TideSec/BypassAntiVirus)
+#### 4.5.2 webshell免杀和WAF逃逸
+- [Webshell免杀&WAF逃逸](./penetration/Webshell-Bypass.md)
+- [**[Tool]** 哥斯拉WebShell免杀生成@Tas9er](https://github.com/Tas9er/ByPassGodzilla)
+- [**[Tool]** 冰蝎WebShell免杀生成@Tas9er](https://github.com/Tas9er/ByPassBehinder)
 ### 4.6 隧道&代理
 
 #### 4.6.1 TCP隧道
