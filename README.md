@@ -205,7 +205,7 @@
 > SSTap全局代理也是基于虚拟网卡方案，可惜已停止更新，推荐使用1.0.9.7版本
 - [**[Tool]** Windows下全局代理客户端工具 SSTap](https://github.com/solikethis/SSTap-backup)
 
-> Clash for Windows支持TAP模式基于虚拟网卡方案，走全局【推荐】
+> 【推荐!】Clash for Windows支持TAP模式基于虚拟网卡方案，走全局
 - [**[Tool]** Windows下全局代理客户端工具 Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg)
 
 >Proxifier 全局代理支持并不好，可以设置规则选择指定程序走代理或直连
@@ -322,11 +322,11 @@
 #### 4.6.1 TCP隧道
 - [SSH 端口转发&开socks5](./penetration/PEN-ssh.md)
 - [Iptables 端口复用](./penetration/PEN-Reuse.md)
- >FRP 客服端和服务端配合的端口转发工具
+ > FRP 客服端和服务端配合的端口转发工具
 - [**[Tool]** 反向端口转发工具 FRP](https://github.com/fatedier/frp)
->Venom 可以嵌套多层代理，适合多层无外网的渗透测试，停止更新
+> Venom 可以嵌套多层代理，适合多层无外网的渗透测试，停止更新
 - [**[Tool]** 内网多级代理服务端工具 Venom](https://github.com/Dliv3/Venom/releases)
->比Venom更加稳定，持续更新【推荐】
+> 【推荐!】比Venom更加稳定，持续更新
 - [**[Tool]** 内网多级代理服务端工具 Stowaway](https://github.com/ph4ntonn/Stowaway)
 #### 4.6.2 HTTP隧道
 >HTTP代理，国内更新维护
