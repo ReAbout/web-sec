@@ -270,15 +270,21 @@
 
 ### 4.3 权限获取&提升
 #### 4.3.1 Win
+**权限获取：**
 > 离线|在线|破解
 - [Windows 认证凭证获取](./penetration/PEN-GetHash.md)  
-- [**[Tool]** mimikatz Windows认证凭证提取神器](https://github.com/gentilkiwi/mimikatz) 
+- [**[Tool]** mimikatz Windows认证凭证提取神器](https://github.com/gentilkiwi/mimikatz)
+**提权:**
+- [Windows提权检测工具 Windows Exploit Suggester](https://github.com/bitsadmin/wesng)
 > 已经停止更新到CVE-2018
 - [Windows提权漏洞集合@SecWiki](https://github.com/SecWiki/windows-kernel-exploits)
+- [PetitPotato for Win10](https://github.com/wh0amitz/PetitPotato)
 #### 4.3.2 Linux
+**权限获取：**
 - [Linux 认证凭证获取](./penetration/PEN-GetHash-Linux.md)
-- [Linux setuid提权](./penetration/PEN-Setuid-Linux.md)
+**提权:**
 - [Linux 提权检测脚本 lse.sh](https://github.com/diego-treitos/linux-smart-enumeration)
+- [Linux setuid提权](./penetration/PEN-Setuid-Linux.md)
 > 已经停止更新到CVE-2018
 - [Linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
 
@@ -311,7 +317,6 @@
 - [**[Tool]** 哥斯拉WebShell免杀生成@Tas9er](https://github.com/Tas9er/ByPassGodzilla)
 - [**[Tool]** 冰蝎WebShell免杀生成@Tas9er](https://github.com/Tas9er/ByPassBehinder)
 ### 4.6 隧道&代理
-
 #### 4.6.1 TCP隧道
 - [SSH 端口转发&开socks5](./penetration/PEN-ssh.md)
 - [Iptables 端口复用](./penetration/PEN-Reuse.md)
@@ -368,6 +373,5 @@
 - [HackMD markdown协同工具(Docker版)](https://hackmd.io/c/codimd-documentation/%2Fs%2Fcodimd-docker-deployment)
 
 ## Other
-
 [toc目录生成工具](https://houbb.github.io/opensource/markdown-toc/)
 
