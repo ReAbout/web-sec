@@ -259,6 +259,8 @@
 > 用于出网检测，无回显命令执行检测
 - [dnslog.cn](http://dnslog.cn/)
 - [ceye](http://ceye.io/)
+>【推荐!】好用，开源
+- [requestrepo](https://requestrepo.com/)
 
 
 #### 4.2.3 字典
