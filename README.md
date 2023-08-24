@@ -320,6 +320,7 @@
 - [Webshell免杀&WAF逃逸](./penetration/Webshell-Bypass.md)
 - [**[Tool]** 哥斯拉WebShell免杀生成@Tas9er](https://github.com/Tas9er/ByPassGodzilla)
 - [**[Tool]** 冰蝎WebShell免杀生成@Tas9er](https://github.com/Tas9er/ByPassBehinder)
+- [**[Tool]** 免杀webshell生成集合工具](https://github.com/cseroad/Webshell_Generate)
 ### 4.6 隧道&代理
 #### 4.6.1 TCP隧道
 - [SSH 端口转发&开socks5](./penetration/PEN-ssh.md)
