@@ -217,6 +217,8 @@
 - [外网信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
 - [IP地址信息网站 ipip.net](http://ipip.net)
 - [IP反查域名和子域名查询 rapiddns.io](https://rapiddns.io/)
+> 有域名层级图，更直观
+- [子域名查询 dnsdumpster](https://dnsdumpster.com/)
 #### 4.1.3 资产搜索引擎（大数据）
 - [fofa.so](https://fofa.so)   
 - [shodan.io](https://www.shodan.io/)   
@@ -376,7 +378,8 @@
  - [攻击和反制@Getshell](https://github.com/Getshell/Fanzhi)
 ### 4.9 协同
 - [HackMD markdown协同工具(Docker版)](https://hackmd.io/c/codimd-documentation/%2Fs%2Fcodimd-docker-deployment)
-
+> 简单，美观
+- [文件管理系统](https://github.com/filebrowser/filebrowser)
 ## Other
 [toc目录生成工具](https://houbb.github.io/opensource/markdown-toc/)
 
