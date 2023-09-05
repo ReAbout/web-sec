@@ -284,6 +284,7 @@
 > 已经停止更新到CVE-2018
 - [Windows提权漏洞集合@SecWiki](https://github.com/SecWiki/windows-kernel-exploits)
 - [PetitPotato for Win10](https://github.com/wh0amitz/PetitPotato)
+- [CVE-2022-24481](https://github.com/robotMD5/CVE-2022-24481-POC)
 #### 4.3.2 Linux
 **权限获取：**    
 - [Linux 认证凭证获取](./penetration/PEN-GetHash-Linux.md)
