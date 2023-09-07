@@ -72,11 +72,22 @@ O:<class_name_length>:"<class_name>":<number_of_properties>:{<properties>}
 ### 跳过__wakeup 执行
 
 
+[php反序列化中wakeup绕过总结](https://fushuling.com/index.php/2023/03/11/php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%ADwakeup%E7%BB%95%E8%BF%87%E6%80%BB%E7%BB%93/) 这篇文章总结了5个方法：
+
+#### 1）CVE-2016-7124
 这里就要用到CVE-2016-7124漏洞，当序列化字符串中表示对象属性个数的值大于真实的属性个数时会跳过__wakeup的执行
 ```
 构造序列化对象：O:5:"SoFun":1:{S:7:"\00*\00file";s:8:"flag.php";}
 绕过__wakeup：O:5:"SoFun":2:{S:7:"\00*\00file";s:8:"flag.php";}
 ```
+#### 2）php引用赋值&
+
+#### 3）fast-destruct
+
+#### 4）php issue#9618
+
+#### 5）使用C绕过
+
 
 ### 字符溢出控制序列化内容
 
