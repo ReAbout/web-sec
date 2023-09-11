@@ -368,6 +368,7 @@
 - [**[Tool]** 开源图形化内网渗透工具 Viper](https://github.com/FunnyWolf/Viper)
 #### 4.7.4 域渗透
 - [域渗透@uknowsec](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
+- 域提权：MS14-068,CVE-2020-1472(Zerologon),CVE-2021-42287/CVE-2021-42278,CVE-2022-26923
 
 #### 4.7.5 云平台
 >通过accesskey获取相关主机权限执行命令
