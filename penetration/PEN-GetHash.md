@@ -33,7 +33,8 @@ mimikatz # lsadump::sam /sam:sam.hive /system:system.hive
 
 #### （1）目标主机lsass.exe dump内存
 
-[内网渗透-免杀抓取windows hash](https://www.freebuf.com/column/231880.html)介绍了一些方法，主要是为了过杀软，如果能登录3389可以直接用任务管理器右键导出lsass.exe的内存。
+- [内网渗透-免杀抓取windows hash](https://www.freebuf.com/column/231880.html)介绍了一些方法，主要是为了过杀软，如果能登录3389可以直接用任务管理器右键导出lsass.exe的内存。
+- 微软VStudio2022自带的dumpminitool程序也可以免杀，毕竟是微软自己的工具，找到lsass进程号，dump内存。
 
 #### （2）通过mimikatz导出Hash
 ```
