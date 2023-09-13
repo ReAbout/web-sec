@@ -74,13 +74,15 @@ xdebug.remote_handler="dbgp"
 
 ## 0x04 php报错开启
 
-修改php.ini
+### php单文件： 
 ```
-//禁用错误报告
-error_reporting(0);
-//报告运行时错误
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
-//报告所有错误
-error_reporting(E_ALL);
+ini_set("display_errors", "On");
+error_reporting(E_ALL | E_STRICT)
+```
+### 修改php.ini：
+```
+display_errors = On
+error_reporting  =  E_ALL & ~E_NOTICE
+
 ```
 
