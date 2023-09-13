@@ -32,7 +32,7 @@ xdebug.remote_autostart = 1
 Windows系统 + Xdebug
 ### （2）Install on windows
 可以直接找对应的php版本的xdebug，都是编译好的。    
-https://xdebug.org/download/historical
+https://xdebug.org/download/historical     
 配置php.ini，详情见xdebug配置
 ## 0x02 客户端工具配置
 
