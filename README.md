@@ -241,7 +241,8 @@
  - [**[Tool]** AWVS  Docker版](https://hub.docker.com/r/secfa/docker-awvs)
  - [**[Tool]** 长亭的扫描器 Xray](https://github.com/chaitin/xray)   
  - [**[Tool]** Vulmap](https://github.com/zhzyker/vulmap)   
- - [**[Tool]** 红队综合渗透框架SatanSword@Lucifer1993](https://github.com/Lucifer1993/SatanSword)   
+ - [**[Tool]** 红队综合渗透框架SatanSword@Lucifer1993](https://github.com/Lucifer1993/SatanSword)
+ - [**[Tool]** 国内OA系统漏洞检测](https://github.com/LittleBear4/OA-EXPTOOL)
 ##### 4.2.1.2 被动式
 >将Burpusuite打造成一个被动式扫描器   
 - [**[Tool]** BurpSutie 插件集合@Mr-xn](https://github.com/Mr-xn/BurpSuite-collections)  
