@@ -177,6 +177,8 @@
 - [PHP代码审计入门指南@burpheart](https://github.com/burpheart/PHPAuditGuideBook)
 ### 3.2 JAVA
 - [Java调试环境的搭建](./audit/AUD-Java-Debug.md)
+>自己整理的Java代码审计
+- [Java代码审计手册](https://github.com/ReAbout/audit-java)
 - [Java代码审计@cn-panda](https://github.com/cn-panda/JavaCodeAudit)
 - [Java安全@Y4tacker](https://github.com/Y4tacker/JavaSec)
 - [Java漏洞平台@j3ers3](https://github.com/j3ers3/Hello-Java-Sec)
