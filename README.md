@@ -323,8 +323,9 @@
 ### 4.5 免杀
 #### 4.5.1 二进制免杀
 - [免杀系列文章及配套工具@TideSec](https://github.com/TideSec/BypassAntiVirus)
-> 带界面的shellcode加载器
+> shellcode加载器
 - [**[Tool]**  LoaderGo免杀工具](https://github.com/di0xide-U/LoaderGo)
+- [**[Tool]**  千机-红队免杀木马自动生成器 By Hyyrent](https://github.com/Pizz33/Qianji)
 #### 4.5.2 webshell免杀和WAF逃逸
 - [Webshell免杀&WAF逃逸](./penetration/Webshell-Bypass.md)
 - [**[Tool]** 哥斯拉WebShell免杀生成@Tas9er](https://github.com/Tas9er/ByPassGodzilla)
