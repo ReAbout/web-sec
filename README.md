@@ -260,6 +260,9 @@
 - [**[Tool]** Struts2漏洞扫描&利用](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞利用](https://github.com/wyzxxz/shiro_rce_tool)
 - [**[Tool]** EBurstGo Exchange 服务器 Web 接口爆破邮箱账户](https://github.com/X1r0z/EBurstGo)
+- [**[Tool]** ConfluenceMemshell Confluence利用工具(CVE-2021-26084，CVE-2022-26134，CVE_2023_22515，CVE-2023-22527)](https://github.com/Lotus6/ConfluenceMemshell)
+- [**[Tool]** Fastjson漏洞快速利用框架](https://github.com/c0ny1/FastjsonExploit)
+- [Fastjson姿势技巧集合@safe6Sec](https://github.com/safe6Sec/Fastjson)
 ##### 4.2.2.3 dnslog平台
 > 用于出网检测，无回显命令执行检测
 - [dnslog.cn](http://dnslog.cn/)
