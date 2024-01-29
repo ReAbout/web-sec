@@ -366,6 +366,8 @@
 > Windows rdp相关的登录记录导出工具。
 - [**[Tool]** 浏览器数据导出解密工具](https://github.com/moonD4rk/HackBrowserData)
 - [**[Tool]** SharpRDPLog](https://github.com/Adminisme/SharpRDPLog)
+ > Xshell在本地保存的密码进行解密
+- [**[Tool]** SharpXDecrypt](https://github.com/JDArmy/SharpXDecrypt)
 ####  4.7.2 轻量级扫描工具
 > 内网扫描神器，go语言跨平台，效率快，支持各类口令爆破，还有主机识别和web服务识别。
 - [**[Tool]** fscan](https://github.com/shadow1ng/fscan)
