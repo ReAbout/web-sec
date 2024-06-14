@@ -327,13 +327,14 @@
 #### 4.5.1 二进制免杀
 - [免杀系列文章及配套工具@TideSec](https://github.com/TideSec/BypassAntiVirus)
 > shellcode加载器
-- [**[Tool]**  LoaderGo免杀工具](https://github.com/di0xide-U/LoaderGo)
-- [**[Tool]**  千机-红队免杀木马自动生成器 By Hyyrent](https://github.com/Pizz33/Qianji)
+- [**[Tool]**  LoaderGo免杀工具@di0xide-U](https://github.com/di0xide-U/LoaderGo)
+- [**[Tool]**  千机-红队免杀木马自动生成器@Pizz33](https://github.com/Pizz33/Qianji)
 #### 4.5.2 webshell免杀和WAF逃逸
 - [Webshell免杀&WAF逃逸](./penetration/Webshell-Bypass.md)
 - [**[Tool]** 哥斯拉WebShell免杀生成@Tas9er](https://github.com/Tas9er/ByPassGodzilla)
 - [**[Tool]** 冰蝎WebShell免杀生成@Tas9er](https://github.com/Tas9er/ByPassBehinder)
-- [**[Tool]** 免杀webshell生成集合工具](https://github.com/cseroad/Webshell_Generate)
+- [**[Tool]** 免杀webshell生成集合工具@cseroad](https://github.com/cseroad/Webshell_Generate)
+- [**[Tool]** XG拟态-Webshell静态免杀+流量逃逸@xiaogang000](https://github.com/xiaogang000/XG_NTAI)
 ### 4.6 隧道&代理
 #### 4.6.1 TCP隧道
 - [SSH 端口转发&开socks5](./penetration/PEN-ssh.md)
