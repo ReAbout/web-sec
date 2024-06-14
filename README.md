@@ -284,7 +284,7 @@
 > 离线|在线|破解
 - [Windows 认证凭证获取](./penetration/PEN-GetHash.md)  
 - [**[Tool]** mimikatz Windows认证凭证提取神器](https://github.com/gentilkiwi/mimikatz)
-   
+- [**[Tool]** go-secdump 利用smb远程无文件落地获取@jfjallid](https://github.com/jfjallid/go-secdump)
 **提权:**    
 - [Windows提权检测工具 Windows Exploit Suggester](https://github.com/bitsadmin/wesng)
 > 已经停止更新到CVE-2018
@@ -360,7 +360,7 @@
 #### 4.7.1 内网信息获取&执行
 > 信息获取 & 远程文件操作 & 远程执行命令 & ipc$ & wmi & winrm
 - [Windows 主机常用命令](./penetration/PEN-WinCmd.md)
-> wmi,smb等执行脚本，python方便liunx使用
+> 超强神器，wmi,smb等执行脚本，python方便liunx使用
 - [**[Tool]** Impacket](https://github.com/fortra/impacket)
 > 可以提取流量中用户名&密码，NTML Hash，图片等，以及绘制网络拓扑。
 - [**[Tool]** 流量取证工具 BruteShark](https://github.com/odedshimon/BruteShark)
