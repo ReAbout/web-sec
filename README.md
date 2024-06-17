@@ -284,7 +284,7 @@
 > 离线|在线|破解
 - [Windows 认证凭证获取](./penetration/PEN-GetHash.md)  
 - [**[Tool]** mimikatz Windows认证凭证提取神器](https://github.com/gentilkiwi/mimikatz)
-- [**[Tool]** go-secdump 利用smb远程无文件落地获取@jfjallid](https://github.com/jfjallid/go-secdump)
+- [**[Tool]** go-secdump 利用smb远程无文件落地获取@jfjallid](https://github.com/jfjallid/go-secdump)    
 **提权:**    
 - [Windows提权检测工具 Windows Exploit Suggester](https://github.com/bitsadmin/wesng)
 > 已经停止更新到CVE-2018
