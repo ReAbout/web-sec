@@ -137,6 +137,7 @@
 - [XXE](./exp/EXP-XXE.md)
 ### 2.9 文件操作漏洞
 - [文件上传漏洞](./exp/EXP-Upload.md)
+- [文件上传漏洞WAF绕过-JSP](./exp/EXP-Upload-JSP.md)
 > 远古时期的通杀利器
 - [FCKeditor编辑器漏洞利用](./exp/EXP-FCK.md)
 
