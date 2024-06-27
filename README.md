@@ -392,6 +392,8 @@
 - 域提权：MS14-068,CVE-2020-1472(Zerologon),CVE-2021-42287/CVE-2021-42278,CVE-2022-26923
 
 #### 4.7.5 云平台
+>k8s渗透
+- [从零开始的Kubernetes攻防@neargle](https://github.com/neargle/my-re0-k8s-security)   
 >通过accesskey获取相关主机权限执行命令
 - [**[Tool]** Aliyun Accesskey Tool](https://github.com/mrknow001/aliyun-accesskey-Tools)
 - [**[Tool]** CF 云环境利用框架](https://github.com/teamssix/cf)
