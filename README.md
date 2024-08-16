@@ -344,9 +344,17 @@
 ### 4.5 免杀
 #### 4.5.1 二进制免杀
 - [免杀系列文章及配套工具@TideSec](https://github.com/TideSec/BypassAntiVirus)
-> shellcode加载器
+##### shellcode加载器
 - [**[Tool]**  LoaderGo免杀工具@di0xide-U](https://github.com/di0xide-U/LoaderGo)
 - [**[Tool]**  千机-红队免杀木马自动生成器@Pizz33](https://github.com/Pizz33/Qianji)
+- [**[Tool]**  RingQ@T4y1oR](https://github.com/T4y1oR/RingQ)
+- [**[Tool]**  darkPulse@fdx-xdf](https://github.com/fdx-xdf/darkPulse)
+##### kill杀软
+- [**[Tool]**  强关进程EDR-XDR-AV-Killer@EvilBytecode](https://github.com/EvilBytecode/EDR-XDR-AV-Killer)  
+- [**[Tool]**  强关Windows defender@es3n1n](https://github.com/es3n1n/no-defender)
+##### rootkit
+- [**[Tool]**  shadow-rs@joaoviictorti](https://github.com/joaoviictorti/shadow-rs)
+
 #### 4.5.2 webshell免杀和WAF逃逸
 - [Webshell免杀&WAF逃逸](./penetration/Webshell-Bypass.md)
 - [**[Tool]** 哥斯拉WebShell免杀生成@Tas9er](https://github.com/Tas9er/ByPassGodzilla)
