@@ -145,7 +145,7 @@
 >php,java只能序列化数据，python可以序列化代码。   
 - [反序列化漏洞-PHP](./exp/EXP-PHP-Unserialize.md)
 - [反序列化漏洞-Java](./exp/EXP-Java-Unserialize.md)
-- [Java反序列化高版本JDK漏洞利用](./exp/EXP-Java-Unserialize-Bypass-Jdk.md)    
+- [绕过高版本Jdk的限制进行Jndi注入利用](./exp/EXP-Java-Unserialize-Bypass-Jdk.md)    
 - [**[Tool]** 反序列化漏洞利用工具-Java ysoserial](https://github.com/frohoff/ysoserial)
 > 拓展payload和添加脏数据绕过waf功能
 - [**[Tool]** 反序列化漏洞利用工具 针对Java ysoserial进行拓展](https://github.com/su18/ysoserial)
