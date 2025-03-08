@@ -175,7 +175,7 @@
 
 ### 3.1 PHP
 >自己整理的PHP代码审计
-- [Java代码审计手册](https://github.com/ReAbout/audit-php)
+- [PHP代码审计手册](https://github.com/ReAbout/audit-php)
 - [PHP代码审计@bowu678](https://github.com/bowu678/php_bugs)
 - [PHP代码审计入门指南@burpheart](https://github.com/burpheart/PHPAuditGuideBook)
 ### 3.2 JAVA
