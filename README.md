@@ -422,6 +422,7 @@
 ### 4.8 反溯源 
  - [Linux 痕迹清理](./penetration/PEN-LinuxClear.md)
  - [攻击和反制@Getshell](https://github.com/Getshell/Fanzhi)
+ - [**[Tool]** xhide linux进程名隐藏](https://github.com/chenkaie/junkcode/blob/master/xhide.c)    
 ### 4.9 协同
 - [HackMD markdown协同工具(Docker版)](https://hackmd.io/c/codimd-documentation/%2Fs%2Fcodimd-docker-deployment)
 > 简单，美观
