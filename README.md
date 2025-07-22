@@ -147,8 +147,10 @@
 - [反序列化漏洞-Java](./exp/EXP-Java-Unserialize.md)
 - [绕过高版本Jdk的限制进行Jndi注入利用](./exp/EXP-Java-Unserialize-Bypass-Jdk.md)    
 - [**[Tool]** 反序列化漏洞利用工具-Java ysoserial](https://github.com/frohoff/ysoserial)
-> 拓展payload和添加脏数据绕过waf功能
-- [**[Tool]** 反序列化漏洞利用工具 针对Java ysoserial进行拓展](https://github.com/su18/ysoserial)
+> 拓展payload和内存马
+- ~[**[Tool]** 反序列化漏洞利用工具 Y4er](https://github.com/Y4er/ysoserial)~
+> 拓展payload和添加脏数据绕过waf功能（已删库）
+- ~[**[Tool]** 反序列化漏洞利用工具 su18](https://github.com/su18/ysoserial)~
 
 ### 2.11 包含漏洞
 - [包含漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-Include-PHP.md)
