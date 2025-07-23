@@ -148,7 +148,7 @@
 - [绕过高版本Jdk的限制进行Jndi注入利用](./exp/EXP-Java-Unserialize-Bypass-Jdk.md)    
 - [**[Tool]** 反序列化漏洞利用工具-Java ysoserial](https://github.com/frohoff/ysoserial)
 > 拓展payload和内存马
-- ~[**[Tool]** 反序列化漏洞利用工具 Y4er](https://github.com/Y4er/ysoserial)~
+- [**[Tool]** 反序列化漏洞利用工具 Y4er](https://github.com/Y4er/ysoserial)
 > 拓展payload和添加脏数据绕过waf功能（已删库）
 - ~[**[Tool]** 反序列化漏洞利用工具 su18](https://github.com/su18/ysoserial)~
 
