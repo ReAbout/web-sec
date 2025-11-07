@@ -13,7 +13,7 @@
   * [0x02 漏洞利用篇(Exploit)](#0x02-漏洞利用篇exploit)
     * [2.1 前端安全-XSS](#21-前端安全-xss)
     * [2.2 前端安全-CSRF](#22-前端安全-csrf)
-    * [2.9 Server-side request forgery (SSRF)](#29-server-side-request-forgery-ssrf)
+    * [2.3 Server-side request forgery (SSRF)](#29-server-side-request-forgery-ssrf)
     * [2.4  [注入]SQL注入&数据库漏洞利用](#24--注入sql注入数据库漏洞利用)
     * [2.5 [注入]模板注入 Server Side Template Injection (SSTI)](#25-注入模板注入-server-side-template-injection-ssti)
     * [2.6 [注入]命令注入&代码执行](#26-注入命令注入代码执行)
@@ -102,7 +102,7 @@
  ### 2.2 前端安全-CSRF
 > CSRF 利用的是网站对用户网页浏览器的信任   
 - [Client-side request forgery (CSRF)](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-CSRF.md)
-### 2.9 Server-side request forgery (SSRF)
+### 2.3 Server-side request forgery (SSRF)
 - [SSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSRF.md)
 
 ###  2.4  [注入]SQL注入&数据库漏洞利用
