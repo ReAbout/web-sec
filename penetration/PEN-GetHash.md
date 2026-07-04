@@ -1,13 +1,24 @@
-# Windows Hash提取
+# Windows Hash 与明文凭证获取
 
-## 0x00 基础知识
+## 0x00 概述
 
-- LM Hash Windows Vista和Windows Server 2008以前的系统还会使用
-- NTLM Hash
-- Net-NTLM Hash 网络环境下NTLM认证中的hash
+本篇记录 Windows 环境下几类常见认证材料：
 
-[Windows下的密码hash——NTLM hash和Net-NTLM hash介绍](https://3gstudent.github.io/Windows%E4%B8%8B%E7%9A%84%E5%AF%86%E7%A0%81hash-NTLM-hash%E5%92%8CNet-NTLM-hash%E4%BB%8B%E7%BB%8D)
-## 0x01 离线获取Hash
+- `LM Hash`
+- `NTLM Hash`
+- `Net-NTLM Hash`
+- LSASS 内存中的明文或票据相关信息
+
+适用场景通常分为两类：
+
+- 已拿到管理员权限，准备离线导出或转存凭证材料。
+- 已能访问系统内存或关键文件，准备做本地分析。
+
+基础参考：
+
+- [Windows 下的密码 Hash 介绍](https://3gstudent.github.io/Windows%E4%B8%8B%E7%9A%84%E5%AF%86%E7%A0%81hash-NTLM-hash%E5%92%8CNet-NTLM-hash%E4%BB%8B%E7%BB%8D)
+
+## 0x01 离线获取 Hash
 ### 1. 导出SAM和SYSTEM表方法
 #### （1）目标主机注册表导出文件
 ```
@@ -73,7 +84,8 @@ ntdsutil snapshot "delete GUID" quit quit
 ntdsutil snapshot "List All" quit quit
 ntdsutil snapshot "List Mounted" quit quit
  ```
-## 0x02 主机获取密码
+
+## 0x02 主机获取明文密码
 
 ### 获取明文密码
 
@@ -107,6 +119,13 @@ mimikatz.exe "sekurlsa::minidump lsass.dmp" "sekurlsa::logonPasswords full" "exi
 - [Ophcrack 在线破解](https://www.objectif-securite.ch/en/ophcrack)
 
 - [Cmd5在线破解](https://www.cmd5.com/)
+
+## 0x04 注意事项
+
+- 离线导出 `SAM`、`SYSTEM`、`SECURITY` 时，最好一次性带全，避免后续解析不完整。
+- 处理 `lsass.exe` 内存时，稳定性和查杀风险都明显高于注册表导出。
+- 域控上导出 `ntds.dit` 风险最高，操作前先确认回收和清理路径。
+- “能拿到 Hash” 不代表“能直接拿到明文”，两者后续处理方式不同。
 
 ## Ref
 

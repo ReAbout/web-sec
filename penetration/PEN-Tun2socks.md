@@ -1,17 +1,24 @@
-# Windows下socks客户端全局代理终极解决方案——tun2socks
+# Windows 下使用 tun2socks 接管流量
 
+## 0x01 概述
 
-需求： 通过socks server相关工具已经开启进入内网的socks5代理，在windows攻击机上想全局走socks5代理，那如何解决？     
-解决方案： 用tun2socks 启一个虚拟网卡，该网卡流量都走制定配置好的socks5服务，然后配置路由，全局或者部分ip段指定该网卡为网关。    
+适用于已经拿到一个可用的 `SOCKS5` 代理，希望让 Windows 攻击机上的指定网段或全局流量都走该代理的场景。
 
-### 0x01 准备
+核心思路：
+
+1. 用 `tun2socks` 创建虚拟网卡。
+2. 把虚拟网卡流量转进 SOCKS5 代理。
+3. 用路由控制哪些目标网段走这张虚拟网卡。
+
+## 0x02 准备
 
 1. 要使用 tun2socks，需要创建一个虚拟网卡，首先下载 Tap-windows 并安装：    
 下载地址：http://build.openvpn.net/downloads/releases/tap-windows-9.22.1-I602.exe   
 2. 下载tun2socks工具     
 下载地址：https://github.com/eycorsican/go-tun2socks/releases/download/v1.11.2/tun2socks-windows-4.0-amd64.exe.zip
 >PS:采用推荐版本，最新版适配有问题
-### 0x02 执行
+
+## 0x03 执行
 
 #### 运行tun2socks
 `tun2socks-windows-4.0-amd64.exe -tunAddr 10.0.0.2 -tunGw 10.0.0.1 -proxyType socks -proxyServer 127.0.0.1:1080 -dnsServer 8.8.8.8,8.8.4.4`
@@ -32,6 +39,12 @@
 >更改默认路由
 `route add x.x.x.x 192.168.101.1 metric 5`
 >还要加一条路由让去我们代理服务器的流量发到原来的网关（192.168.101.1）
+
+## 0x04 注意事项
+
+- 先确认本机到 SOCKS5 服务器本身的路由不要被默认路由覆盖。
+- 如果出现 DNS 泄漏，要同时检查系统 DNS、浏览器 DoH 和代理软件设置。
+- 全局代理前先验证单网段代理可用，再切默认路由。
 
 ## Ref
 - https://tachyondevel.medium.com/%E6%95%99%E7%A8%8B-%E5%9C%A8-windows-%E4%B8%8A%E4%BD%BF%E7%94%A8-tun2socks-%E8%BF%9B%E8%A1%8C%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86-aa51869dd0d

