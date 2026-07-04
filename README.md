@@ -98,12 +98,12 @@
 ## 0x02 漏洞利用篇(Exploit)
 ### 2.1 前端安全-XSS
 > XSS 利用的是用户对指定网站的信任 
-- [Cross Site Scripting (XSS)](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-XSS.md)
+- [Cross Site Scripting (XSS)](./exp/EXP-XSS.md)
  ### 2.2 前端安全-CSRF
 > CSRF 利用的是网站对用户网页浏览器的信任   
-- [Client-side request forgery (CSRF)](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-CSRF.md)
+- [Client-side request forgery (CSRF)](./exp/EXP-CSRF.md)
 ### 2.3 Server-side request forgery (SSRF)
-- [SSRF](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-SSRF.md)
+- [SSRF](./exp/EXP-SSRF.md)
 
 ###  2.4  [注入]SQL注入&数据库漏洞利用
 - [SQL injection - MySQL](./exp/EXP-SQLi-MySQL.md)
@@ -121,7 +121,7 @@
 
 ### 2.5 [注入]模板注入 Server Side Template Injection (SSTI)
 > MVC架构中，模板参数恶意输入产生的安全问题
-- [STTI 总述](./exp/EXP-SSTI-ALL.md)
+- [SSTI 总述](./exp/EXP-SSTI-ALL.md)
 - [SSTI -Python](./exp/EXP-SSTI-Python.md)
 - [SSTI -PHP](./exp/EXP-SSTI-PHP.md)
 - [SSTI Payload @payloadbox](https://github.com/payloadbox/ssti-payloads)
@@ -153,7 +153,7 @@
 - ~[**[Tool]** 反序列化漏洞利用工具 su18](https://github.com/su18/ysoserial)~
 
 ### 2.11 包含漏洞
-- [包含漏洞-PHP](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-Include-PHP.md)
+- [包含漏洞-PHP](./exp/EXP-Include-PHP.md)
 
 ### 2.12 Java-特性漏洞
 - [表达式(EL)注入](./exp/EXP-Expression-Injection.md)
@@ -166,7 +166,7 @@
 
 
 ### 2.13 NodeJs-特性漏洞
-- [Node.js 原型链污染](https://github.com/ReAbout/web-exp/blob/master/exp/EXP-nodejs-proto.md)
+- [Node.js 原型链污染](./exp/EXP-nodejs-proto.md)
 ### 2.14 不一致性
 > 利用前后DNS解析的不一致（劫持或者逻辑问题）   
 - [DNS rebinding 攻击](./exp/EXP-DNS-Rebinding.md)
@@ -220,7 +220,7 @@
 - [**[Tool]** Windows版 proxychains](https://github.com/shunf4/proxychains-windows)
 
 #### 4.1.2 常规信息（单兵）
-- [外网信息收集思路](https://github.com/ReAbout/web-exp/blob/master/penetration/PEN-Info.md)
+- [外网信息收集思路](./penetration/PEN-Info.md)
 - [IP地址信息网站 ipip.net](http://ipip.net)
 - [IP反查域名和子域名查询 rapiddns.io](https://rapiddns.io/)
 > 有域名层级图，更直观
@@ -243,6 +243,7 @@
 
 #### 4.2.1 漏洞验证（扫描器）
 > 工欲其善必先利器
+- [扫描器专题](./penetration/PEN-Scanner.md)
 ##### 4.2.1.1 主动式
  - [**[Tool]** AWVS  Docker版](https://hub.docker.com/r/secfa/docker-awvs)
  - [**[Tool]** 长亭的扫描器 Xray](https://github.com/chaitin/xray)   
@@ -315,6 +316,7 @@
 **提权:**     
 - [Linux 提权检测脚本 lse.sh](https://github.com/diego-treitos/linux-smart-enumeration)
 - [Linux setuid提权](./penetration/PEN-Setuid-Linux.md)
+- [Linux经典漏洞提权总结](./penetration/PEN-Linux-LPE.md)
 > 已经停止更新到CVE-2018
 - [Linux提权漏洞集合@SecWiki](https://github.com/SecWiki/linux-kernel-exploits)
 
