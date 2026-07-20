@@ -28,9 +28,19 @@
 - [PEN-Setuid-Linux.md](./PEN-Setuid-Linux.md)：Linux SUID 提权。
 - [PEN-Linux-LPE.md](./PEN-Linux-LPE.md)：Linux 常见本地提权枚举与利用方向。
 
+## 域渗透
+
+- [PEN-BloodHound.md](./PEN-BloodHound.md)：域信息收集与 BloodHound 图谱分析。
+- [PEN-Kerberos.md](./PEN-Kerberos.md)：Kerberos 认证攻击（Roasting、票据伪造、委派）。
+
+## 云上攻防
+
+- [PEN-Cloud.md](./PEN-Cloud.md)：AKSK 利用、元数据服务、对象存储攻击面。
+
 ## 痕迹与运维辅助
 
 - [PEN-LinuxClear.md](./PEN-LinuxClear.md)：Linux 登录痕迹与 History 处理。
+- [PEN-WinClear.md](./PEN-WinClear.md)：Windows 事件日志、RDP 与执行痕迹清理。
 - [PEN-WinCmd.md](./PEN-WinCmd.md)：Windows 常用系统与域渗透命令。
 - [PEN-MSF.md](./PEN-MSF.md)：Metasploit 与 Meterpreter 常用命令。
 

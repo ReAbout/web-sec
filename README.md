@@ -4,6 +4,44 @@
 【声明】个人的快速查询目录，经验整理，仅供参考。     
 【内容】包括个人对漏洞理解、漏洞利用、代码审计和渗透测试的整理，也收录了他人相关的知识的总结和工具的推荐。    
 
+## 使用方式
+- 人工速查入口：优先从本页的目录和“高频速查入口”进入。
+- 专题正文入口：漏洞利用看 `./exp/`，原理理解看 `./vul/`，渗透流程看 `./penetration/`。
+- AI/Wiki 入口：优先阅读 [AI-WIKI 索引](./AI-WIKI.md)，里面补了主题映射、别名、检索关键词和推荐输出结构。
+
+## 高频速查入口
+- 前端基础：`跨域 / SOP / CSP / JSONP / DOM 污染` -> [跨域安全](./vul/VUL-CrossDomain.md)
+- 常见 Web 利用：`XSS / CSRF / SSRF / SQLi / SSTI / XXE / 文件上传 / 反序列化` -> `./exp/`
+- Java 方向：`EL / SPEL / OGNL / JNDI / 反序列化` -> `./exp/EXP-Expression-Injection.md`、`./exp/EXP-SPEL-Injection.md`、`./exp/EXP-OGNL-Injection.md`、`./exp/EXP-Java-Unserialize.md`
+- 权限与后渗透：`提权 / 会话 / 内网 / 隧道 / 痕迹清理` -> `./penetration/`
+- Windows 现场：`取凭证 / 提权 / 命令 / RDP / WinRM / WMI` -> `./penetration/PEN-GetHash.md`、`./penetration/PEN-WinCmd.md`
+- Linux 现场：`取凭证 / SUID / 本地提权 / 反弹 shell` -> `./penetration/PEN-GetHash-Linux.md`、`./penetration/PEN-Setuid-Linux.md`、`./penetration/PEN-Linux-LPE.md`、`./penetration/PEN-ReShell.md`
+
+## 速查矩阵
+| 主题 | 典型成立条件 | 第一入口 | 常用检索词 |
+| --- | --- | --- | --- |
+| XSS | 输入可控 + 输出落入可执行上下文 | [EXP-XSS](./exp/EXP-XSS.md) | `反射型` `存储型` `DOM XSS` `CSP` |
+| CSRF | 仅凭 Cookie 鉴权 + 状态变更接口 + 缺少额外校验 | [EXP-CSRF](./exp/EXP-CSRF.md) | `SameSite` `Token` `Origin` `Fetch Metadata` |
+| SSRF | 服务端可控请求目标 + 可访问内部资源 | [EXP-SSRF](./exp/EXP-SSRF.md) | `回显型` `盲 SSRF` `云 metadata` |
+| SQLi | 参数拼接 SQL + 过滤不严 | [EXP-SQLi-MySQL](./exp/EXP-SQLi-MySQL.md) | `报错` `布尔盲注` `时间盲注` `OOB` |
+| SSTI | 模板表达式可控 + 模板引擎执行 | [EXP-SSTI-ALL](./exp/EXP-SSTI-ALL.md) | `Jinja2` `Twig` `Freemarker` |
+| 命令执行 | 参数进入系统命令或解释器 | [EXP-CI-PHP](./exp/EXP-CI-PHP.md) | `命令拼接` `RCE` `Runtime.exec` |
+| XXE | XML 解析器允许外部实体 | [EXP-XXE](./exp/EXP-XXE.md) | `外部实体` `文件读取` `SSRF` |
+| 文件上传 | 可上传可解析文件 + 校验薄弱 | [EXP-Upload](./exp/EXP-Upload.md) | `MIME` `后缀绕过` `解析差异` |
+| 反序列化 | 不可信数据进入反序列化入口 | [EXP-Java-Unserialize](./exp/EXP-Java-Unserialize.md) / [EXP-PHP-Unserialize](./exp/EXP-PHP-Unserialize.md) | `gadget` `JNDI` `POP` |
+| 原型链污染 | 可控键写入对象原型链 | [EXP-nodejs-proto](./exp/EXP-nodejs-proto.md) | `__proto__` `constructor.prototype` |
+| 越权 | 只验登录态 + 不验资源归属 | [EXP-IDOR](./exp/EXP-IDOR.md) | `水平越权` `垂直越权` `BOLA` |
+| JWT | 签名算法/密钥/声明校验缺陷 | [EXP-JWT](./exp/EXP-JWT.md) | `alg=none` `算法混淆` `弱密钥` `kid` |
+| 文件读取 | 路径可控 + 未限制目录 | [EXP-FileRead](./exp/EXP-FileRead.md) | `目录穿越` `任意文件下载` `伪协议` |
+| NoSQL | 参数被解析为查询对象 | [EXP-NoSQL](./exp/EXP-NoSQL.md) | `$ne` `$regex` `$where` |
+| 请求走私 | 前后端 CL/TE 解析不一致 | [EXP-Request-Smuggling](./exp/EXP-Request-Smuggling.md) | `CL.TE` `TE.CL` `HTTP/2降级` |
+
+## 使用建议
+- 做题或实战时，先定位“漏洞类别 -> 成立条件 -> 常见利用链 -> 防御点”。
+- 查不准时，不要只搜英文名，也要用别名检索，例如：`请求伪造`、`模板注入`、`原型链污染`、`请求走私`。
+- 一个主题如果既涉及原理又涉及利用，优先读 `vul/` 理解边界，再回 `exp/` 找 payload 和步骤。
+- 对 AI 来说，优先提供“目标场景 + 语言/框架 + 认证方式 + 是否有 WAF / CSP / SameSite”这几个限定词，答案会更稳定。
+
 ## 目录
   * [0x00 技能栈](#0x00-技能栈)
   * [0x01 漏洞理解篇(Vulnerability)](#0x01-漏洞理解篇vulnerability)
@@ -13,7 +51,7 @@
   * [0x02 漏洞利用篇(Exploit)](#0x02-漏洞利用篇exploit)
     * [2.1 前端安全-XSS](#21-前端安全-xss)
     * [2.2 前端安全-CSRF](#22-前端安全-csrf)
-    * [2.3 Server-side request forgery (SSRF)](#29-server-side-request-forgery-ssrf)
+    * [2.3 Server-side request forgery (SSRF)](#23-server-side-request-forgery-ssrf)
     * [2.4  [注入]SQL注入&数据库漏洞利用](#24--注入sql注入数据库漏洞利用)
     * [2.5 [注入]模板注入 Server Side Template Injection (SSTI)](#25-注入模板注入-server-side-template-injection-ssti)
     * [2.6 [注入]命令注入&代码执行](#26-注入命令注入代码执行)
@@ -25,6 +63,12 @@
     * [2.12 Java-特性漏洞](#212-java-特性漏洞)
     * [2.13 NodeJs-特性漏洞](#213-nodejs-特性漏洞)
     * [2.14 不一致性](#214-不一致性)
+    * [2.15 越权漏洞](#215-越权漏洞)
+    * [2.16 JWT攻击](#216-jwt攻击)
+    * [2.17 跨域利用](#217-跨域利用)
+    * [2.18 CRLF注入](#218-crlf注入)
+    * [2.19 信息泄露](#219-信息泄露)
+    * [2.20 业务逻辑漏洞](#220-业务逻辑漏洞)
   * [0x03 代码审计篇(Audit)](#0x03-代码审计篇audit)
     * [3.1 PHP](#31-php)
     * [3.2 JAVA](#32-java)
@@ -85,11 +129,15 @@
 
 ## 0x01 漏洞理解篇(Vulnerability)
 ### 1.1 前端
-> 同源策略 & CSP & JOSNP
+> 同源策略 & CSP & JSONP
 - [跨域安全](./vul/VUL-CrossDomain.md)
 ### 1.2 后端
 > 应用分层 & 漏洞分类
 - [错综复杂的后端逻辑及安全](./vul/VUL-Backend.md)
+> 认证机制 & 密码误用 & 逻辑设计
+- [认证与会话机制](./vul/VUL-Auth-Session.md)
+- [Web 密码学误用](./vul/VUL-Crypto.md)
+- [业务逻辑漏洞原理](./vul/VUL-Logic.md)
 
 ### 1.3 打造自己的知识库
 >爬取范围包括先知社区、安全客、Seebug Paper、跳跳糖、奇安信攻防社区、棱角社区
@@ -99,7 +147,7 @@
 ### 2.1 前端安全-XSS
 > XSS 利用的是用户对指定网站的信任 
 - [Cross Site Scripting (XSS)](./exp/EXP-XSS.md)
- ### 2.2 前端安全-CSRF
+### 2.2 前端安全-CSRF
 > CSRF 利用的是网站对用户网页浏览器的信任   
 - [Client-side request forgery (CSRF)](./exp/EXP-CSRF.md)
 ### 2.3 Server-side request forgery (SSRF)
@@ -113,6 +161,8 @@
 - [SQL injection - 信息外带(OOB)](./exp/EXP-SQLi-OOB.md)
 
 - [Redis 漏洞利用](./exp/EXP-DB-Redis.md)
+> MongoDB 操作符注入（PHP/Node 数组参数场景）
+- [NoSQL 注入](./exp/EXP-NoSQL.md)
 > go写的命令行版本
 - [**[Tool]** 数据库综合利用工具](https://github.com/Hel10-Web/Databasetools)
 > 程序检测参数不能为空，导致空口令无法利用
@@ -138,6 +188,8 @@
 ### 2.9 文件操作漏洞
 - [文件上传漏洞](./exp/EXP-Upload.md)
 - [文件上传漏洞WAF绕过-JSP](./exp/EXP-Upload-JSP.md)
+> 文件操作的另一半：读取/下载/目录穿越
+- [任意文件读取与目录穿越](./exp/EXP-FileRead.md)
 > 远古时期的通杀利器
 - [FCKeditor编辑器漏洞利用](./exp/EXP-FCK.md)
 
@@ -145,6 +197,8 @@
 >php,java只能序列化数据，python可以序列化代码。   
 - [反序列化漏洞-PHP](./exp/EXP-PHP-Unserialize.md)
 - [反序列化漏洞-Java](./exp/EXP-Java-Unserialize.md)
+> pickle序列化的是代码逻辑，拿到入口基本等于RCE
+- [反序列化漏洞-Python(pickle)](./exp/EXP-Python-Unserialize.md)
 - [绕过高版本Jdk的限制进行Jndi注入利用](./exp/EXP-Java-Unserialize-Bypass-Jdk.md)    
 - [**[Tool]** 反序列化漏洞利用工具-Java ysoserial](https://github.com/frohoff/ysoserial)
 > 拓展payload和内存马
@@ -171,7 +225,27 @@
 > 利用前后DNS解析的不一致（劫持或者逻辑问题）   
 - [DNS rebinding 攻击](./exp/EXP-DNS-Rebinding.md)
 > 前后端不一致性
+- [HTTP 请求走私](./exp/EXP-Request-Smuggling.md)
 - [请求走私总结@chenjj](https://github.com/chenjj/Awesome-HTTPRequestSmuggling)
+
+### 2.15 越权漏洞
+> 认证不等于授权，利用见双账号对比法
+- [越权漏洞（IDOR / Broken Access Control）](./exp/EXP-IDOR.md)
+### 2.16 JWT攻击
+> alg=none / 算法混淆 / 弱密钥 / kid注入
+- [JWT 攻击](./exp/EXP-JWT.md)
+### 2.17 跨域利用
+> CSRF是"写"，CORS/JSONP劫持是"读"
+- [CORS 误配与 JSONP 劫持](./exp/EXP-CORS.md)
+### 2.18 CRLF注入
+> 换行符进响应头，拆分响应打XSS
+- [CRLF 注入与 HTTP 响应拆分](./exp/EXP-CRLF.md)
+### 2.19 信息泄露
+> 源码/配置/接口文档/调试信息，攻击链的第一步
+- [信息泄露](./exp/EXP-InfoLeak.md)
+### 2.20 业务逻辑漏洞
+> 条件竞争 / 验证码 / 密码重置 / 支付篡改
+- [业务逻辑漏洞利用](./exp/EXP-Logic.md)
 
 ## 0x03 代码审计篇(Audit)
 
@@ -255,9 +329,8 @@
 
 #### 4.2.2漏洞利用(1day)
 ##### 4.2.2.1 漏洞利用知识
-- [漏洞索引表]()【待整理】
+- [漏洞索引表](./exp/EXP-Vul-Index.md)
 > IoT安全 & web安全& 系统漏洞 1day整理
-- [漏洞利用wiki](https://wiki.96.mk/)
 - [红队中易被攻击的一些重点系统漏洞整理@r0eXpeR](https://github.com/r0eXpeR/redteam_vul)
 - [织梦全版本漏洞扫描@lengjibo](https://github.com/lengjibo/dedecmscan)
 ##### 4.2.2.2 漏洞利用工具
@@ -413,10 +486,14 @@
 - [**[Tool]** 内网横向拓展系统 InScan](https://github.com/inbug-team/InScan)
 - [**[Tool]** 开源图形化内网渗透工具 Viper](https://github.com/FunnyWolf/Viper)
 #### 4.7.4 域渗透
+- [域信息收集与 BloodHound](./penetration/PEN-BloodHound.md)
+- [Kerberos 认证攻击速查](./penetration/PEN-Kerberos.md)
 - [域渗透@uknowsec](https://github.com/uknowsec/Active-Directory-Pentest-Notes)
 - 域提权：MS14-068,CVE-2020-1472(Zerologon),CVE-2021-42287/CVE-2021-42278,CVE-2022-26923
 
 #### 4.7.5 云平台
+> AKSK利用 & metadata & 对象存储
+- [云上攻防速查](./penetration/PEN-Cloud.md)
 >k8s渗透
 - [从零开始的Kubernetes攻防@neargle](https://github.com/neargle/my-re0-k8s-security)   
 >通过accesskey获取相关主机权限执行命令
@@ -425,6 +502,7 @@
 
 ### 4.8 反溯源 
  - [Linux 痕迹清理](./penetration/PEN-LinuxClear.md)
+ - [Windows 痕迹清理](./penetration/PEN-WinClear.md)
  - [攻击和反制@Getshell](https://github.com/Getshell/Fanzhi)
  - [**[Tool]** xhide linux进程名隐藏](https://github.com/chenkaie/junkcode/blob/master/xhide.c)    
 ### 4.9 协同
