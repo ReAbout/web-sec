@@ -512,4 +512,4 @@
 ## Other
 [toc目录生成工具](https://houbb.github.io/opensource/markdown-toc/)
 
-![Star History Chart](https://api.star-history.com/svg?repos=ReAbout/web-sec&type=Date)
+![Star History Chart](https://star-history.dera.page/svg?repos=ReAbout/web-sec&type=Date)
